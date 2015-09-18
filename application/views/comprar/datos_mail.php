@@ -2,6 +2,7 @@
     <head>
         <title>Club de la Cocina</title>
         <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     </head>
     <body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
         <table width="600" height="561" border="0" align="center" cellpadding="0" cellspacing="0" id="Tabla_01" style="border:#666 1px solid">
@@ -21,7 +22,15 @@
 
                     <span style="font-family:Arial; font-size:13px; font-weight:bold">
                         Tu Compra se ha efectuado exitosamente.<br>
-                        A continuaci&oacute;n puedes ver el detalle</span>
+                        A continuaci&oacute;n puedes ver el detalle <br>
+                        ¡y también contarle a tus amigos en las redes sociales! <br>
+                        <span>
+                            <a href="   
+                    http://facebook.com/sharer.php?u=<?= urlencode(base_url($chefLink).'#'.str_replace(" ", "_", $experiencia['nombre']))?>"><i class="fa fa-facebook fa-2x"></i></a>
+                            <a href="   
+                    https://twitter.com/intent/tweet?text=<?= urlencode(base_url($chefLink).'#'.str_replace(" ", "_", $experiencia['nombre']))?>"><i class="fa fa-twitter fa-2x"></i></a>        
+                        </span>
+                    </span>
                 </td>
             </tr>
             <tr>

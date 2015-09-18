@@ -7,6 +7,7 @@
         <link href="<?= base_url('css/style2.css'); ?>" rel="stylesheet" media="screen" />
         <link href="<?= base_url('css/paginator.css'); ?>" rel="stylesheet" media="screen" />
         <link href="<?= base_url('css/font-awesome.min.css'); ?>" rel="stylesheet" media="screen" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <link href="<?= base_url('css/jquery-ui-1.9.2.custom.min.css'); ?>" rel="stylesheet" media="screen" />
         <link rel="stylesheet" href="<?= base_url('css/magnific-popup.css') ?>">
         <link rel="stylesheet" href="<?= base_url('css/jquery.datetimepicker.css') ?>">

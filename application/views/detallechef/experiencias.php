@@ -25,8 +25,16 @@
             foreach ($experiencias as $experiencia) :
                 $idExperiencia = $experiencia['idExperiencia'];
                 ?>
-                <li class="overflowauto">
-                    <h2 class="titulo-fantasia SueEllen mayus"><?= $experiencia['nombre']; ?></h2>
+                <li class="overflowauto" id="<?= str_replace(" ", "_", $experiencia['nombre']);?>">
+                    <h2 class="titulo-fantasia SueEllen mayus"><?= $experiencia['nombre']; ?>
+                        <span class="social-buttons">
+                            <a href="   
+                    http://facebook.com/sharer.php?u=<?= urlencode(base_url($chefLink).'#'.str_replace(" ", "_", $experiencia['nombre']))?>"><i class="fa fa-facebook"></i></a>
+                            <a href="   
+                    https://twitter.com/intent/tweet?text=<?= urlencode(base_url($chefLink).'#'.str_replace(" ", "_", $experiencia['nombre']))?>"><i class="fa fa-twitter"></i></a>        
+                        </span>
+                    </h2>
+
                     <div class="float-left texto-fantasia">
                         <div class="texto-fantasia-wrapper">
                             <div class="img-experiencia overflowauto"><img src="<?= base_url('images/experiencias/' . $experiencia['imagen']); ?>" alt="imagen experiencia <?= $experiencia['nombre'] ?>"/></div>

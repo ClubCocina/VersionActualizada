@@ -17,6 +17,12 @@
 </script>
 <div id="nombre-chef">
     <span><?= ucwords($datosChef['nombre'] . ' ' . $datosChef['apellidoPaterno']) ?></span>
+    <span class="social-buttons">
+        <a href="   
+http://facebook.com/sharer.php?u=<?= urlencode(base_url($chefLink))?>"><i class="fa fa-facebook"></i></a>
+        <a href="   
+https://twitter.com/intent/tweet?text=<?= urlencode(base_url($chefLink))?>"><i class="fa fa-twitter"></i></a>        
+    </span>
 </div>
 <div id="slide-chef" style='position: relative'>
     <img src="<?= isset($fotos['23']) ? base_url('images/' . $fotos['27']) : ''; ?>" alt="Imagen Portada"/>

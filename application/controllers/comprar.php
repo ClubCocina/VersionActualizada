@@ -248,6 +248,12 @@ class Comprar extends CI_Controller {
                     $data['invitados'] = $this->session->userdata('invitados');
                     $data['horario'] = $this->session->userdata('horario');
                     $data['total'] = $this->session->userdata('total');
+                    if($chef[0]['link']){
+                        $data['chefLink'] = 'chef/'.$chef[0]['link'];    
+                    }
+                    else{
+                        $data['chefLink'] = 'chefs/verDatosChef/'.$experiencia[0]['idUsuario'];
+                    }
                     $this->actividad_model->update($actividadUp);
 
                     //Mail cliente

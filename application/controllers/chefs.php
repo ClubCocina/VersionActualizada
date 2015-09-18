@@ -289,6 +289,14 @@ class Chefs extends CI_Controller {
         $data['diasSemana'] = $this->_getDiasAgenda($id);
         $data['comentarios'] = $this->_getComentarios($id);
 
+        $link = $this->usuario_model->getUserLink($id);
+        if($link){
+            $data['chefLink'] = 'chef/'.$link;    
+        }
+        else{
+            $data['chefLink'] = 'chefs/verDatosChef/'.$id;
+        }
+
         $this->load->vars($data); //función que disponibiliza $data para todas las vistas
     }
 

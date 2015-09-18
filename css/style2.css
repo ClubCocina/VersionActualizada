@@ -3033,3 +3033,11 @@ input::-webkit-inner-spin-button {
     width: 171px;
     float: right;
 }
+
+.social-buttons {
+    float: right;
+}
+
+.social-buttons .fa {
+    margin-right: 12px;
+}
