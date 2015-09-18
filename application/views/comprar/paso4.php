@@ -11,6 +11,12 @@
 <div id="pasofinal" class="overflowauto">
     <div class="mayus titulo-ingreso centerbox">
         <div>¡Listo! El Chef que has escogido está reservado para el evento. Te escribiremos en un plazo de 24 horas, ¡quédate atento!</div>
+        <div>Mientras tanto, ¡puedes compartirlo con tus amigos en las redes sociales!
+            <span>
+                <a href="http://facebook.com/sharer.php?u=<?= urlencode(base_url($chefLink).'#'.str_replace(" ", "_", $experiencia['nombre']))?>"><i class="fa fa-facebook fa-2x"></i></a>
+                <a href="https://twitter.com/intent/tweet?text=<?= urlencode(base_url($chefLink).'#'.str_replace(" ", "_", $experiencia['nombre']))?>"><i class="fa fa-twitter fa-2x"></i></a>        
+            </span>
+        </div>
     </div>
     <div id="detalles">
         <div id="cont-confirmacion" class="float-left">
