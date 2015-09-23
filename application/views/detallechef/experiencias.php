@@ -56,12 +56,12 @@
                                         <div class="input-vista-chef"><?= ucwords($datosChef['nombre'] . ' ' . $datosChef['apellidoPaterno']) ?></div>
                                     </div>
                                 </div>
-                                <div class="overflowauto row-detalle">
+                            <!--    <div class="overflowauto row-detalle">
                                     <div class="titulo-datos">Experiencia</div>
                                     <div class="row-info">
                                         <div class="input-vista-chef"><?= $experiencia['nombre']; ?></div>
                                     </div>
-                                </div>
+                                </div>  -->
                                 <div class="overflowauto row-detalle">
                                     <div class="titulo-datos">¿Cuántos Comen?</div>
                                     <div class="row-info cantidad-invitados prompt-input">
@@ -72,17 +72,7 @@
                                                />
                                     </div>
                                 </div>
-                                <div class="overflowauto row-detalle">
-                                    <div class="titulo-datos">Tiempo que el chef estar&aacute; en tu casa</div>
-                                    <div class="row-info horario-evento">
-                                        <input id="duracion<?= $idExperiencia; ?>"
-                                               name="duracion<?= $idExperiencia; ?>"
-                                               class="input-vista-chef duracion"
-                                               readOnly
-                                               value="<?= set_value('duracion' . $idExperiencia, gmdate('H:i', $experiencia['tiempo' . $comensales_default] * 60 * 60)); ?>"
-                                               /><span class="input-vista-chef duracion no-upper">Horas</span>
-                                    </div>
-                                </div>
+                    
                                 <div class="overflowauto row-detalle">
                                     <div class="titulo-datos">Fecha y Hora</div>
                                     <div class="row-info horario-evento prompt-input">
@@ -190,6 +180,17 @@
                                                 });
                                             });
                                         </script>
+                                    </div>
+                                </div>
+                                <div class="overflowauto row-detalle">
+                                    <div class="titulo-datos">Tiempo que el chef estar&aacute; en tu casa</div>
+                                    <div class="row-info horario-evento">
+                                        <input id="duracion<?= $idExperiencia; ?>"
+                                               name="duracion<?= $idExperiencia; ?>"
+                                               class="input-vista-chef duracion"
+                                               readOnly
+                                               value="<?= set_value('duracion' . $idExperiencia, gmdate('H:i', $experiencia['tiempo' . $comensales_default] * 60 * 60)); ?>"
+                                               /><span class="input-vista-chef duracion no-upper">Horas</span>
                                     </div>
                                 </div>
                                 <div class="overflowauto row-detalle">
