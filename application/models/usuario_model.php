@@ -263,7 +263,7 @@ class usuario_model extends CI_Model {
         }
     }
 
-    function getUserLink($id){
+    public function getUserLink($id){
         $query = $this->db->query("SELECT * FROM usuario u WHERE u.idUsuario = ".$id);
 
         return $query->row()->link;
