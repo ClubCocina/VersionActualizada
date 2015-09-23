@@ -28,7 +28,7 @@
                 </div>
             </div>
         </div>
-        <div id="header-video-home"><span>¿Quieres saber cómo funciona?</span></div>
+        <div id="header-video-home"><span>¿Cómo funciona?</span></div>
         <div id="video-home">
             <iframe width="346" height="195" src="//www.youtube.com/embed/Ff1wgRzY7Hw" frameborder="0" allowfullscreen></iframe>
         </div>
@@ -56,7 +56,7 @@
                             <div class="ca-nombre-home bg-rojo"><a href="<?= base_url($urlChef); ?>"><?= $chef['nombre'] . ' ' . $chef['apellidoPaterno']; ?></a></div>
                             <div class="ca-descripcion-home overflowauto"><?= isset($chef['dato']) && $chef['dato'] != '' ? $chef['dato'] : '' ?></div>
                             <div class="link-preparaciones float-right">
-                                <a href="<?= base_url($urlChef); ?>">Conocer las experiencias</a>
+                                <a href="<?= base_url($urlChef); ?>">Conoce las experiencias</a>
                             </div>
                         </div>
                     </div>

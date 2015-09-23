@@ -61,6 +61,7 @@
                             <ul>
                                 <li class="float-left"><a href="<?= base_url('home/page/2') ?>">¿Cómo Funciona?</a></li>
                                 <li class="float-left"><a href="<?= base_url('home/page/4') ?>">Preguntas Frecuentes</a></li>
+                                <li class="float-left"><a href="<?= base_url('home/contacto') ?>">Contacto</a></li>
                             </ul>
                         </div>
                         <div id="login" class="menu">
@@ -124,7 +125,7 @@
                                         </div>
                                     </div>
                                 <!-- <input type="text" placeholder="Tu Comuna" name="comuna" class="comuna-buscador">-->
-                                    <div class="input-buscador float-left">
+                                <!--    <div class="input-buscador float-left">
                                         <div class="constraint-select">
                                             <select name="tag" class="custom-select">
                                                 <option value="">¿ALGO EN ESPECIAL?</option>
@@ -133,7 +134,7 @@
                                                 <?php endforeach; ?>
                                             </select>
                                         </div>
-                                    </div>
+                                    </div>  -->
                                     <div class="input-buscador float-left">
                                         <input type="text" placeholder="NOMBRE DEL CHEF" id="nombre_chef" name="nombre_chef" class="input_autocomplete"/>
                                     </div>

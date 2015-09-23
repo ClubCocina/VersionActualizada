@@ -1,4 +1,4 @@
-@charset "utf-8";
+    @charset "utf-8";
 /* CSS Document */
 
 @font-face {
@@ -140,7 +140,7 @@ a:visited {
 }
 
 .bg-rojo {
-    background-color: #C1173C;
+    background-color: #FF1849;
 }
 
 .float-left {
@@ -210,7 +210,7 @@ a:visited {
 }
 
 #main-menu ul li {
-    margin-left: 25px;
+    margin-left: 35px;
 }
 
 #username-header {
@@ -265,6 +265,7 @@ a:visited {
     padding-top: 15px;
     color: #FFFFFF;
     text-align: center;
+    border-radius: 5px;
 }
 
 .conteo-top {
@@ -314,10 +315,12 @@ a:visited {
     padding-left: 10px;
 }
 
+/*
 #header-video-home span:before {
     content: url('../images/flecha-video.png');
     vertical-align: middle;
     margin-right: 5px;
+    */
 }
 
 #video-home {
@@ -333,12 +336,13 @@ a:visited {
     text-align: center;
     height: 428px;
     padding-top: 14px;
-    margin-bottom: 42px;
+    margin-bottom: 25px;
     margin-top: 25px;
+    border-radius: 5px;
 }
 
 #carrusel-home-cont span {
-    font-size: 38px;
+    font-size: 25px;
     color: #FFFFFF;
     height: 43px;
     padding-bottom: 14px;
@@ -346,12 +350,12 @@ a:visited {
 
 .carruselhome-chef {
     width: 177px;
-    height: 346px;
+    height: 331px;
     background: #FFECC5;
     margin-right: 14px;
     padding-right: 15px;
     padding-left: 15px;
-
+    border-radius: 5px;
     padding-top: 16px;
 }
 
@@ -367,36 +371,36 @@ a:visited {
 
 .ca-avatar-home img {
     width: 140px;
+    border-radius: 5px;
 
 }
 
 .ca-nombre-home {
 
     width: 176px;
-
     font-size: 15px;
-    font-style: italic;
     color: #FFFFFF;
     padding: 5px 0;
+    border-radius: 3px;
 }
 
 .ca-descripcion-home {
     line-height: 16px;
-
-    font-style: italic;
     font-size: 13px;
     margin-top: 10px;
     height: 76px;
     width: 176px;
     text-align: left;
+    padding-bottom: 4px;
 }
 
 .link-preparaciones {
 
-    color: rgb(37, 181, 153);
+    color: #FF1849;
     padding-top: 20px;
-    font-size: 12px;
-    bottom: -12px;
+    font-size: 15px;
+    font-weight: 500;
+    bottom: -14px;
     position: relative;
 }
 
@@ -472,7 +476,7 @@ a:visited {
 }
 
 .buscador span.resultado {
-    font-size: 22px;
+    font-size: 25px;
 }
 
 .buscador form {
@@ -482,7 +486,7 @@ a:visited {
 
 .fecha-buscador {
     width: 145px;
-    text-indent: 12px;
+    text-indent: 8px;
 }
 
 .comuna-buscador {
@@ -517,14 +521,15 @@ a:visited {
 }
 
 .input-buscador {
-    width: 147px;
-    height: 36px;
+    width: 185px;
+    height: 40px;
     border: 3px solid #DE9322;
-    margin-right: 5px;
+    margin-right: 12px;
+    border-radius: 4px;
 }
 
 .submit-buscador {
-    width: 68px;
+    width: 98px;
     height: 42px;
 }
 
@@ -536,6 +541,7 @@ a:visited {
     background-position: right;
     background-repeat: no-repeat;
     overflow: hidden;
+    border-radius: 3px;
 }
 
 .constraint-select select {
@@ -1271,7 +1277,7 @@ li.nobottomline {
 
 .datos-info {
     /*height: 194px;*/
-    padding: 28px 5px 28px 13px;
+    padding: 15px 5px 15px 13px;
 }
 
 .duracion {
@@ -1935,7 +1941,7 @@ li.nobottomline {
 
 #nombre-chef{
     font-family: "SueEllen";
-    font-size: 25px;
+    font-size: 32px;
     color: #FFAA22;
     font-weight: 400;
     /*padding-bottom: 10px;*/
@@ -1966,13 +1972,13 @@ li.nobottomline {
 }
 
 .titulo-fantasia {
-    font-size: 24px;
+    font-size: 30px;
     margin-bottom: 30px;
     text-align: center;
     padding-top: 5px;
     padding-left: 17px;
-    background: #A1162F;
-    line-height: 33px;
+    background: #FF1849;
+    line-height: 45px;
     color: #FFFFFF;
 }
 
@@ -2020,7 +2026,7 @@ li.nobottomline {
 }
 
 .titulo-info {
-    height: 22px;
+    height: 15px;
     font-size: 15px;
     padding: 15px;
     font-weight: 600;
@@ -2032,7 +2038,7 @@ li.nobottomline {
 }
 
 .input-vista-chef {
-    background: #C1173C;
+    background: #FF1849;
     border: none;
     color: white;
     font-weight: 700;
@@ -2076,14 +2082,14 @@ span.ui-spinner {
 
 .horario-evento:before {
     content: url(../images/thumb-horario.png);
-    background: #A1162F;
+    background: #FF1849;
     padding: 0 7px;
     padding-bottom: 3px;
 }
 
 .total-evento:before {
     content: url(../images/thumb-total.png);
-    background: #A1162F;
+    background: #FF1849;
     padding: 0 9px;
     padding-bottom: 2px;
 }
@@ -2206,7 +2212,7 @@ span.ui-spinner {
 }
 
 .bg-rojo-oscuro {
-    background: #A1162F;
+    background: #FF1849;
 }
 
 .bg-rojo-oscuro-btn {
@@ -2779,13 +2785,15 @@ div.thumb-sf {
 
 
 .buscador.interior input, .buscador.interior .nombrechef-buscador{
-    font-size: 15px !important;
-    width: 100% !important;
+    font-size: 17px !important;
+    width: 99% !important;
+    border-radius: 3px;
 }
 
 .buscador.interior select {
-    font-size: 15px !important;
+    font-size: 17px !important;
     width: 164px;
+    padding-left: 10px;
 }
 
 .buscador.interior .resultado{
