@@ -75,10 +75,17 @@ https://twitter.com/intent/tweet?text=<?= urlencode(base_url($chefLink))?>"><i c
             </div>
         </div>
         <div id="precio" class="bg-rojo">
-            <span class="preview-clp mayus">Valor por hora</span>
+            <span class="preview-clp mayus">Desde</span>
             <br>
             <div class="preview-valor">
-                $ <?= is_numeric($parametrosChef['4']) ? number_format(($parametrosChef['4']), 0, ',', '.') : 0; ?>
+                <span>
+                    $ <? //is_numeric($parametrosChef['4']) ? number_format(($parametrosChef['4']), 0, ',', '.') : 0; 
+                        $comensales = explode('-', $parametrosChef['5']);
+                        //echo $comensales[1];
+                        echo number_format($parametrosChef['4'] * $minTiempo / $comensales[1], 0, ',', '.');
+                    ?>
+                </span>
+                <span class="por-persona">por persona</span>
             </div>
             <div class="desc-precio">
                 <p>Incluye todos los ingredientes necesarios para la experiencia.</p>

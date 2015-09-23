@@ -291,11 +291,23 @@ class Chefs extends CI_Controller {
 
         $link = $this->usuario_model->getUserLink($id);
         if($link){
-            $data['chefLink'] = 'chef/'.$link;    
+            $linkAux = 'chef/'.$link;    
         }
         else{
-            $data['chefLink'] = 'chefs/verDatosChef/'.$id;
+            $linkAux = 'chefs/verDatosChef/'.$id;
         }
+        $data['chefLink'] = $linkAux;
+
+        $minTiempo = 100;
+        $tiempo;
+        foreach ($data['experiencias'] as $experiencia) {
+            $tiempo = explode('-', $data['parametrosChef']['5']);
+            if($experiencia['tiempo'.$tiempo[1]] < $minTiempo){
+                $minTiempo = $experiencia['tiempo'.$tiempo[1]];
+            }
+        }
+
+        $data['minTiempo'] = $minTiempo;
 
         $this->load->vars($data); //función que disponibiliza $data para todas las vistas
     }
