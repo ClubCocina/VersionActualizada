@@ -76,6 +76,7 @@ input[type=submit]{
     -webkit-transition: color 1s, background 1s, opacity 1s; /* For Safari 3.1 to 6.0 */
     transition: color 1s, background 1s, opacity 1s;	
     cursor: pointer;
+    border-radius: 5px;
 
 }
 
@@ -116,7 +117,9 @@ a:visited {
 
 #main-container {
     width: 980px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
+    z-index: -1;
+    margin-top: -15px;
 }
 
 .white {
@@ -129,6 +132,7 @@ a:visited {
 
 .SueEllen {
     font-family: "SueEllen";
+    letter-spacing: 0.4px;
 }
 
 .mayus {
@@ -136,7 +140,7 @@ a:visited {
 }
 
 .bg-color-general {
-    background-color: #262626;
+    background-color: rgba(0,0,0,0.7);
 }
 
 .bg-rojo {
@@ -186,6 +190,7 @@ a:visited {
     height: 34px; 
     font-family: "SueEllen", sans-serif;
     font-size: 17px;
+    letter-spacing: 0.4px;
 }
 
 .header-bot {
@@ -251,7 +256,7 @@ a:visited {
 
 #contenedor-portada {
     height:336px;
-    position: relative;
+    z-index: -1;
 }
 
 #slide-home {
@@ -269,7 +274,7 @@ a:visited {
 }
 
 .conteo-top {
-    height: 96px;
+    height: 90px;
 }
 
 #nrochefs {
@@ -283,7 +288,7 @@ a:visited {
 }*/
 
 .conteo {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 700;
 }
 
@@ -299,18 +304,18 @@ a:visited {
 .contados {
     font-weight: 300;
     font-size: 15px;
-    font-style: italic;
     line-height: 120%;
 }
 
 #header-video-home {
     width: 336px;
-    height: 30px;
+    height: 36px;
     background: #FCA502;
     color: #000;
     font-family: SueEllen;
-    font-size: 23px;
-    line-height: 135%;
+    font-size: 25px;
+    line-height: 150%;
+    letter-spacing: 0.4px;
     text-align: left;
     padding-left: 10px;
 }
@@ -510,20 +515,20 @@ a:visited {
 
 .enviar-buscador {
     height: 100% !important;
-    background-color: orange !important;
+    background-color: #FF1849 !important;
     -webkit-transition: opacity 2s; /* For Safari 3.1 to 6.0 */
     transition: opacity 2s;
 }
 
 .enviar-buscador:hover{
     /* opacity: 0.8;	*/
-    background-color: #a1162f !important;
+    background-color: #FFAA22 !important;
 }
 
 .input-buscador {
     width: 185px;
     height: 40px;
-    border: 3px solid #DE9322;
+    border: 3px solid #FFAA22;
     margin-right: 12px;
     border-radius: 4px;
 }
@@ -581,6 +586,7 @@ a:visited {
     color: #F5F3EC;
     border: none;
     font-family: "SueEllen";
+    letter-spacing: 1px;
 }
 
 .div-orden {
@@ -589,8 +595,10 @@ a:visited {
 }
 
 .ordenar{
-    font-size: 14px !important;
+    font-size: 16px !important;
     min-width: 125px !important;
+    padding-left: 3px;
+    padding-top: 2px;
 }
 
 .buscador input::-webkit-input-placeholder {
@@ -778,6 +786,7 @@ a:visited {
     background-color: #FFAB00;
     padding-bottom: 38px;
     margin-bottom: 17px;
+    border-radius: 5px;
 }
 
 #comentarios div.SueEllen {
@@ -1271,8 +1280,9 @@ li.nobottomline {
 .info-actividad {
     width:250px;
     /*height: 300px;*/
-    margin-left: 35px;
+    margin-left: 20px;
     color: white;
+    border-radius: 5px;
 }
 
 .datos-info {
@@ -1286,7 +1296,7 @@ li.nobottomline {
 
 #cont-derecha{
     width: 250px;
-    margin-left: 30px;
+    margin-left: 20px;
     margin-top: -250px;
     z-index: 9999;
     margin-bottom: 17px;
@@ -1296,8 +1306,10 @@ li.nobottomline {
 #resumen-reviews {
     min-height: 95px;
     margin-bottom: 11px;
-    padding-left: 18px;
-    padding-top: 15px;
+    padding-left: 15px;
+    padding-top: 25px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 
 .globo-conteo {
@@ -1327,22 +1339,27 @@ li.nobottomline {
     margin-top: 13px;
     color: #FFAA22;
     font-size: 15px;
-    font-style: italic;
 }
 
 #precio {
     padding: 10px 18px;
-    margin-bottom: 11px;
+    /*border-top-right-radius: 5px;
+    border-top-left-radius: 5px;  */
+    border-radius: 5px;
+    margin-top: 16px;
 }
 
 #precio div {
-    font-size: 40px;
+    font-size: 35px;
     color: #FFFFFF;
-    font-weight: 700;
+    font-weight: 500;
+    padding-top: 5px;
 }
 #invitados-comunas {
     padding-left: 15px;
     padding-bottom: 25px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 #invitados-comunas div{
@@ -1357,16 +1374,18 @@ li.nobottomline {
 #maxpersonas div span{
     margin-left: 15px;
     vertical-align: super;
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: 300;
 }
 
 #comunas ul {
     margin-left: 15px;
+    font-weight: 300;
 }
 
 #comunas ul li {
     margin-top: 7px;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 #grafica-reviews {
@@ -1523,6 +1542,8 @@ li.nobottomline {
     padding-bottom: 19px;
     background: url('../images/background_footer.png');
     font-family: "SueEllen";
+    opacity: 0.8;
+    letter-spacing: 0.4px;
 }
 
 #links-paginas {
@@ -1546,19 +1567,20 @@ li.nobottomline {
 
 #inicio-sesion {
 
-    background: #ECD5AA;
+    background: url("../images/site-background.png");
     color: #FFFFFF;
     padding: 35px;
-    /*border: solid;
-    border-radius: 10px;*/
+    /*border: solid;*/
+    border-radius: 5px;
     text-align: center; 
     width: 760px;
 }
 
 #inicio-sesion input{
     border: none;
-    padding: 3px;
+    padding: 4px;
     font-style: italic;
+    border-radius: 4px;
 }
 
 #inicio-sesion select{
@@ -1578,13 +1600,14 @@ li.nobottomline {
 }
 
 #registro {
-    width: 430px;
-    margin-right:  80px;
+    width: 360px;
+    margin-right: 20px;
+    background-color: #FF1849;
 
 }
 
 #registro h2{
-    background: #DD234C;
+    background: #FF1849;
 }
 
 #inicio-sesion h2 {
@@ -1592,7 +1615,9 @@ li.nobottomline {
     width: 100%;
     margin: 0 auto;
     padding: 10px 0;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    text-transform: uppercase;
 }
 
 
@@ -1603,8 +1628,8 @@ li.nobottomline {
 }
 
 #login-light{
-    width: 230px;
-    height:  300px;
+    width: 360px;
+    height: 315px;
     background: #30B499;
 }
 
@@ -1617,28 +1642,29 @@ li.nobottomline {
 }
 
 #login-light h2{
-    background: #59E2C6;
+    background: #30B499;
 }
 
 #registro form {
-    width: 100%;
+    width: 90%;
 }
 
 #registro input {
-    width: 95%;
+    width: 90%;
     margin-bottom: 6px;
 }
 
 #registro select {
-    width: 96%;
+    width: 92%;
     margin-bottom: 6px;
     -webkit-appearance: menulist;
     appearance: initial;
 }
 
 #registrarme {
-    background: #DD234C; 
+    background: #FFAA22; 
     float: right;
+    margin-right: 75px;
 }
 
 .bot-light{
@@ -1654,7 +1680,7 @@ li.nobottomline {
 }
 
 #login-light .bot-light{
-    background: #59E2C6; 
+    background: #FFAA22; 
 }
 
 .fb-login-button{
@@ -1669,8 +1695,11 @@ li.nobottomline {
     color: #FFFFFF;
     font-size: 22px;
     float: left;
-    width: 980px;
-    height: 38px;
+    width: 930px;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 22px;
 }
 
 #result-container {
@@ -1682,16 +1711,19 @@ li.nobottomline {
 
 #filtro-tags {
     margin: 0 24px;
-    background: #333333;
+    background: rgba(0,0,0,0.7);
     color: #FFFFFF;
-    padding: 25px 25px
+    padding: 25px 25px;
+    border-radius: 5px;
 }
 
 .titulo-tags{
-    font-size: 30px;
+    font-size: 25px;
     font-family: "SueEllen";
     line-height: 30px;
     padding-top: 15px;
+    margin-left: 15px;
+    letter-spacing: 0.4px;
 }
 
 #display-tags {
@@ -1701,8 +1733,6 @@ li.nobottomline {
 
 .tag-row {
     font-size: 20px;
-
-    font-style: italic;
     height: 40px;
 }
 
@@ -1737,7 +1767,7 @@ li.nobottomline {
     width: 602px;
     height: 377px;
     background-color: #FFFFFF;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     position: relative;
 }
 
@@ -1822,11 +1852,11 @@ li.nobottomline {
 }
 
 .preview-nombre {
-    line-height: 22px;
-    font-size: 17px;
-    font-style: italic;
-    font-weight: 500;
-    color: #73130A;
+    line-height: 36px;
+    font-size: 30px;
+    font-family: "SueEllen";
+    letter-spacing: 1px;
+    color: #FF1849;
 }
 
 .conteo-preview {
@@ -1853,7 +1883,7 @@ li.nobottomline {
 .preview-clp {
     font-size: 17px;
     color: #FFAA22;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 #precio-detalle {
@@ -1893,6 +1923,8 @@ li.nobottomline {
     height: 280px;
     overflow:hidden;
     z-index: -9999;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 #slide-chef img{
@@ -1900,22 +1932,24 @@ li.nobottomline {
 }
 
 #infochef {
-    width: 670px;
+    width: 700px;
     float: left;
     /*margin-left: 20px;*/
-
+    margin-bottom: 10px;
 }
 
 #metas {
     width: 670px;
-    background: #FFC669;
+    background: #FFAA22;
     padding: 10px;
     margin-top: 15px;
-    min-height: 90px;
+    min-height: 95px;
+    border-radius: 5px;
+    margin-left: 8px;
 }
 
 #contenedor-central {
-    width: 670px;
+    width: 700px;
     margin-top: 15px;
 }
 
@@ -1926,22 +1960,25 @@ li.nobottomline {
     background: #FFFFFF;
     font-weight: 500; 
     color: #333333;
+    border-radius: 5px;
+    margin-left: 8px;
 }
 
 #descripcion p {
     line-height: 16px;
+    margin-top: 10px;
 }
 
 .titulo-descripcion {
-    font-size: 20px;
-    line-height: 21px;
+    font-size: 30px;
+    line-height: 30px;
     font-weight: 700;
-    font-style: italic;
+    font-family: "SueEllen";
 }
 
 #nombre-chef{
     font-family: "SueEllen";
-    font-size: 32px;
+    font-size: 35px;
     color: #FFAA22;
     font-weight: 400;
     /*padding-bottom: 10px;*/
@@ -1950,10 +1987,14 @@ li.nobottomline {
     background:#333333; 
     /*color:#ffffff; */
     padding: 10px 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 #nombre-chef span{
-    padding-left: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    letter-spacing: 5px;
 }
 
 #menuchef ul li{
@@ -1964,28 +2005,34 @@ li.nobottomline {
 
 #experiencias-chef h3 {
     font-family: "SueEllen";
-    font-size: 30px;
+    font-size: 35px;
     background: white;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 14px 0px 10px 14px;
+    border-radius: 5px;
+    letter-spacing: 2px;
 }
 
 .titulo-fantasia {
     font-size: 30px;
-    margin-bottom: 30px;
-    text-align: center;
+    margin-bottom: 15px;
+    text-align: left;
     padding-top: 5px;
-    padding-left: 17px;
+    padding-left: 25px;
+    padding-right: 25px;
     background: #FF1849;
     line-height: 45px;
     color: #FFFFFF;
+    border-radius: 5px;
 }
 
 .img-experiencia {
     width: 100%;
     height: 200px;
     margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
 }
 
 .img-experiencia img {
@@ -1995,24 +2042,24 @@ li.nobottomline {
 
 .descripcion-fantasia {
     text-align: left;
-
     font-size: 12px;
     color: gray;
-    font-style: italic;
 }
 
 .texto-fantasia {
     padding-top: 15px;
-    width: 670px;
+    width: 690px;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
     background: #FFFFFF;
     min-height: 470px;
+    border-radius: 5px;
+    margin-left: 10px;
 }
 
 .texto-plato {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .texto-fantasia-wrapper {
@@ -2021,15 +2068,17 @@ li.nobottomline {
 
 .titulo-plato {
     font-size: 20px;
-    font-style: italic;
+    font-family: "SueEllen";
     font-weight: 600;
+    letter-spacing: 2px;
 }
 
 .titulo-info {
     height: 15px;
-    font-size: 15px;
+    font-size: 20px;
     padding: 15px;
-    font-weight: 600;
+    font-family: "SueEllen";
+    letter-spacing: 2px;
     text-align: center;
 }
 
@@ -2041,9 +2090,9 @@ li.nobottomline {
     background: #FF1849;
     border: none;
     color: white;
-    font-weight: 700;
-    font-size: 14px;
-    margin-top: 3px;
+    font-weight: 400;
+    font-size: 17px;
+    margin-top: 2px;
     /*text-transform: uppercase;*/
     width: 170px;
     margin-left: 5px;
@@ -2052,25 +2101,28 @@ li.nobottomline {
 
 span.ui-spinner {
     margin-left: 5px;
+    margin-top: 3px;
 }
 
 .spinner-invitados{
     background: #fff !important;
     border: none !important;
     color: #474646 !important;
-    font-weight: 700 !important;
+    font-weight: 400 !important;
     font-size: 16px !important;
-    margin-top: 3px !important;
+    margin-top: 4px !important;
     text-transform: uppercase !important;
-    width: 40px !important;
+    width: 35px !important;
     margin-left: 5px !important;
     padding-left: 5px;
+    text-align: center;
     /*height: 30px !important;*/
 }
 
 .input-normal {
     background: #fff;
     color: #474646;
+    margin-top: 3px;
 }
 
 .cantidad-invitados:before {
@@ -2141,6 +2193,8 @@ span.ui-spinner {
     font-weight: 600;
     text-transform: uppercase;
     font-size: 19px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     -webkit-transition: opacity 1s; /* For Safari 3.1 to 6.0 */
     transition: opacity 1s;
 
@@ -2154,17 +2208,18 @@ span.ui-spinner {
 
 .compra-error {
     background: #FFFFFF;
-    color: #C1173C;
-    padding-top: 7px;
+    color: #FF1849;
+    padding-top: 8px;
     padding-left: 3px;
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 15px;
+    text-align: center;
+    line-height: 18px;
     border-style: solid;
     border-width: 0 10px;
     margin-bottom: 3px;
     text-transform: uppercase;
     padding-bottom: 6px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .foto-ver-chef {
@@ -2176,6 +2231,8 @@ span.ui-spinner {
     /* top: 230px;*/
     overflow: hidden;
     border: 2px solid #FFFFFF;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 
 #calendario{
@@ -2191,36 +2248,39 @@ span.ui-spinner {
 }
 
 .display-tags {
-    margin-right: 5px;
-    line-height: 13px;
-    font-size: 13px;
-
-    background: #FFAA22;
+    margin-right: 8px;
+    line-height: 18px;
+    font-size: 15px;
+    border-radius: 5px;
+    background: #FF1849;
     color: white;
     padding: 7px 10px;
     margin-top: 11px;
+    margin-left: 10px;
 }
 
 .row-info {
-    margin-top: 5px;
+    margin-top: 3px;
 }
 
 .titulo-datos {
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 400;
     color: #FFCF00;
 }
 
 .bg-rojo-oscuro {
     background: #FF1849;
+    border-radius: 5px;
 }
 
 .bg-rojo-oscuro-btn {
-    background: #A1162F;
+    background: #FFAA22;
+    border-radius: 5px;
 }
 
 .bg-rojo-oscuro-btn:hover{
-    background-color: orange !important;
+    background-color: #FF1849 !important;
 }
 
 .bg-blanco {
@@ -2450,6 +2510,7 @@ span.ui-spinner {
     background-color: #262626;
     color: #fff;
     font-family: "Roboto";
+    border-radius: 5px;
 }
 
 #mensaje-404 #wrapper-fallo {
@@ -2461,12 +2522,13 @@ span.ui-spinner {
 
 #back-404 {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 35px;
 }
 
 #link-home-404 {
     background-color: orange;
     padding: 10px 20px;
+    border-radius: 5px;
 }
 
 #img-fallo {
@@ -2503,13 +2565,12 @@ span.ui-spinner {
 
 #contacto {
     width: 932px;
-    height: 391px;
+    height: 360px;
     padding: 24px;
     color: #FFFFFF;
-
     font-size: 17px;
     font-weight: 400;
-    font-style: italic;
+    border-radius: 5px;
     margin-bottom: 14px;
 }
 
@@ -2524,18 +2585,21 @@ span.ui-spinner {
 
 #contacto textarea {
     width: 100%;
-    height: 190px;
+    height: 195px;
     resize: none;
-    margin-top: 26px;
+    margin-top: 10px;
+    border-radius: 5px;
 }
 
 #contacto input[type="text"] {
     width: 100%;
     height: 29px;
+    margin-top: 10px;
+    border-radius: 5px;
 }
 
 .contacto-fields {
-    margin-bottom: 32px;
+    margin-bottom: 20px;
 }
 
 .error-validacion {
@@ -2562,10 +2626,9 @@ span.ui-spinner {
     width: 135px;
     height: 48px;
     background-color: #FFAA22;
-    margin-top: 11px;
+    margin-top: 20px;
     font-size: 16px;
     font-weight: 400;
-    font-style: italic;
 }
 
 .enviar-contacto:hover {
@@ -2615,7 +2678,7 @@ span.ui-spinner {
 
 .magic-fixed{
     position: fixed;
-    height: 100px;
+    height: 110px;
     top: 0;
     background: #000;
     opacity: 0.8;
@@ -2788,6 +2851,7 @@ div.thumb-sf {
     font-size: 17px !important;
     width: 99% !important;
     border-radius: 3px;
+    letter-spacing: 1px;
 }
 
 .buscador.interior select {
@@ -2875,12 +2939,13 @@ input::-webkit-inner-spin-button {
 
     width: 100%;
     text-align: left;
-    color: #DD234C;
+    color: #FFFFFF;
+    margin-bottom: 3px;
 
 }
 
 #campos-login div {
-    margin-bottom: 3px;
+    margin-bottom: 5px;
 }
 
 #campos-login a{
@@ -3051,5 +3116,6 @@ input::-webkit-inner-spin-button {
 }
 
 .por-persona {
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 300;
 }

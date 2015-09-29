@@ -38,7 +38,7 @@ https://twitter.com/intent/tweet?text=<?= urlencode(base_url($chefLink))?>"><i c
                 <?php endforeach; ?>
             </div>
             <div id="metas">
-                <div class="mayus titulo-tags white">ESPECIALIDADES</div>
+                <div class="mayus titulo-tags white">Especialidades</div>
                 <div><?php if (!empty($tagsChef)): ?>
                     <ul>
                             <?php foreach ($tagsChef as $tagChef): ?>
@@ -62,7 +62,7 @@ https://twitter.com/intent/tweet?text=<?= urlencode(base_url($chefLink))?>"><i c
         <div class="foto-ver-chef">
             <img src="<?= base_url('avatar/' . $datosChef['avatar']); ?>" /> 
         </div>
-        <div id="resumen-reviews" class="bg-blanco">
+  <!--      <div id="resumen-reviews" class="bg-blanco">
             <div class="globo-conteo">
                 <div class="float-left conteo">
                     <?= $datosChef['conteo'] ?>
@@ -73,7 +73,7 @@ https://twitter.com/intent/tweet?text=<?= urlencode(base_url($chefLink))?>"><i c
                 <div class="fork-rate"></div>
                 <div><a href="#comentarios" id="masreviews">Mira comentarios de sus clientes</a></div>
             </div>
-        </div>
+        </div>  -->
         <div id="precio" class="bg-rojo">
             <span class="preview-clp mayus">Desde</span>
             <br>
@@ -89,21 +89,21 @@ https://twitter.com/intent/tweet?text=<?= urlencode(base_url($chefLink))?>"><i c
             </div>
             <div class="desc-precio">
                 <p>Incluye todos los ingredientes necesarios para la experiencia.</p>
-                <p>Tiempo total de la experiencia dependerá del número de comensales.</p>
+            <!--    <p>Tiempo total de la experiencia dependerá del número de comensales.</p>  -->
             </div>
         </div>
         <div id="invitados-comunas" class="bg-rojo white overflowauto">
-            <div>REQUISITOS DEL CHEF</div>
+        <!--    <div>REQUISITOS DEL CHEF</div>  -->
             <div id="maxpersonas">
                 <span class="preview-clp mayus">RANGO DE COMENSALES</span>
                 <br>
                 <div class="info">
                     <img src="<?= base_url('images/max-invitados.png'); ?>"/>
-                    <span class="mayus">De <?= str_replace('-', ' a ', $parametrosChef['5']) ?> Personas</span>
+                    <span>De <?= str_replace('-', ' a ', $parametrosChef['5']) ?> Personas</span>
                 </div>
             </div>
             <div id="comunas">
-                <span class="preview-clp mayus">COMUNAS A LAS QUE LLEGA</span>
+                <span class="preview-clp mayus">DONDE COCINA</span>
                 <div class="info"><img src="<?= base_url('images/comunas.png'); ?>" class="float-left"/>
                     <?php if (isset($comunas)): ?>
                         <ul class="float-left">
