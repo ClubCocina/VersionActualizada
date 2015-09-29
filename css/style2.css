@@ -38,6 +38,7 @@ body {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     background: url("../images/site-background.png");
     height: 100%;
+    background-attachment: fixed;
 }
 ol, ul {
     list-style: none;
@@ -256,7 +257,7 @@ a:visited {
 
 #contenedor-portada {
     height:336px;
-    z-index: -1;
+    position: relative;
 }
 
 #slide-home {
@@ -528,7 +529,9 @@ a:visited {
 .input-buscador {
     width: 185px;
     height: 40px;
+
     border: 3px solid #FFAA22;
+
     margin-right: 12px;
     border-radius: 4px;
 }
@@ -587,6 +590,8 @@ a:visited {
     border: none;
     font-family: "SueEllen";
     letter-spacing: 1px;
+
+    padding-left: 5px;
 }
 
 .div-orden {
@@ -1291,7 +1296,7 @@ li.nobottomline {
 }
 
 .duracion {
-    width: 50px !important;
+    width: 55px !important;
 }
 
 #cont-derecha{
@@ -1353,6 +1358,7 @@ li.nobottomline {
     font-size: 35px;
     color: #FFFFFF;
     font-weight: 500;
+
     padding-top: 5px;
 }
 #invitados-comunas {
@@ -1544,6 +1550,7 @@ li.nobottomline {
     font-family: "SueEllen";
     opacity: 0.8;
     letter-spacing: 0.4px;
+    border-radius: 5px;
 }
 
 #links-paginas {
@@ -1691,7 +1698,7 @@ li.nobottomline {
 /****************** Resultado de la búsqueda **********************/
 
 #barra-info {
-    background: #FFAA22;
+    background: #FFCF00;
     color: #FFFFFF;
     font-size: 22px;
     float: left;
@@ -1857,6 +1864,8 @@ li.nobottomline {
     font-family: "SueEllen";
     letter-spacing: 1px;
     color: #FF1849;
+    padding: 8px;
+
 }
 
 .conteo-preview {
@@ -1898,13 +1907,13 @@ li.nobottomline {
 
 #precio div.desc-precio, #precio-detalle div.desc-precio {
     font-size: 14px;
-    color: #FFAA22;
+    color: #FFCF00;
     font-weight: 400;
 }
 
 .desc-precio-preview {
     font-size: 11px;
-    color: #FFAA22;
+    color: #FFCF00;
     font-weight: 400;
 }
 
@@ -2097,6 +2106,7 @@ li.nobottomline {
     width: 170px;
     margin-left: 5px;
     padding: 6px;
+    height: 20px;
 }
 
 span.ui-spinner {
@@ -2117,6 +2127,7 @@ span.ui-spinner {
     padding-left: 5px;
     text-align: center;
     /*height: 30px !important;*/
+    height: 20px !important;
 }
 
 .input-normal {
@@ -2190,7 +2201,7 @@ span.ui-spinner {
     text-align: center;
     width: 100%;
     height: 50px;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     font-size: 19px;
     border-bottom-left-radius: 5px;
@@ -2267,6 +2278,8 @@ span.ui-spinner {
     font-size: 15px;
     font-weight: 400;
     color: #FFCF00;
+    margin-top: 2px;
+    margin-bottom: 5px;
 }
 
 .bg-rojo-oscuro {
@@ -2681,7 +2694,7 @@ span.ui-spinner {
     height: 110px;
     top: 0;
     background: #000;
-    opacity: 0.8;
+    opacity: 0.7;
     width: 100%;
     display: none;
     z-index: 999;
