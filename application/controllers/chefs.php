@@ -125,6 +125,7 @@ class Chefs extends CI_Controller {
 
     public function listarChefs($idsChefs, $ajax = FALSE) {
         $this->load->model('actividad_model');
+        $this->load->model('plato_model');
         $chefs = array();
         $idsChefsImplode = array();
         foreach ($idsChefs as $index => $idChef) {
@@ -144,8 +145,23 @@ class Chefs extends CI_Controller {
             }
 
             $chef[0]['porcentGral'] = empty($eval) ? '0' : round(array_sum($eval) / count($eval), 1);
+            
+            $experiencias = $this->_getExperienciasChef($idChef['idUsuario']);
+            $minTiempo = 100;
+            $tiempo;
+            foreach ($experiencias as $experiencia) {
+                $tiempo = explode('-', $parametros['5']);
+                if($experiencia['tiempo'.$tiempo[1]] < $minTiempo){
+                    $minTiempo = $experiencia['tiempo'.$tiempo[1]];
+                }
+            }
+
+            $comensales = explode('-', $parametros['5']);
+            $chef[0]['precio_persona'] = $parametros['4'] * $minTiempo / $comensales[1];
+
             $chefs[] = $chef[0];
             $idsChefsImplode[] = $idChef['idUsuario'];
+
         }
         $data['chefs'] = $chefs;
         if ($this->session->userdata('tagsOriginales')) {

@@ -3131,4 +3131,5 @@ input::-webkit-inner-spin-button {
 .por-persona {
     font-size: 14px;
     font-weight: 300;
+    line-height: 0px;
 }
