@@ -113,9 +113,15 @@
                                         <span class="preview-clp mayus">Precio CLP</span>
                                         <br>
                                         <div class="preview-valor">
-                                            $ <?= is_numeric($chef['precio']) ? number_format($chef['precio'], 0, ',', '.') : 0; ?>
+                                            <? //is_numeric($chef['precio_persona']) ? number_format($chef['precio_persona'], 0, ',', '.') : 0; 
+
+                                            ?>
+                                            <span>
+                                                $ <?= is_numeric($chef['precio_persona']) ? number_format($chef['precio_persona'], 0, ',', '.') : 0;
+                                                ?>
+                                            </span>
+                                            <div class="por-persona">por persona</div>
                                         </div>
-                                        <div class="desc-precio-preview">Precio por hora.</div>
                                     </div>
                                 </div>
                             </a>
