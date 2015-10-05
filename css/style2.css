@@ -118,7 +118,7 @@ a:visited {
 
 #main-container {
     width: 980px;
-    padding-bottom: 40px;
+    padding-bottom: 0 !important;
     z-index: -1;
     margin-top: -15px;
 }
@@ -544,7 +544,7 @@ a:visited {
 .constraint-select {
     height: 100%;
     width: 100%;
-    background-color: #333333;
+    background-color: rgba(0,0,0,0.7);
     background-image: url('../images/flecha_down.png');
     background-position: right;
     background-repeat: no-repeat;
@@ -574,7 +574,7 @@ a:visited {
     height: 95%;
     font-size: 19px;
     text-transform: uppercase;
-    background: #333333;
+    background: rgba(0,0,0,0.7);
     color: #F5F3EC;
     border: none;
     font-family: "SueEllen";
@@ -1533,8 +1533,8 @@ li.nobottomline {
 }
 
 #wrapper-footer {
-    position: absolute;
-    bottom: 0;
+    position: inherit !important;
+    bottom: auto !important;
     width: 100%;
 }
 
@@ -1698,7 +1698,7 @@ li.nobottomline {
 /****************** Resultado de la búsqueda **********************/
 
 #barra-info {
-    background: #FFCF00;
+    background: #FFAA22;
     color: #FFFFFF;
     font-size: 22px;
     float: left;
@@ -1725,8 +1725,9 @@ li.nobottomline {
 }
 
 .titulo-tags{
-    font-size: 25px;
+    font-size: 34px;
     font-family: "SueEllen";
+    color:#333333;
     line-height: 30px;
     padding-top: 15px;
     margin-left: 15px;
@@ -1773,7 +1774,7 @@ li.nobottomline {
     margin-left: 13px;
     width: 602px;
     height: 377px;
-    background-color: #FFFFFF;
+    background-color: rgba(255,255,255,0.7);
     margin-bottom: 25px;
     position: relative;
 }
@@ -1907,20 +1908,20 @@ li.nobottomline {
 
 #precio div.desc-precio, #precio-detalle div.desc-precio {
     font-size: 14px;
-    color: #FFCF00;
+    color: #FFAA22;
     font-weight: 400;
 }
 
 .desc-precio-preview {
     font-size: 11px;
-    color: #FFCF00;
+    color: #FFAA22;
     font-weight: 400;
 }
 
 .preview-valor {
     /*margin-top: 15px;*/
-    line-height: 43px;
-    font-size: 34px;
+    line-height: 36px;
+    font-size: 32px;
     color: #FFFFFF;
 }
 
@@ -1932,6 +1933,7 @@ li.nobottomline {
     height: 280px;
     overflow:hidden;
     z-index: -9999;
+    opacity: 0.7;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
 }
@@ -1949,11 +1951,12 @@ li.nobottomline {
 
 #metas {
     width: 670px;
-    background: #FFAA22;
+    background: rgba(255,255,255,0.6);
     padding: 10px;
-    margin-top: 15px;
+    margin-top: 2px;
     min-height: 95px;
-    border-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     margin-left: 8px;
 }
 
@@ -1964,9 +1967,9 @@ li.nobottomline {
 
 
 #descripcion {
-    padding: 23px 23px 27px;
+    padding: 8px 23px 27px;
     font-size: 14px;
-    background: #FFFFFF;
+    background: rgba(255,255,255,0.6);
     font-weight: 500; 
     color: #333333;
     border-radius: 5px;
@@ -1993,7 +1996,7 @@ li.nobottomline {
     /*padding-bottom: 10px;*/
     line-height: 135%;
     width: 100%; 
-    background:#333333; 
+    background: rgba(0,0,0,0.7); 
     /*color:#ffffff; */
     padding: 10px 0;
     border-top-right-radius: 5px;
@@ -2014,11 +2017,11 @@ li.nobottomline {
 
 #experiencias-chef h3 {
     font-family: "SueEllen";
-    font-size: 35px;
-    background: white;
+    font-size: 30px;
+    background: rgba(255,255,255,0.6);
     margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 14px 0px 10px 14px;
+    margin-bottom: 5px;
+    padding: 14px 0px 10px 28px;
     border-radius: 5px;
     letter-spacing: 2px;
 }
@@ -2056,12 +2059,12 @@ li.nobottomline {
 }
 
 .texto-fantasia {
-    padding-top: 15px;
+    padding-top: 0px;
     width: 690px;
     font-size: 14px;
     line-height: 16px;
     text-align: center;
-    background: #FFFFFF;
+    background: rgba(255,255,255,0.6);
     min-height: 470px;
     border-radius: 5px;
     margin-left: 10px;
@@ -2083,8 +2086,8 @@ li.nobottomline {
 }
 
 .titulo-info {
-    height: 15px;
-    font-size: 20px;
+    height: 10px;
+    font-size: 18px;
     padding: 15px;
     font-family: "SueEllen";
     letter-spacing: 2px;
@@ -2196,7 +2199,8 @@ span.ui-spinner {
 .btn-comprar {
     background: inherit;
     border: none;
-
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
     color: white;
     text-align: center;
     width: 100%;
@@ -2373,7 +2377,7 @@ span.ui-spinner {
 
 #menuchef ul li.menu-paso1 div.texto-fantasia{
     width: 630px;
-    background-color: #333333;
+    background-color: rgba(0,0,0,0.3);
     color: #FFFFFF;
 }
 
@@ -3107,8 +3111,8 @@ input::-webkit-inner-spin-button {
 #banner-pasos {
     float: right;
     margin: 30px 60px 0 0;
-    font-size: 90px;
-    font-family: SueEllen;
+    font-size: 40px;
+    font-family: "SueEllen";
     color: #FFAA22;
 }
 

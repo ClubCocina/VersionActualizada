@@ -30,15 +30,8 @@ https://twitter.com/intent/tweet?text=<?= urlencode(base_url($chefLink))?>"><i c
 <div id="contenido-chef">
     <div id="infochef" class="overflowauto centerbox">
         <div id="contenedor-central" class="float-left">
-            <div id="descripcion">
-                <?php foreach($descripcionesChef as $descripcion): ?>
-                <span class="titulo-descripcion"><?=$this->functions->meta_a_ui($descripcion['nombreMeta']); ?></span>
-                <p><?= $descripcion['dato']; ?></p>
-                <br>
-                <?php endforeach; ?>
-            </div>
             <div id="metas">
-                <div class="mayus titulo-tags white">Especialidades</div>
+                <div class="titulo-tags white">Especialidades</div>
                 <div><?php if (!empty($tagsChef)): ?>
                     <ul>
                             <?php foreach ($tagsChef as $tagChef): ?>
@@ -50,8 +43,14 @@ https://twitter.com/intent/tweet?text=<?= urlencode(base_url($chefLink))?>"><i c
                     <?php endif; ?>
                 </div>
             </div>
-
-
+            <div id="descripcion">
+                <?php foreach($descripcionesChef as $descripcion): ?>
+                <span class="titulo-descripcion"><?=$this->functions->meta_a_ui($descripcion['nombreMeta']); ?></span>
+                <p><?= $descripcion['dato']; ?></p>
+                <br>
+                <?php endforeach; ?>
+            </div>
+            
         </div><!-- Fin contenido central -->
 
 

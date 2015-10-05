@@ -20,7 +20,7 @@
     </div>
     <div id="result-container" class="overflowauto ">
         <div id="filtro-tags" class="float-left">
-            <div><span class="mayus titulo-tags">Especialidades</span></div>
+            <div><span class="mayus titulo-info">Especialidades</span></div>
             <div id="display-tags">
                 <?php foreach ($tags as $tag) : ?>
                     <?php
