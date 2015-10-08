@@ -110,7 +110,7 @@
                                         </script>
                                     </div>
                                     <div class="precio-preview float-left bg-rojo">
-                                        <span class="preview-clp mayus">Precio CLP</span>
+                                        <span class="preview-clp mayus">Valores desde </span>
                                         <br>
                                         <div class="preview-valor">
                                             <? //is_numeric($chef['precio_persona']) ? number_format($chef['precio_persona'], 0, ',', '.') : 0; 
@@ -120,6 +120,8 @@
                                                 $ <?= is_numeric($chef['precio_persona']) ? number_format($chef['precio_persona'], 0, ',', '.') : 0;
                                                 ?>
                                             </span>
+                                        </br>
+                                        
                                             <div class="por-persona">por persona</div>
                                         </div>
                                     </div>
