@@ -188,7 +188,7 @@ a:visited {
 
 .header-top {
     padding-top: 18px;
-    height: 34px; 
+    height: 36px; 
     font-family: "SueEllen", sans-serif;
     font-size: 17px;
     letter-spacing: 0.4px;
@@ -404,7 +404,8 @@ a:visited {
 
     color: #FF1849;
     padding-top: 20px;
-    font-size: 15px;
+    padding-right: 12px;
+    font-size: 14px;
     font-weight: 500;
     bottom: -14px;
     position: relative;
@@ -1348,14 +1349,14 @@ li.nobottomline {
 
 #precio {
     padding: 10px 18px;
-    /*border-top-right-radius: 5px;
-    border-top-left-radius: 5px;  */
-    border-radius: 5px;
-    margin-top: 16px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px; 
+    /*border-radius: 5px; */
+    margin-top: 17px; 
 }
 
 #precio div {
-    font-size: 35px;
+    font-size: 25px;
     color: #FFFFFF;
     font-weight: 500;
 
@@ -1609,7 +1610,8 @@ li.nobottomline {
 #registro {
     width: 360px;
     margin-right: 20px;
-    background-color: #FF1849;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 5px;
 
 }
 
@@ -1636,8 +1638,9 @@ li.nobottomline {
 
 #login-light{
     width: 360px;
-    height: 315px;
-    background: #30B499;
+    height: 300px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 5px;
 }
 
 #login-light form{
@@ -1649,7 +1652,7 @@ li.nobottomline {
 }
 
 #login-light h2{
-    background: #30B499;
+    background: #FF1849;
 }
 
 #registro form {
@@ -1678,10 +1681,10 @@ li.nobottomline {
     font-style: normal !important;
     color: #fff;
     text-transform: uppercase;
-    font-size: 19px;
+    font-size: 22px;
 
     border-radius: 5px;
-    padding: 5px 20px !important;
+    padding: 5px 25px !important;
     width: auto !important;
     margin: 15px 0;
 }
@@ -1725,7 +1728,7 @@ li.nobottomline {
 }
 
 .titulo-tags{
-    font-size: 34px;
+    font-size: 30px;
     font-family: "SueEllen";
     color:#333333;
     line-height: 30px;
@@ -1884,14 +1887,14 @@ li.nobottomline {
 }
 
 .precio-preview {
-    width:139px;
+    width:137px;
     height: 71px;
     font-weight: 700;
     padding: 15px;
 }
 
 .preview-clp {
-    font-size: 17px;
+    font-size: 15px;
     color: #FFAA22;
     font-weight: 500;
 }
@@ -1920,8 +1923,8 @@ li.nobottomline {
 
 .preview-valor {
     /*margin-top: 15px;*/
-    line-height: 36px;
-    font-size: 32px;
+    line-height: 40px;
+    font-size: 30px;
     color: #FFFFFF;
 }
 
@@ -1950,7 +1953,7 @@ li.nobottomline {
 }
 
 #metas {
-    width: 670px;
+    width: 672px;
     background: rgba(255,255,255,0.6);
     padding: 10px;
     margin-top: 2px;
@@ -2103,13 +2106,13 @@ li.nobottomline {
     border: none;
     color: white;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 16px;
     margin-top: 2px;
     /*text-transform: uppercase;*/
-    width: 170px;
-    margin-left: 5px;
+    width: 180px;
+    margin-left: 3px;
     padding: 6px;
-    height: 20px;
+    height: 22px;
 }
 
 span.ui-spinner {
@@ -2141,7 +2144,7 @@ span.ui-spinner {
 
 .cantidad-invitados:before {
     content: url(../images/thumb-invitados.png);
-    background: #A1162F;
+    background: #FF1849;
     padding: 0 7px;
     padding-bottom: 3px;
 }
@@ -2224,17 +2227,17 @@ span.ui-spinner {
 .compra-error {
     background: #FFFFFF;
     color: #FF1849;
-    padding-top: 8px;
+    padding-top: 4px;
     padding-left: 3px;
     font-size: 15px;
     text-align: center;
     line-height: 18px;
     border-style: solid;
-    border-width: 0 10px;
-    margin-bottom: 3px;
+    margin: 7px;
     text-transform: uppercase;
     padding-bottom: 6px;
     font-weight: 500;
+    border-radius: 4px;
 }
 
 .foto-ver-chef {
@@ -2307,7 +2310,7 @@ span.ui-spinner {
 
 #pasos {
     background-color: #FFC669;
-    margin-bottom: 32px;
+    margin-bottom: 0px;
 }
 
 #pasos ul { 
@@ -2377,7 +2380,7 @@ span.ui-spinner {
 
 #menuchef ul li.menu-paso1 div.texto-fantasia{
     width: 630px;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.1);
     color: #FFFFFF;
 }
 
@@ -2866,7 +2869,7 @@ div.thumb-sf {
 
 .buscador.interior input, .buscador.interior .nombrechef-buscador{
     font-size: 17px !important;
-    width: 99% !important;
+    width: 100% !important;
     border-radius: 3px;
     letter-spacing: 1px;
 }
@@ -2966,7 +2969,7 @@ input::-webkit-inner-spin-button {
 }
 
 #campos-login a{
-    margin-top: 10px;
+    margin-top: 5px;
     float: left;
     text-align: center;
     width: 100%;
@@ -3135,5 +3138,5 @@ input::-webkit-inner-spin-button {
 .por-persona {
     font-size: 14px;
     font-weight: 300;
-    line-height: 0px;
+    line-height: 6px;
 }

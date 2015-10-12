@@ -52,7 +52,7 @@
             <div>
                 <span>O inicia sesión con</span>
             </div>
-            <div class="fb-login-button" data-max-rows="1" data-size="medium" data-scope="basic_info, email" onlogin="fbLogin" data-show-faces="false" data-auto-logout-link="false"></div>
+            <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-scope="basic_info, email" onlogin="fbLogin" data-show-faces="false" data-auto-logout-link="false"></div>
         </div>
     </div>
     <script type="text/javascript">
