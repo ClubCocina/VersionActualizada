@@ -1,7 +1,7 @@
 <div id="contenedor-portada">
-    <div class="mensaje-imagen-home">
+<!--    <div class="mensaje-imagen-home">
         <img src="<?= base_url('images/mensaje-imagen-home.png'); ?>" />
-    </div>
+    </div>  -->
     <div id="slide-home" class="float-left">
         <?php foreach ($slides as $slide): ?>
             <img src="<?= base_url('slides/' . $slide); ?>">
