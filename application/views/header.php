@@ -6,8 +6,8 @@
         <title>Club de la Cocina</title>		<!-- aquí va php que indique el titulo segun la pagina en la que se encuentre -->
         <link rel="canonical" href="http://www.clubdelacocina.cl">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="chef, cocina" >
-        <meta name="description" content="Los mejores chef en tu casa, con tu gente.">
+        <meta name="keywords" content="chef, cocina" />
+        <meta name="description" content="Los mejores chef en tu casa, con tu gente." />
         <link href="<?= base_url('css/style2.css'); ?>" rel="stylesheet" media="screen" />
         <link href="<?= base_url('css/paginator.css'); ?>" rel="stylesheet" media="screen" />
         <link href="<?= base_url('css/font-awesome.min.css'); ?>" rel="stylesheet" media="screen" />
