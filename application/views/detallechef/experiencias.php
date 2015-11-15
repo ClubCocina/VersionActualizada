@@ -74,7 +74,7 @@
                                 </div>
                     
                                 <div class="overflowauto row-detalle">
-                                    <div class="titulo-datos">Fecha y Hora</div>
+                                    <div class="titulo-datos">Fecha y Hora (llegada del chef)</div>
                                     <div class="row-info horario-evento prompt-input">
                                         <input id="horario<?= $idExperiencia; ?>"
                                                name="horario<?= $idExperiencia; ?>"

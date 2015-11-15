@@ -6,8 +6,8 @@
         <title>Club de la Cocina</title>		<!-- aquí va php que indique el titulo segun la pagina en la que se encuentre -->
         <link rel="canonical" href="http://www.clubdelacocina.cl">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="chef, cocina" />
-        <meta name="description" content="Los mejores chef en tu casa, con tu gente." />
+        <meta name="keywords" content="chef, cocina">
+        <meta name="description" content="Los mejores chef en tu casa, con tu gente.">
         <link href="<?= base_url('css/style2.css'); ?>" rel="stylesheet" media="screen" />
         <link href="<?= base_url('css/paginator.css'); ?>" rel="stylesheet" media="screen" />
         <link href="<?= base_url('css/font-awesome.min.css'); ?>" rel="stylesheet" media="screen" />
@@ -108,7 +108,7 @@
                     <div class="header-bot">
                         <?php if ($this->router->class !== 'comprar'): ?>
                             <div class="buscador interior">
-                                <span class="mayus resultado SueEllen">ENCUENTRA TU CHEF</span>
+                                <span class="mayus resultado SueEllen"><h1>ENCUENTRA TU CHEF</h1></span>
                                 <?php echo form_open('chefs/busquedaForm', array('class' => 'overflowauto')); ?>
                                 <?php
                                 $comunas = $this->meta_usuario_model->getMetasExistentesEnChef(3);
@@ -150,7 +150,7 @@
                                 <?php echo form_close(); ?>
                             </div>
                         <?php else: ?>
-                        <div id="banner-pasos">Confirma tu evento</div>
+                        <div id="banner-pasos">Confirma las caracter&iacute;sticas de tu evento</div>
                         <?php endif; ?>
                     </div>
                 </div>

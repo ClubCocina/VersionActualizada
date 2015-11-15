@@ -35,7 +35,7 @@
     </div>
 </div>
 <div id="carrusel-home-cont"class="bg-color-general">
-    <span class="mayus SueEllen">Nuestros chefs</span>
+    <span class="mayus SueEllen">Los chefs del Club</span>
     <div id="carrusel-home" class="ca-container centerbox">
         <?php if (!empty($chefsCarrusel)): ?>
             <div class="ca-wrapper">

@@ -7,7 +7,7 @@
     </ul>
 </div>
 <div id="confirmacion-datos" class="bg-color-general">
-    <div class="chef-confirmacion mayus">Confirma las caracter&iacute;sticas de tu evento</div>
+    <!-- <div class="chef-confirmacion mayus">Confirma las caracter&iacute;sticas de tu evento</div>  -->
     <div id="menuchef" class="overflowauto">
         <ul>
             <?php foreach ($experiencias as $experiencia) : ?>
