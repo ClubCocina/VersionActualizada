@@ -265,6 +265,39 @@ class Home extends CI_Controller {
         }
     }
 
+    public function ver_experiencias(){
+        $this->load->model('experiencia_model');
+        $this->load->model('plato_model');
+        $this->load->model('usuario_model');
+        $this->load->model('meta_usuario_model');
+
+        $experiencias = $this->experiencia_model->getAllExperiencias();
+
+        foreach ($experiencias as &$experiencia) {
+            $experiencia['platos'] = $this->plato_model->getPlatosExperiencia($experiencia['idExperiencia']);
+            $experiencia['chef'] = $this->usuario_model->getUserData($experiencia["idUsuario"]);
+            $experiencia['metasChef'] = $this->meta_usuario_model->getMetaUsuario($experiencia["idUsuario"], 6);
+            
+
+            $minTiempo = 100;
+            $tiempo;
+            foreach ($this->experiencia_model->getExperienciasChef($experiencia["idUsuario"]) as $experiencia_chef) {
+                $tiempo = explode('-', $experiencia['metasChef'][1]['dato']);
+                if($experiencia_chef['tiempo'.$tiempo[1]] < $minTiempo){
+                    $minTiempo = $experiencia_chef['tiempo'.$tiempo[1]];
+                }
+            }
+
+            $experiencia['minTiempo'] = $minTiempo;
+        }
+
+        $data['experiencias'] = $experiencias;
+
+        $this->load->view('header');
+        $this->load->view('todas_experiencias', $data);
+        $this->load->view('footer');
+    }
+
 }
 
 /* End of file welcome.php */

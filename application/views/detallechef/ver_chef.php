@@ -80,7 +80,6 @@ https://twitter.com/intent/tweet?text=<?= urlencode(base_url($chefLink))?>"><i c
                 <span>
                     $ <? //is_numeric($parametrosChef['4']) ? number_format(($parametrosChef['4']), 0, ',', '.') : 0; 
                         $comensales = explode('-', $parametrosChef['5']);
-                        //echo $comensales[1];
                         echo number_format($parametrosChef['4'] * $minTiempo / $comensales[1], 0, ',', '.');
                     ?>
                 </span>

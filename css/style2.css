@@ -1346,6 +1346,14 @@ li.nobottomline {
     font-size: 15px;
 }
 
+#cant-personas{
+    padding: 10px 18px;
+}
+
+.margin-bottom{
+    margin-bottom: 10px;
+}
+
 #precio {
     padding: 10px 18px;
     border-top-right-radius: 5px;

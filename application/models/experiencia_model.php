@@ -50,6 +50,19 @@ class experiencia_model extends CI_Model {
         return $query->result_array();
     }
 
+    public function getAllExperiencias(){
+        /*$query = $this->db->query('SELECT e.idExperiencia, e.idUsuario, e.nombre, e.descripcion, e.imagen
+                        FROM usuario u, experiencia e
+                        WHERE u.estado = 1');
+        */
+        $query = $this->db->query('SELECT idExperiencia, idUsuario, nombre, descripcion, imagen, tiempo, tiempo2, tiempo3, tiempo4, tiempo5, tiempo6, tiempo7, tiempo8, tiempo9, tiempo10, tiempo11, tiempo12, tiempo13, tiempo14
+                                    FROM experiencia
+                                    WHERE idUsuario IN (SELECT idUsuario
+                                                          FROM usuario
+                                                          WHERE estado = 1)');
+        return $query->result_array();
+    }
+
 }
 
 ?>

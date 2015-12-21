@@ -29,9 +29,9 @@
                     <h2 class="titulo-fantasia SueEllen mayus"><?= $experiencia['nombre']; ?>
                         <span class="social-buttons">
                             <a href="   
-                    http://facebook.com/sharer.php?u=<?= urlencode(base_url($chefLink).'#'.str_replace(" ", "_", $experiencia['nombre']))?>"><i class="fa fa-facebook"></i></a>
+                    http://facebook.com/sharer.php?u=<?= urlencode(base_url('chef/'.$chefLink).'#'.str_replace(" ", "_", $experiencia['nombre']))?>"><i class="fa fa-facebook"></i></a>
                             <a href="   
-                    https://twitter.com/intent/tweet?text=<?= urlencode(base_url($chefLink).'#'.str_replace(" ", "_", $experiencia['nombre']))?>"><i class="fa fa-twitter"></i></a>        
+                    https://twitter.com/intent/tweet?text=<?= urlencode(base_url('chef/'.$chefLink).'#'.str_replace(" ", "_", $experiencia['nombre']))?>"><i class="fa fa-twitter"></i></a>        
                         </span>
                     </h2>
 
