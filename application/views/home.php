@@ -1,3 +1,4 @@
+
 <div id="contenedor-portada">
 <!--    <div class="mensaje-imagen-home">
         <img src="<?= base_url('images/mensaje-imagen-home.png'); ?>" />
@@ -28,14 +29,14 @@
                 </div>
             </div>
         </div>
-        <div id="header-video-home"><span>¿Cómo funciona?</span></div>
+    <!--    <div id="header-video-home"><span>¿Cómo funciona?</span></div>   -->
         <div id="video-home">
-            <iframe width="346" height="195" src="//www.youtube.com/embed/Ff1wgRzY7Hw" frameborder="0" allowfullscreen></iframe>
+            <iframe width="346" height="195" src="//www.youtube.com/embed/-s6J1HuuFAk" frameborder="0" allowfullscreen></iframe>
         </div>
     </div>
 </div>
 <div id="carrusel-home-cont"class="bg-color-general">
-    <span class="mayus SueEllen">Los chefs del Club</span>
+    <span class="mayus SueEllen"><h1>Los chefs del Club</h1></span>
     <div id="carrusel-home" class="ca-container centerbox">
         <?php if (!empty($chefsCarrusel)): ?>
             <div class="ca-wrapper">
@@ -78,9 +79,9 @@
             // You cannot use your own buttons. Sorry.
             effect: "slide",
             // [string] Can be either "slide" or "fade".
-            interval: 5000,
+            interval: 1700,
             // [number] Time spent on each slide in milliseconds.
-            auto: false,
+            auto: true,
             // [boolean] Start playing the slideshow on load.
             swap: true,
             // [boolean] show/hide stop and play buttons
@@ -94,3 +95,10 @@
         }
     });
 </script>
+<?php 
+    // Make the call to the DB to get the title text. See OP post for example
+    $title_text = "Encuentra tu Chef";
+
+    // Use body onload to set the title of the page
+    print "<body onload=\"setTitle( '$title_text' )\"   >";
+?>

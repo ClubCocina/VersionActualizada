@@ -128,3 +128,10 @@ https://twitter.com/intent/tweet?text=<?= urlencode(base_url($chefLink))?>"><i c
     <!-- Mostrar comentarios realizados al Chef -->
     <?php $this->load->view('detallechef/comentarios'); ?>
 </div>
+<?php 
+    // Make the call to the DB to get the title text. See OP post for example
+    $title_text = ucwords($datosChef['nombre'] . ' ' . $datosChef['apellidoPaterno']);
+
+    // Use body onload to set the title of the page
+    print "<body onload=\"setTitle( '$title_text' )\"   >";
+?>
