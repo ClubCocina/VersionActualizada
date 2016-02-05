@@ -270,6 +270,7 @@ class Home extends CI_Controller {
         $this->load->model('plato_model');
         $this->load->model('usuario_model');
         $this->load->model('meta_usuario_model');
+        $this->load->model('agenda_chef_model');
 
         $experiencias = $this->experiencia_model->getAllExperiencias();
 
@@ -277,7 +278,7 @@ class Home extends CI_Controller {
             $experiencia['platos'] = $this->plato_model->getPlatosExperiencia($experiencia['idExperiencia']);
             $experiencia['chef'] = $this->usuario_model->getUserData($experiencia["idUsuario"]);
             $experiencia['metasChef'] = $this->meta_usuario_model->getMetaUsuario($experiencia["idUsuario"], 6);
-            
+            $experiencia['diasDisponibles'] = $this->agenda_chef_model->diasSemanaDisponibles($experiencia["idUsuario"]);
 
             $minTiempo = 100;
             $tiempo;

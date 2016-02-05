@@ -2058,6 +2058,11 @@ li.nobottomline {
     border-radius: 5px;
 }
 
+.ver-todas-exp img{
+    width: 50% !important;
+    text-align: left;
+}
+
 .img-experiencia img {
     width: 100%;
     height: auto;
@@ -2256,9 +2261,31 @@ span.ui-spinner {
     background: white;
     /* top: 230px;*/
     overflow: hidden;
-    border: 2px solid #FFFFFF;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
+    /*border: 2px solid #FFFFFF;*/
+    /*border-top-left-radius: 3px;
+    border-top-right-radius: 3px;*/
+    border-radius: 5px;
+}
+
+.avatar-chef{
+    height: 80px;
+    border-radius: 5px;
+    margin-left: -10px;
+    margin-top: 10px;    
+}
+
+.no-padding{
+    padding: 0px;
+}
+
+.btn-exp{
+    margin-left: -20px;
+    border-radius: 0 !important;
+}
+
+.nombre-chef-avatar{
+    padding: 0;
+    margin-bottom: -20px;
 }
 
 #calendario{
