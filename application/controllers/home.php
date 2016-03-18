@@ -299,6 +299,13 @@ class Home extends CI_Controller {
         $this->load->view('footer');
     }
 
+    public function ordenar_experiencias(){
+        if ($_POST) {
+            $orden = $this->input->post('ordenar') ? $this->input->post('ordenar') : FALSE;
+            $this->session->set_userdata('orden', $orden);
+        }   
+    }
+
 }
 
 /* End of file welcome.php */

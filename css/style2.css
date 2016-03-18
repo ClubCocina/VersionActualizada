@@ -117,7 +117,6 @@ a:visited {
 }
 
 #main-container {
-    width: 980px;
     padding-bottom: 0 !important;
     z-index: -1;
     margin-top: -15px;
@@ -265,13 +264,16 @@ a:visited {
     height: 100%;
 }
 
+.img-slide{
+    border-radius: 5px;
+}
+
 #conteo-home {
-    float: right;
-    width: 345px;
     padding-top: 36px;
     color: #FFFFFF;
     text-align: center;
     border-radius: 5px;
+    height: auto;
 }
 
 .conteo-top {
@@ -279,8 +281,8 @@ a:visited {
 }
 
 #nrochefs {
-    padding-left: 27px;
-    width: 130px;
+    /*padding-left: 27px;
+    width: 130px;*/
 }
 
 /*.cuadro-conteo {
@@ -331,6 +333,7 @@ a:visited {
 
 #video-home {
     float:right;
+    overflow: auto;
 }
 
 #carrusel-home {
@@ -1953,6 +1956,11 @@ li.nobottomline {
     width: 980px;
 }
 
+.carousel-inner > .item > img{
+    width: 100%;
+    border-radius: 5px;
+}
+
 #infochef {
     width: 700px;
     float: left;
@@ -2012,6 +2020,23 @@ li.nobottomline {
     padding: 10px 0;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+}
+
+#nuestras-experiencias{
+    font-family: "SueEllen";
+    font-size: 35px;
+    color: #FFAA22;
+    font-weight: 400;
+    line-height: 135%;
+    width: 100%; 
+    background: rgba(0,0,0,0.7); 
+    padding: 20px 0;
+    border-radius: 5px;
+    margin-left: 0;
+}
+
+.crit-orden{
+    color: #fff;
 }
 
 #nombre-chef span{
@@ -2153,6 +2178,11 @@ span.ui-spinner {
     background: #fff;
     color: #474646;
     margin-top: 3px;
+}
+
+.spinner-growth{
+    width: 50px !important;
+    height: 25px !important; 
 }
 
 .cantidad-invitados:before {
@@ -3181,4 +3211,39 @@ input::-webkit-inner-spin-button {
     font-size: 14px;
     font-weight: 300;
     line-height: 6px;
+}
+
+#orden-exp{
+    font-size: 25px !important;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.btn-select{
+    background-color: #fa2;
+    border-color: #B5860F;
+    font-size: 0.6em;
+}
+
+.btn-select:hover{
+    background-color: #B5860F;
+    border-color: #B5860F;
+}
+
+.btn-select:active{
+    background-color: #B5860F;
+    border-color: #B5860F;
+}
+
+.btn-select.active{
+    background-color: #B5860F;
+    border-color: #B5860F;   
+}
+
+.btn-select.active:hover{
+    background-color: #B5860F;
+    border-color: #B5860F;   
+}
+
+#ordenar-por{
+    font-size: 0.7em;
 }

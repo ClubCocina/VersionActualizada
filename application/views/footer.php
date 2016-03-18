@@ -1,4 +1,5 @@
-</div>
+        </div>
+    </div>
 </div>
 <div id="wrapper-footer">
     <div id="footer" class="bg-color-general mayus">

@@ -13,6 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="chef, cocina">
         <meta name="description" content="Los mejores chef en tu casa, con tu gente.">
+        <link rel="stylesheet" type="text/css" href="<?= base_url('css/bootstrap.min.css') ?>">
         <link href="<?= base_url('css/style2.css'); ?>" rel="stylesheet" media="screen" />
         <link href="<?= base_url('css/paginator.css'); ?>" rel="stylesheet" media="screen" />
         <link href="<?= base_url('css/font-awesome.min.css'); ?>" rel="stylesheet" media="screen" />
@@ -31,6 +32,7 @@
         <script src="<?= base_url('js/jquery.slides.min.js'); ?>"></script>
         <script src="<?= base_url('js/jquery.datetimepicker.js'); ?>"></script>
         <script src="<?= base_url('js/jquery.blockUI.js'); ?>"></script>
+        <script src="<?= base_url('js/bootstrap.min.js'); ?>"></script>
         <?php $img = base_url('images/logo.png'); ?>
         <?php if(isset($datosChef) && !empty($datosChef)): ?>
         <?php 
@@ -162,3 +164,4 @@
             </div>
             <div id="main-container" class="centerbox">
                 <div id="content">
+                    <div class="container-fluid">

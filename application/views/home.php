@@ -1,39 +1,74 @@
 
-<div id="contenedor-portada">
+<div class="row">
 <!--    <div class="mensaje-imagen-home">
         <img src="<?= base_url('images/mensaje-imagen-home.png'); ?>" />
     </div>  -->
-    <div id="slide-home" class="float-left">
-        <?php foreach ($slides as $slide): ?>
-            <img src="<?= base_url('slides/' . $slide); ?>">
-        <?php endforeach; ?>
-    </div>
-    <div id="conteo-home" class="bg-rojo">
-        <div class="overflowauto conteo-top">
-            <div id="nrochefs" class="cuadro-conteo float-left overflowauto">
-                <div class="float-left img-conteo">
-                    <img src="<?= base_url('images/gorroChef.png'); ?>" alt="imagen conteo chef"/>
-                </div>
-                <div class="float-left">
-                    <div class="conteo"><?= $nro_chefs; ?></div>
-                    <div class="contados">Chefs<br> para elegir</div>
-                </div>
+    <!--div id="slide-home" class="float-left col-md-8"-->
+    <div class="col-md-8">
+        <div id="carousel-home" class="carousel slide" data-ride="carousel" data-interval="2000">
+            <ol class="carousel-indicators">
+                <?php for ($i=0; $i < sizeof($slides) ; $i++) { ?>
+                    <?php if ($i == 0) { ?>
+                        <li data-target="#carousel-home" data-slide-to="<?= $i ?>" class="active"></li>
+                    <? } 
+                    else {?>
+                        <li data-target="#carousel-home" data-slide-to="<?= $i ?>"></li>
+                    <? }
+                } ?>          
+            </ol>            
+            <div class="carousel-inner" role="listbox">
+                <? 
+                    $flag = true;
+                ?>
+                <?php foreach ($slides as $slide) { ?>
+                    <?php if ($flag) { ?>
+                        <div class="item active">
+                            <img src="<?= base_url('slides/' . $slide); ?>" class="img-slide">
+                        </div>
+                    <? $flag = false;
+                    }
+                    else {?> 
+                        <div class="item">
+                            <img src="<?= base_url('slides/' . $slide); ?>">
+                        </div>
+                <?php }
+                } ?>
             </div>
-            <div id="nroplatos" class="cuadro-conteo float-left overflowauto">
-                <div class="float-left img-conteo">
-                    <img src="<?= base_url('images/imagenPlato.png'); ?>" alt="imagen conteo platos"/>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div id="conteo-home" class="bg-rojo">
+            <div class="overflowauto conteo-top row">
+                <div id="nrochefs" class="cuadro-conteo col-md-6">
+                    <div class="float-left img-conteo">
+                        <img src="<?= base_url('images/gorroChef.png'); ?>" alt="imagen conteo chef"/>
+                    </div>
+                    <div class="float-left">
+                        <div class="conteo"><?= $nro_chefs; ?></div>
+                        <div class="contados">Chefs<br> para elegir</div>
+                    </div>
                 </div>
-                <div class="float-left">
-                    <div class="conteo"><?= $nro_experiencias; ?></div>
-                    <div class="contados">Experiencias <br>para disfrutar</div>
+                <a href="<?= base_url('home/ver_experiencias')?>">
+                    <div id="nroplatos" class="cuadro-conteo col-md-6">
+                        <div class="float-left img-conteo">
+                            <img src="<?= base_url('images/imagenPlato.png'); ?>" alt="imagen conteo platos"/>
+                        </div>
+                        <div class="float-left">
+                            <div class="conteo"><?= $nro_experiencias; ?></div>
+                            <div class="contados">Experiencias <br>para disfrutar</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        <!--    <div id="header-video-home"><span>¿Cómo funciona?</span></div>   -->
+            <div id="video-home" class="row">
+                <div class="col-md-12">
+
+                    <iframe width="346" height="195" src="//www.youtube.com/embed/-s6J1HuuFAk" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-    <!--    <div id="header-video-home"><span>¿Cómo funciona?</span></div>   -->
-        <div id="video-home">
-            <iframe width="346" height="195" src="//www.youtube.com/embed/-s6J1HuuFAk" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
+    </div>    
 </div>
 <div id="carrusel-home-cont"class="bg-color-general">
     <span class="mayus SueEllen"><h1>Los chefs del Club</h1></span>
