@@ -269,9 +269,9 @@ a:visited {
 }
 
 #conteo-home {
-    padding-top: 36px;
+    padding-top: 20px;
     color: #FFFFFF;
-    text-align: center;
+    /*text-align: center;*/
     border-radius: 5px;
     height: auto;
 }
@@ -306,7 +306,7 @@ a:visited {
 
 .contados {
     font-weight: 300;
-    font-size: 15px;
+    font-size: 13px;
     line-height: 120%;
 }
 
@@ -332,8 +332,13 @@ a:visited {
 }
 
 #video-home {
-    float:right;
-    overflow: auto;
+    /*float:right;
+    overflow: auto;*/
+    margin-top: 15px;
+}
+
+.video-home{
+    margin-top: 15px;
 }
 
 #carrusel-home {
@@ -343,8 +348,10 @@ a:visited {
 }
 #carrusel-home-cont {
     text-align: center;
-    height: 428px;
-    padding-top: 14px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-bottom: 25px;
     margin-top: 25px;
     border-radius: 5px;
@@ -3246,4 +3253,90 @@ input::-webkit-inner-spin-button {
 
 #ordenar-por{
     font-size: 0.7em;
+}
+
+#experiencias-conteo{
+    margin-left: -15px;
+}
+
+#gorro-chef{
+    margin-left: 10px;
+}
+
+#all-chefs{
+    padding-top: 15px;
+}
+
+.img-chef{
+    border-radius: 5px;
+}
+
+.avatar{
+    margin-bottom: 10px;
+}
+
+.avatar > .front{
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: webkit-transform 0.5s linear 0s;
+    transition: transform 0.5s linear 0s;
+}
+
+.avatar > .back{
+    top: 0;
+    left: 0;
+    position: absolute;
+    -webkit-transform: perspective(600px) rotateY(180deg);
+    transform: perspective(600px) rotateY(180deg);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: webkit-transform 0.5s linear 0s;
+    transition: transform 0.5s linear 0s;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 0px 5px;
+}
+
+.avatar:hover > .front {
+    -webkit-transform: perspective(600px) rotateY(-180deg);
+    transform: perspective(600px) rotateY(-180deg);
+}
+
+.avatar:hover > .back {
+    -webkit-transform: perspective(600px) rotateY(0deg);
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.nombre-chef-carrusel{
+    border-radius: 5px;
+    background-color: #FF1849;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.nombre-chef-carrusel > a:hover{
+    text-decoration: none;
+    font-weight: bold;   
+}
+
+.btn-experiencias{
+    max-width: inherit;
+    background-color: #FF1849;
+    color: #FFF !important;
+    border-color: #FF1849;
+    padding: 2px 8px;
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.btn-default:focus,
+.btn-default.focus{
+    color: #FFF;
+    border-color: #FF1849;
+}
+
+a {
+    transition: none;
 }

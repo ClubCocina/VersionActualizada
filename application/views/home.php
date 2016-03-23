@@ -4,7 +4,7 @@
         <img src="<?= base_url('images/mensaje-imagen-home.png'); ?>" />
     </div>  -->
     <!--div id="slide-home" class="float-left col-md-8"-->
-    <div class="col-md-8">
+    <div class="col-md-8 col-sm-8 col-xs-12">
         <div id="carousel-home" class="carousel slide" data-ride="carousel" data-interval="2000">
             <ol class="carousel-indicators">
                 <?php for ($i=0; $i < sizeof($slides) ; $i++) { ?>
@@ -36,35 +36,39 @@
             </div>
         </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-4 col-xs-12">
         <div id="conteo-home" class="bg-rojo">
-            <div class="overflowauto conteo-top row">
-                <div id="nrochefs" class="cuadro-conteo col-md-6">
-                    <div class="float-left img-conteo">
-                        <img src="<?= base_url('images/gorroChef.png'); ?>" alt="imagen conteo chef"/>
-                    </div>
-                    <div class="float-left">
-                        <div class="conteo"><?= $nro_chefs; ?></div>
-                        <div class="contados">Chefs<br> para elegir</div>
+            <div class="row">
+                <div id="nrochefs" class="col-md-5 col-sm-5 col-xs-5">
+                    <div class="row">
+                        <div class="col-md-7 col-xs-7 col-sm-7">
+                            <img id="gorro-chef" class="img-responsive" src="<?= base_url('images/gorroChef.png'); ?>" alt="imagen conteo chef"/>
+                        </div>
+                        <div class="col-md-5 col-sm-5 col-xs-5">
+                            <div class="conteo"><?= $nro_chefs; ?></div>
+                            <div class="contados">Chefs <span class="hidden-sm">para elegir</span></div>
+                        </div>
                     </div>
                 </div>
-                <a href="<?= base_url('home/ver_experiencias')?>">
-                    <div id="nroplatos" class="cuadro-conteo col-md-6">
-                        <div class="float-left img-conteo">
-                            <img src="<?= base_url('images/imagenPlato.png'); ?>" alt="imagen conteo platos"/>
+                <div class="col-md-6 col-sm-6 col-xs-6">                    
+                    <a class="experiencias-home" href="<?= base_url('home/ver_experiencias')?>">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                <img class="img-responsive" src="<?= base_url('images/imagenPlato.png'); ?>" alt="imagen conteo platos"/>
+                            </div>
+                            <div id="experiencias-conteo" class="col-md-5 col-sm-5 col-xs-5">
+                                <div class="conteo"><?= $nro_experiencias; ?></div>
+                                <div class="contados">Experiencias <span class="hidden-sm">para disfrutar</span></div>
+                            </div>
                         </div>
-                        <div class="float-left">
-                            <div class="conteo"><?= $nro_experiencias; ?></div>
-                            <div class="contados">Experiencias <br>para disfrutar</div>
-                        </div>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
-        <!--    <div id="header-video-home"><span>¿Cómo funciona?</span></div>   -->
-            <div id="video-home" class="row">
-                <div class="col-md-12">
-
-                    <iframe width="346" height="195" src="//www.youtube.com/embed/-s6J1HuuFAk" frameborder="0" allowfullscreen></iframe>
+            <div class="row video-home">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe class="embed-responsive-item" src="//www.youtube.com/embed/-s6J1HuuFAk"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -72,34 +76,32 @@
 </div>
 <div id="carrusel-home-cont"class="bg-color-general">
     <span class="mayus SueEllen"><h1>Los chefs del Club</h1></span>
-    <div id="carrusel-home" class="ca-container centerbox">
+    <div id="all-chefs" class="row">
         <?php if (!empty($chefsCarrusel)): ?>
-            <div class="ca-wrapper">
-                <?php foreach ($chefsCarrusel as $chef): ?>
-                    <div class="ca-item">
-                        <div class="carruselhome-chef">
-                            <div class="ca-avatar-home">
-
-                                <?
-                                if ($chef['avatar'] == '')
-                                    $imgChef = '10-top-celebrity-chefs.jpg';
-                                else
-                                    $imgChef = $chef['avatar'];
-                                ?>
-                                <?php $urlChef = $chef['link'] !== '' ? 'chef/'.$chef['link'] : 'chefs/verDatosChef/' . $chef['idUsuario']; ?>
-                                <a href="<?= base_url($urlChef); ?>"><img src="<?= base_url('avatar/' . $imgChef); ?>" alt="avatar chef" /></a>
-                            </div>
-                            <div class="ca-nombre-home bg-rojo"><a href="<?= base_url($urlChef); ?>"><?= $chef['nombre'] . ' ' . $chef['apellidoPaterno']; ?></a></div>
-                            <div class="ca-descripcion-home overflowauto"><?= isset($chef['dato']) && $chef['dato'] != '' ? $chef['dato'] : '' ?></div>
-                            <div class="link-preparaciones float-right">
-                                <a href="<?= base_url($urlChef); ?>">Conoce las experiencias</a>
-                            </div>
-                        </div>
+            <?php foreach ($chefsCarrusel as $chef): ?>
+                <?php
+                if ($chef['avatar'] == '')
+                    $imgChef = '10-top-celebrity-chefs.jpg';
+                else
+                    $imgChef = $chef['avatar'];
+                $urlChef = $chef['link'] !== '' ? 'chef/'.$chef['link'] : 'chefs/verDatosChef/' . $chef['idUsuario'];
+                ?>
+                <div class="col-md-2 col-sm-2 col-xs-6 avatar">
+                    <div class="front">
+                        <img class="img-responsive img-chef" src="<?= base_url('avatar/' . $imgChef); ?>" alt="avatar chef" />
                     </div>
-                <?php endforeach; ?>
-            </div>
-        <?php endif; ?>
-    </div>
+                    <div class="back col-md-12 col-sm-12 col-xs-12">
+                        <h2 class="nombre-chef-carrusel"><a href="<?= base_url($urlChef); ?>"><?= $chef['nombre'] . ' ' . $chef['apellidoPaterno']; ?></a></h2>
+                        <p class="hidden-xs hidden-sm">
+                            <?= isset($chef['dato']) && $chef['dato'] != '' ? $chef['dato'] : '' ?>
+                        </p>
+                        <p class="datos-chef-hidden hidden-md hidden-lg">¡Conoce las experiencias!</p>
+                        <a class="btn btn-danger btn-experiencias" href="<?= base_url($urlChef); ?>">Las experiencias</a>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        <?php endif;?>
+    </div>    
 </div>
 <script>
     $('#carrusel-home').contentcarousel({
