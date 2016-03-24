@@ -37,25 +37,32 @@ if(isset($this->session->userdata['username'])){ //existe session iniciada corre
 	echo "Bienvenido ".$this->session->userdata['username']." <br><a href='/mipanel'>Mi panel</a> <a href='login/logout'>Logout</a>";
 }else{ //no existe session iniciada      
 ?>
- <div id="login" > 
-  <?php echo form_open(array('method' => 'POST'));?>
-    <div class="form-group">
-	<?= form_error('username'); ?>
-    <input placeholder="Nombre usuario" type="text" id="username" name="username">
-    </div>
-    <div class="form-group">
-    <?php echo form_error('password'); ?>
-    <input placeholder="Contraseña" type="password" id="password" name="password">
-    </div>
-    
-    <div id="btnLogin" class="form-group">Login</div>
-    <?= form_close();?>
-  </div>
-  <div id="facebook-login" class="hide-text">Facebook Login</div>
-  <? if (isset($error)){ ?>
-  <div id="errorLogin">
-    <?=$error?>
-  </div>
+ <div id="login"> 
+ 	<div class="container-fluid">
+ 		<div class="col-md-6 col-sm-6 col-xs-6">
+ 			<?php echo form_open(array('method' => 'POST'));?>
+				<div class="form-group">
+				<?= form_error('username'); ?>
+				<span>asfgas</span>
+				<input placeholder="Nombre usuario" type="text" id="username" name="username">
+				</div>
+				<div class="form-group">
+				<?php echo form_error('password'); ?>
+				<input placeholder="Contraseña" type="password" id="password" name="password">
+				</div>
+
+				<div id="btnLogin" class="form-group">Login</div>
+			<?= form_close();?>
+ 		</div>
+ 		<div class="col-md-6 col-sm-6 col-xs-6">
+			<div id="facebook-login" class="hide-text">Facebook Login</div>
+				<? if (isset($error)){ ?>
+				<div id="errorLogin">
+				<?=$error?>
+			</div>
+ 		</div>
+ 	</div>			
+  </div>  
   <? }
 } 
 ?>

@@ -62,55 +62,68 @@
     <body>
         <div id="super-wrapper">
             <div id="wrapper-header" class="bg-color-general">
-                <div class="magic-fixed"></div>
+                <!--div class="magic-fixed"></div-->
                 <div id="header">
                     <div class="header-top mayus">
-                        <div id="logo" class="float-left">
-                            <a href="<?= base_url() ?>"><img src="<?= base_url('images/logo.png'); ?>" alt="logo club cocina"/></a>
-                        </div>
-                        <div id="main-menu" class="menu float-left">
-                            <ul>
-                                <li class="float-left"><a href="<?= base_url('home/page/2') ?>">¿Cómo Funciona?</a></li>
-                                <li class="float-left"><a href="<?= base_url('home/page/4') ?>">Preguntas Frecuentes</a></li>
-                                <li class="float-left"><a href="<?= base_url('home/contacto') ?>">Contacto</a></li>
-                            </ul>
-                        </div>
-                        <div id="login" class="menu">
-                            <?php if (isset($this->session->userdata['username'])): ?>
-                                <ul class="logged">
-                                    <li>
-                                        <a href="<?= base_url() ?>mipanel">
-                                            <div>Panel de Control</div>
-                                        </a>
-                                    </li>
-                                    <li>|</li>
-                                    <li>
-                                        <a href="<?= base_url() ?>login/logout">
-                                            <div>Salir</div>
-                                        </a>
-                                    </li>
-                                </ul>
-                                <div id="username-header"><span><?= $this->session->userdata('username'); ?></span></div>
-                            <?php else : ?>
-                                <ul>
-                                    <li>
-                                        <a class="simple-ajax-popup" href="<?= base_url('login'); ?>">
-                                            <ul>
-                                                <li><span>Ingresa al Club</span></li>
+                        <div class="row">
+                            <div id="logo" class="col-md-3 col-sm-3 col-xs-6">
+                                <a href="<?= base_url() ?>"><img class="img-responsive" src="<?= base_url('images/logo.png'); ?>" alt="logo club cocina"/></a>
+                            </div>
+                            <div class="col-md-9 col-sm-9 col-xs-6">
+                                <nav class="navbar navbar-default header-nav">
+                                    <div class="container-fluid">
+                                        <div class="navbar-header">
+                                            <button id="header-nav-collapse" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                                <span class="sr-only"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+                                        </div>  
+                                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                            <ul class="nav navbar-nav">
+                                                <li class="float-left"><a href="<?= base_url('home/page/2') ?>">¿Cómo Funciona?</a></li>
+                                                <li class="float-left"><a href="<?= base_url('home/page/4') ?>">Preguntas Frecuentes</a></li>
+                                                <li class="float-left"><a href="<?= base_url('home/contacto') ?>">Contacto</a></li>        
                                             </ul>
-                                        </a>
-                                    </li>
-                                </ul>
-                            <?php endif ?>
-
-                        </div>
-                        <script type="text/javascript">
-                            $(document).ready(function() {
-                                $('.simple-ajax-popup').magnificPopup({
-                                    type: 'ajax',
+                                            <?php if (isset($this->session->userdata['username'])): ?>
+                                                <ul class="logged nav navbar-nav navbar-right">
+                                                    <li>
+                                                        <a href="<?= base_url() ?>mipanel">
+                                                            <div>Panel de Control</div>
+                                                        </a>
+                                                    </li>
+                                                    <li>|</li>
+                                                    <li>
+                                                        <a href="<?= base_url() ?>login/logout">
+                                                            <div>Salir</div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <div id="username-header"><span><?= $this->session->userdata('username'); ?></span></div>
+                                            <?php else : ?>
+                                                <ul class="nav navbar-nav navbar-right">
+                                                    <li>
+                                                        <a class="simple-ajax-popup" href="<?= base_url('login'); ?>">
+                                                            <ul>
+                                                                <li><span>Ingresa <span class="hidden-sm">al Club</span></span></li>
+                                                            </ul>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            <?php endif ?>
+                                        </div>
+                                    </div>
+                                </nav>                                
+                            </div>
+                            <script type="text/javascript">
+                                $(document).ready(function() {
+                                    $('.simple-ajax-popup').magnificPopup({
+                                        type: 'ajax',
+                                    });
                                 });
-                            });
-                        </script>
+                            </script>
+                        </div>                        
                     </div>
                     <div class="header-bot">
                         <?php if ($this->router->class !== 'comprar'): ?>
@@ -125,7 +138,7 @@
                                     <div class="input-buscador float-left">
                                         <input type="text" placeholder="¿Para cuándo?" name="agenda" id="agenda" class="fecha-buscador"/>
                                     </div>
-                                    <div class="input-buscador float-left">
+                                    <div class="input-buscador float-left hidden-xs">
                                         <div class="constraint-select">
                                             <select name="comuna">
                                                 <option value="">¿DÓNDE?</option>
@@ -135,18 +148,7 @@
                                             </select>
                                         </div>
                                     </div>
-                                <!-- <input type="text" placeholder="Tu Comuna" name="comuna" class="comuna-buscador">-->
-                                <!--    <div class="input-buscador float-left">
-                                        <div class="constraint-select">
-                                            <select name="tag" class="custom-select">
-                                                <option value="">¿ALGO EN ESPECIAL?</option>
-                                                <?php foreach ($tagsBuscar as $tag): ?>
-                                                    <option value="<?= $tag['idMeta'] ?>"><?= $this->functions->meta_a_ui($tag['nombreMeta']); ?></option>
-                                                <?php endforeach; ?>
-                                            </select>
-                                        </div>
-                                    </div>  -->
-                                    <div class="input-buscador float-left">
+                                    <div class="input-buscador float-left hidden-sm hidden-xs">
                                         <input type="text" placeholder="NOMBRE DEL CHEF" id="nombre_chef" name="nombre_chef" class="input_autocomplete"/>
                                     </div>
                                     <div class="submit-buscador float-left">
