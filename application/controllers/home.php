@@ -306,6 +306,13 @@ class Home extends CI_Controller {
         }   
     }
 
+    public function login(){
+        $data['comunas'] = $this->meta_usuario_model->getMetasExistentesEnChef(3);
+        $this->load->view('header');
+        $this->load->view('form_registro', $data);
+        $this->load->view('footer');
+    }
+
 }
 
 /* End of file welcome.php */

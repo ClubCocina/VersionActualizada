@@ -12,10 +12,12 @@ class Registro extends CI_Controller {
         $this->load->model('usuario_model');
         $this->load->library('session');
         $this->load->library('form_validation');
+        $this->load->model('meta_usuario_model');
+        $this->load->model('periodos_model');
     }
 
     public function index() {
-
+        $data['comunas'] = $this->meta_usuario_model->getMetasExistentesEnChef(3);
         if (isset($this->session->userdata['mailRegistro'])) { //si vienen datos desde la session los seteo para la vista
             $data['mail'] = $this->session->userdata['mailRegistro'];
             $data['nombre'] = $this->session->userdata['nombreRegistro'];
@@ -50,12 +52,16 @@ class Registro extends CI_Controller {
             $this->form_validation->set_rules('password', 'Password', 'required|matches[passwordVerificacion]');
             $this->form_validation->set_rules('passwordVerificacion', 'Repetir Password', 'required');
             $this->form_validation->set_rules('comuna', 'Comuna', 'required');
-
+            
             $this->form_validation->set_message('is_unique', 'El %s ya se encuentra registrado');
-
+            
             if ($this->form_validation->run() == FALSE) {   //si es que contiene errores
-                $this->output->set_output($this->load->view('form_registro', $data, TRUE));
-            } else {             //si no contiene errores
+                $this->load->view('header');
+                //$this->output->set_output($this->load->view('form_registro', $data, TRUE));
+                $this->load->view('form_registro', $data);
+                $this->load->view('footer');
+            } 
+            else {             //si no contiene errores
 
                 /* if($this->input->post('avatar') != ''){ //viene imagen
                   $file = 'no viene nada';
@@ -100,14 +106,14 @@ class Registro extends CI_Controller {
                 unset($this->session->userdata['url']);
                 $this->session->set_userdata($sessionData);
                 $this->output->set_output(json_encode(array('success' => TRUE, 'url' => $urlRedirect)));
-                //redirect('/');
+                redirect('/');
             }
         } else {
 
-            /* 	$this->load->view('header');						 */
+            $this->load->view('header');						 
             /* 	$this->load->view('registro',$data);				 */
             $this->output->set_output($this->load->view('form_registro', $data, TRUE));
-            /* 	$this->load->view('footer');			 */
+            $this->load->view('footer');			 
         }
     }
 

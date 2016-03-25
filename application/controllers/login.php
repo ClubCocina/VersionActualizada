@@ -56,6 +56,7 @@ class Login extends CI_Controller {
                         unset($this->session->userdata['url']);
                         $this->output->set_output(json_encode(array('success' => TRUE, 'url' => $urlRedirect)));
                         //redirect($urlRedirect);
+                        redirect('/');
                     } else {
                         $data['error'] = "Nombre de usuario o clave equivocada";
                         $this->output->set_output($this->load->view('form_registro', $data, TRUE));
