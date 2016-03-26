@@ -89,18 +89,22 @@
                                             <?php if (isset($this->session->userdata['username'])): ?>
                                                 <ul class="logged nav navbar-nav navbar-right">
                                                     <li>
-                                                        <a href="<?= base_url() ?>mipanel">
-                                                            <div>Panel de Control</div>
+                                                        <div id="username-header" class="hidden-sm">
+                                                            <?= $this->session->userdata('username'); ?>
+                                                        </div>                                                        
+                                                    </li>
+                                                    <li>
+                                                        <a class="navbar-padding" href="<?= base_url() ?>mipanel">
+                                                            <div>Mi Panel</div>
                                                         </a>
                                                     </li>
-                                                    <li>|</li>
                                                     <li>
-                                                        <a href="<?= base_url() ?>login/logout">
+                                                        <a class="navbar-padding" href="<?= base_url() ?>login/logout">
                                                             <div>Salir</div>
                                                         </a>
                                                     </li>
                                                 </ul>
-                                                <div id="username-header"><span><?= $this->session->userdata('username'); ?></span></div>
+                                                <!--div id="username-header"><span><?= $this->session->userdata('username'); ?></span></div-->
                                             <?php else : ?>
                                                 <ul class="nav navbar-nav navbar-right">
                                                     <li>

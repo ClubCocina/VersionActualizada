@@ -222,10 +222,24 @@ a:visited {
 
     font-weight: 600;
     color: #FFAB00;
-    margin-top: 22px;
+    /*margin-top: 22px;*/
     font-size: 12px;
-    margin-left: 12px;
+    /*margin-left: 12px;*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    padding-left: 10px;
+}
 
+@media (min-width: 768px) {
+    #username-header{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+.nav > li > a {
+    padding: 10px;
 }
 
 #login {
