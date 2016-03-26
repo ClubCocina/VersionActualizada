@@ -104,8 +104,7 @@
                                             <?php else : ?>
                                                 <ul class="nav navbar-nav navbar-right">
                                                     <li>
-                                                        <!--a class="simple-ajax-popup" href="<?= base_url('login'); ?>"-->
-                                                        <a class="simple-ajax-popup" href="<?= base_url('home/login'); ?>">
+                                                        <a class="simple-ajax-popup" href="<?= base_url('login'); ?>">
                                                             <ul>
                                                                 <li><span>Ingresa <span class="hidden-sm">al Club</span></span></li>
                                                             </ul>
@@ -118,18 +117,18 @@
                                 </nav>                                
                             </div>
                             <script type="text/javascript">
-                                /*$(document).ready(function() {
+                                $(document).ready(function() {
                                     $('.simple-ajax-popup').magnificPopup({
                                         type: 'ajax',
                                     });
-                                });*/
+                                });
                             </script>
                         </div>                        
                     </div>
                     <div class="header-bot">
                         <?php if ($this->router->class !== 'comprar'): ?>
                             <div class="buscador interior">
-                                <span id="encuentra-resultado" class="mayus resultado SueEllen"><h1>ENCUENTRA TU CHEF</h1></span>
+                                <span class="mayus resultado SueEllen"><h1>ENCUENTRA TU CHEF</h1></span>
                                 <?php echo form_open('chefs/busquedaForm', array('class' => 'overflowauto')); ?>
                                 <?php
                                 $comunas = $this->meta_usuario_model->getMetasExistentesEnChef(3);

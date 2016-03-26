@@ -55,11 +55,7 @@
 	echo form_submit('enviarRegistro','Enviar'); echo "<br>";
 	echo form_close(); echo "<br>";
 
-  header("Location: ".base_url());
-  die();
-
   //ver guardar datos en base de datos
 ?>
-
 
 </div>

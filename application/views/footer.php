@@ -2,7 +2,7 @@
     </div>
 </div>
 <!--div id="wrapper-footer"-->
-<div id="container-footer">
+<div id="container-footer" class="container-fluid">
     <div class="row">
         <div id="footer" class="bg-color-general mayus col-md-12 col-sm-12 col-xs-12">
             <div id="links-paginas" class="centerbox">
@@ -12,6 +12,12 @@
                         <a href="<?= base_url('home/page/' . $page['idPage']); ?>"><?= $page['titulo']; ?></a>
                     </div>
                 <?php endforeach; ?>
+                <!--ul>
+                    <?php foreach ($pages as $page) : ?>
+                        <li class="float-left"><a href="<?= base_url('home/page/' . $page['idPage']); ?>"><?= $page['titulo']; ?></a></li>
+                    <?php endforeach; ?>
+                    <li class="float-left"><a href="<?= base_url('home/contacto'); ?>">Contacto</a></li>
+                </ul-->
             </div>
         </div>
     </div>
