@@ -584,13 +584,14 @@ a:visited {
 
 .constraint-select {
     height: 100%;
-    width: 100%;
+    /*width: 100%;*/
     background-color: rgba(0,0,0,0.7);
     background-image: url('../images/flecha_down.png');
     background-position: right;
     background-repeat: no-repeat;
     overflow: hidden;
     border-radius: 3px;
+    max-width: 149px;
 }
 
 .constraint-select select {
@@ -654,7 +655,7 @@ a:visited {
 
 .resultado-texto{
     margin-top: 5px;
-    margin-left: 10px;
+    /*margin-left: 10px;*/
     line-height: 135%;
 }
 
@@ -1788,23 +1789,23 @@ li.nobottomline {
     background: #FFAA22;
     color: #FFFFFF;
     font-size: 22px;
-    float: left;
+    /*float: left;
     width: 930px;
-    height: 40px;
+    height: 40px;*/
     border-radius: 5px;
     margin-top: 15px;
-    margin-left: 22px;
+    padding: 10px 0px;
+    /*margin-left: 22px;*/
 }
 
 #result-container {
     margin-top: 28px;
-
     margin-bottom: 36px;
-    float:left;
+    /*float:left;*/
 }
 
 #filtro-tags {
-    margin: 0 24px;
+    /*margin: 0 24px;*/
     background: rgba(0,0,0,0.7);
     color: #FFFFFF;
     padding: 25px 25px;
@@ -1823,7 +1824,7 @@ li.nobottomline {
 }
 
 #display-tags {
-    width: 240px;
+    /*width: 240px;*/
     margin: 20px 0;
 }
 
@@ -1840,8 +1841,14 @@ li.nobottomline {
 
 .tag-row label {
     font-weight: 300;
-    font-size: 17px;
+    font-size: 13px;
     line-height: 38px;
+}
+
+@media (min-width: 992px){
+    .tag-row label {
+        font-size: 15px;
+    }
 }
 
 .vermas {
@@ -1859,12 +1866,38 @@ li.nobottomline {
 }
 
 .preview-chef {
-    margin-left: 13px;
-    width: 602px;
-    height: 377px;
+    /*margin-left: 13px;*/
+    /*width: 602px;
+    height: 377px;*/
     background-color: rgba(255,255,255,0.7);
     margin-bottom: 25px;
     position: relative;
+    /*padding: 10px;*/
+    border-radius: 5px;
+
+}
+
+.mini-dish{
+    padding-bottom: 10px !important;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.bg-white-t{
+    background-color: rgba(255,255,255,0.7);
+}
+
+.white-border{
+    border: 3px solid #FFF;
+}
+
+.show-dishs{
+    margin-right: -35px;
+}
+
+.avatar-preview-chef{
+    margin-top: -40px;
+    width: 80%;
+    margin-left: 20px;
 }
 
 .avatar-preview {
@@ -1972,14 +2005,15 @@ li.nobottomline {
 }
 
 .precio-preview {
-    width:137px;
-    height: 71px;
+    /*width:137px;*/
+    /*height: 71px;*/
     font-weight: 700;
     padding: 15px;
+    margin-right: -10px;
 }
 
 .preview-clp {
-    font-size: 15px;
+    font-size: 100%;
     color: #FFAA22;
     font-weight: 500;
 }
@@ -2009,8 +2043,12 @@ li.nobottomline {
 .preview-valor {
     /*margin-top: 15px;*/
     line-height: 40px;
-    font-size: 30px;
+    font-size: 120% !important;
     color: #FFFFFF;
+}
+
+.barra-raty > img {
+    margin-right: -10px;
 }
 
 /******************* Perfil de chef por búsqueda ******************/
@@ -2202,14 +2240,40 @@ li.nobottomline {
 
 .titulo-info {
     height: 10px;
-    font-size: 18px;
-    padding: 15px;
+    font-size: 15px;
+    padding: 0px;
     font-family: "SueEllen";
     letter-spacing: 2px;
     text-align: center;
 }
 
-.row-detalle {
+@media (min-width: 992px){
+    .titulo-info{
+        font-size: 18px;
+        padding: 15px;
+    }
+}
+
+.especialidades2{
+    font-family: "SueEllen";
+    text-transform: uppercase;
+}
+
+.filtro-tags2{
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    color: #FFF;
+}
+
+.filtro-tags2 > h6 > a{
+    color: #FFF;
+}
+
+.filtro-tags2 > h6 > a:hover, .filtro-tags2 > h6 > a:focus{
+    text-decoration:  none;
+    font-weight: bold;
+}
+
+.row-detalle > .panel-heading{
     margin-bottom: 10px;
 }
 
@@ -2382,6 +2446,10 @@ span.ui-spinner {
     padding: 0px;
 }
 
+.padding-left{
+    padding-left: 15px;
+}
+
 .btn-exp{
     margin-left: -20px;
     border-radius: 0 !important;
@@ -2426,6 +2494,10 @@ span.ui-spinner {
     color: #FFCF00;
     margin-top: 2px;
     margin-bottom: 5px;
+}
+
+.one-chef{
+    margin-bottom: 20px;
 }
 
 .bg-rojo-oscuro {
@@ -2836,6 +2908,10 @@ span.ui-spinner {
     z-index: 999;
     color: #fff;
     padding-top: 16px;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    margin-left: 0px;
+    padding-left: 35px;
 }
 
 .magic-fixed{
