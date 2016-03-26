@@ -128,7 +128,7 @@
                     <div class="header-bot">
                         <?php if ($this->router->class !== 'comprar'): ?>
                             <div class="buscador interior">
-                                <span class="mayus resultado SueEllen"><h1>ENCUENTRA TU CHEF</h1></span>
+                                <span id="encuentra-resultado" class="mayus resultado SueEllen"><h1>ENCUENTRA TU CHEF</h1></span>
                                 <?php echo form_open('chefs/busquedaForm', array('class' => 'overflowauto')); ?>
                                 <?php
                                 $comunas = $this->meta_usuario_model->getMetasExistentesEnChef(3);
