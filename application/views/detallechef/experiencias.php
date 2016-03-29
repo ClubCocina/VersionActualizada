@@ -35,7 +35,7 @@
                     https://twitter.com/intent/tweet?text=<?= urlencode(base_url('chef/'.$chefLink).'#'.str_replace(" ", "_", $experiencia['nombre']))?>"><i class="fa fa-twitter"></i></a>        
                         </span>
                     </h2-->
-                    <div class="titulo-fantasia col-md-12 col-sm-12 col-xs-12">
+                    <div class="titulo-fantasia col-md-10 col-sm-10 col-xs-12 margin-center">
                         <div class="row">
                             <div class="col-md-10 col-sm-10 col-xs-10">
                                 <div class="SueEllen mayus"><?= $experiencia['nombre']; ?></div>
@@ -74,12 +74,12 @@
                         });    
                     </script>
                     <div class="row">
-                        <div class="col-md-8 col-sm-8 col-xs-12">
+                        <div class="col-md-7 col-sm-7 col-xs-12 margin-center">
                             <div class="texto-fantasia">
                                 <div class="texto-fantasia-wrapper">
                                     <div class="img-experiencia"><img src="<?= base_url('images/experiencias/' . $experiencia['imagen']); ?>" alt="imagen experiencia <?= $experiencia['nombre'] ?>"/></div>
                                     <p class="descripcion-fantasia"><?= $experiencia['descripcion']; ?></p><br>
-                                    <div class="hidden-sm hidden-md">
+                                    <div class="hidden-sm hidden-md hidden-lg">
                                         <button id="platos-btn<?= $idExperiencia; ?>" class="btn btn-default btn-xs-option btn-xs-option-active">Platos</button>
                                         <button id="cotizador-btn<?= $idExperiencia; ?>" class="btn btn-default btn-xs-option">Cotizador</button>
                                     </div>
@@ -92,7 +92,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="cotizador<?= $idExperiencia; ?>" class="container-cotizador col-md-4 col-sm-4 col-xs-8 hidden-xs">
+                        <div id="cotizador<?= $idExperiencia; ?>" class="container-cotizador col-md-3 col-sm-3 col-xs-8 hidden-xs">
                             <div class="info-actividad bg-rojo">
                                 <div class="mayus bg-rojo-oscuro">
                                     <p class="titulo-cotizador">COTIZADOR</p>

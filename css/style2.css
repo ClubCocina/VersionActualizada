@@ -1642,12 +1642,23 @@ li.nobottomline {
     font-weight: bold;
 }
 
-@media (min-width: 992px) {
+/*@media (min-width: 992px) {
     #footer {
         background-image: url('../images/background_footer.png'); 
         background-color: transparent;
     }
+}*/
+
+.margin-center{
+    margin-left: 0px;
 }
+
+@media (min-width: 768px){
+    .margin-center{
+        margin-left: 8.3333%;
+    }
+}
+
 
 #links-paginas {
     /*width: 830px;*/
@@ -2098,14 +2109,14 @@ li.nobottomline {
     float: left;*/
     /*margin-left: 20px;*/
     margin-bottom: 10px;
-    margin-left: auto;
+    /*margin-left: auto;*/
 }
 
-@media (min-width: 768px){
+/*@media (min-width: 768px){
     #infochef{
         margin-left: 0px;
     }
-}
+}*/
 
 #metas {
     /*width: 672px;*/
@@ -2215,6 +2226,8 @@ li.nobottomline {
     padding: 14px 0px 10px 28px;
     border-radius: 5px;
     letter-spacing: 2px;
+    width: 83.333%;
+    margin-left: 8.333%;
 }
 
 .titulo-fantasia {
@@ -2339,7 +2352,7 @@ li.nobottomline {
     font-size: 16px;
     margin-top: 2px;
     /*text-transform: uppercase;*/
-    width: 180px;
+    width: 100%;
     margin-left: 3px;
     padding: 6px;
     /*height: 22px;*/
@@ -2453,6 +2466,18 @@ span.ui-spinner {
 
 }
 
+@media (min-width: 768px) and (max-width: 842px){
+    .btn-comprar{
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 843px) and (max-width: 991px){
+    .btn-comprar{
+        font-size: 15px;
+    }
+}
+
 .btn-comprar:hover{
     cursor: pointer;
     opacity: 0.8;
@@ -2504,14 +2529,14 @@ span.ui-spinner {
 @media (min-width: 768px){
     .foto-avatar-chef > img {
         border: 2px solid #FFF;
-        margin-left: 65%;
+        margin-left: 57%;
     }    
 }
 
 @media (min-width: 992px){
     .foto-avatar-chef > img {
         border: 2px solid #FFF;
-        margin-left: 72%;
+        margin-left: 64%;
     }    
 }
 

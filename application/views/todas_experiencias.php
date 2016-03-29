@@ -1,38 +1,42 @@
 <div id="menuchef">
-    <div id="nuestras-experiencias" class="row">
-        <div class="col-md-4">
-	       <span>Nuestras experiencias</span>
-        </div>
-        <div class="col-md-8">
-            <span id="ordenar-por">Ordenar por: </span>
-            <div class="btn-group" data-toggle="buttons">
-                <label id="mas-nuevo" class="btn btn-warning btn-select">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> Más nuevo
-                </label>
-                <label id="mas-viejo" class="btn btn-warning btn-select">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> Más antiguo
-                </label>
-                <label id="a-z" class="btn btn-warning btn-select">
-                    <input type="radio" name="options" id="option1" autocomplete="off"> A-Z
-                </label>
-                <label id="z-a" class="btn btn-warning btn-select">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> Z-A
-                </label>
-                <label id="mayor-precio" class="btn btn-warning btn-select">
-                    <input type="radio" name="options" id="option3" autocomplete="off"> Mayor precio
-                </label>
-                <label id="menor-precio"class="btn btn-warning btn-select">
-                    <input type="radio" name="options" id="option3" autocomplete="off"> Menor precio
-                </label>
+    <div class="row">
+        <div class="col-md-10 col-sm-10 col-xs-12 margin-center">
+            <div id="nuestras-experiencias" class="row">
+                <div class="col-md-4">
+                <span>Nuestras experiencias</span>
             </div>
-        </div>
+            <div class="col-md-8">
+                <span id="ordenar-por">Ordenar por: </span>
+                <div class="btn-group" data-toggle="buttons">
+                    <label id="mas-nuevo" class="btn btn-warning btn-select">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> Más nuevo
+                    </label>
+                    <label id="mas-viejo" class="btn btn-warning btn-select">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> Más antiguo
+                    </label>
+                    <label id="a-z" class="btn btn-warning btn-select">
+                        <input type="radio" name="options" id="option1" autocomplete="off"> A-Z
+                    </label>
+                    <label id="z-a" class="btn btn-warning btn-select">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> Z-A
+                    </label>
+                    <label id="mayor-precio" class="btn btn-warning btn-select">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> Mayor precio
+                    </label>
+                    <label id="menor-precio"class="btn btn-warning btn-select">
+                        <input type="radio" name="options" id="option3" autocomplete="off"> Menor precio
+                    </label>
+                </div>
+            </div>
+            </div>
+        </div>        
     </div>
 	<br>
     <ul id="lista">
     	<?php foreach ($experiencias as $experiencia) { ?>
         <li class="overflowauto" id="<?= str_replace(" ", "_", $experiencia['nombre']);?>">
             <span id="id-exp" class="hidden"><?= $experiencia['idExperiencia']?></span>
-        	<div class="titulo-fantasia col-md-12 col-sm-12 col-xs-12">
+        	<div class="titulo-fantasia col-md-10 col-sm-10 col-xs-12 margin-center">
                 <div class="row">
                     <div class="col-md-10 col-sm-10 col-xs-10 SueEllen mayus">
                         <a href="<?= base_url('chef/'.$experiencia['chef'][0]['link']).'#'.str_replace(" ", "_", $experiencia['nombre'])?>"><?= $experiencia['nombre']; ?></a>
@@ -80,7 +84,7 @@
                 });    
             </script>
             <div class="row">
-                <div class="col-md-8 col-sm-8 col-xs-12">
+                <div class="col-md-7 col-sm-7 col-xs-12 margin-center">
                     <div class="texto-fantasia margin-bottom">
                         <div class="texto-fantasia-wrapper">
                             <div class="img-experiencia overflowauto">
@@ -100,7 +104,7 @@
                         </div>
                     </div>
                 </div>                
-                <div id="cotizador<?= $experiencia['idExperiencia']; ?>" class="container-cotizador col-md-4 col-sm-4 col-xs-8 hidden-xs">
+                <div id="cotizador<?= $experiencia['idExperiencia']; ?>" class="container-cotizador col-md-3 col-sm-3 col-xs-8 hidden-xs">
                     <div class="info-actividad bg-rojo margin-bottom">                    
                         <div class="info-cotizador bg-rojo">
                             <a href="<?= base_url('chef/'.$experiencia['chef'][0]['link']);?>">

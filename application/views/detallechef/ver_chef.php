@@ -15,23 +15,25 @@
             });
     });
 </script>
-<div id="nombre-chef" class="row">
-    <div class="col-md-12 col-sm-12 col-xs-12">
-        <div class="col-md-10 col-sm-10 col-xs-8">
-            <div class="social-buttons"><?= ucwords($datosChef['nombre'] . ' ' . $datosChef['apellidoPaterno']) ?></div>
-        </div>        
-        <div class="col-md-2 col-sm-2 col-xs-4">
-            <div class="social-buttons">
-                <a href="   
-        http://facebook.com/sharer.php?u=<?= urlencode(base_url($chefLink))?>"><i class="fa fa-facebook"></i></a>
-                <a href="   
-        https://twitter.com/intent/tweet?text=<?= urlencode(base_url($chefLink))?>"><i class="fa fa-twitter"></i></a>        
+<div class="row">
+    <div class="col-md-10 col-sm-10 col-xs-12 margin-center">
+        <div id="nombre-chef" class="row">
+            <div class="col-md-10 col-sm-10 col-xs-8">
+                <div class="social-buttons"><?= ucwords($datosChef['nombre'] . ' ' . $datosChef['apellidoPaterno']) ?></div>
+            </div>        
+            <div class="col-md-2 col-sm-2 col-xs-4">
+                <div class="social-buttons">
+                    <a href="   
+            http://facebook.com/sharer.php?u=<?= urlencode(base_url($chefLink))?>"><i class="fa fa-facebook"></i></a>
+                    <a href="   
+            https://twitter.com/intent/tweet?text=<?= urlencode(base_url($chefLink))?>"><i class="fa fa-twitter"></i></a>        
+                </div>
             </div>
-        </div>
+        </div>        
     </div>
 </div>
 <div class="row">
-    <div class="col-md-12 col-sm-12 col-xs-12">
+    <div class="col-md-10 col-sm-10 col-xs-12 margin-center">
         <!--img id="slide-chef" class="img-responsive" src="<?= isset($fotos['23']) ? base_url('images/' . $fotos['27']) : ''; ?>" alt="Imagen Portada"/-->
         <div id="slide-chef" style='background-image: url(<?= isset($fotos['23']) ? base_url('images/' . $fotos['27']) : ''; ?>);'>
             <!--div class="col-md-offset-9 col-md-3 col-sm-offset-9 col-sm-3 col-xs-12 foto-avatar-chef"-->
@@ -42,7 +44,7 @@
     </div>
 </div>
 <div id="contenido-chef" class="row">
-    <div id="infochef" class="col-md-8 col-sm-8 col-xs-6">
+    <div id="infochef" class="col-md-7 col-sm-7 col-xs-6 margin-center">
         <div id="contenedor-central" class="">
             <div id="metas">
                 <div class="titulo-tags white">Especialidades</div>
@@ -75,7 +77,7 @@
     </div>
 
     <!-- Columna derecha con detalles respecto al servicio que entrega el chef -->
-    <div id="cont-derecha" class="col-md-4 col-sm-4 col-xs-6">        
+    <div id="cont-derecha" class="col-md-3 col-sm-3 col-xs-6">        
         <div id="precio" class="bg-rojo">
             <span class="preview-clp mayus">Desde</span>
             <br>

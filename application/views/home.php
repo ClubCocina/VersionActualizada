@@ -4,7 +4,7 @@
         <img src="<?= base_url('images/mensaje-imagen-home.png'); ?>" />
     </div>  -->
     <!--div id="slide-home" class="float-left col-md-8"-->
-    <div class="col-md-8 col-sm-8 col-xs-12">
+    <div class="col-md-7 col-sm-7 col-xs-12 margin-center">
         <div id="carousel-home" class="carousel slide" data-ride="carousel" data-interval="2000">
             <ol class="carousel-indicators">
                 <?php for ($i=0; $i < sizeof($slides) ; $i++) { ?>
@@ -36,7 +36,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-4 col-sm-4 col-xs-12">
+    <div class="col-md-3 col-sm-3 col-xs-12">
         <div id="conteo-home" class="bg-rojo">
             <div class="row">
                 <div id="nrochefs" class="col-md-5 col-sm-5 col-xs-5">
@@ -72,36 +72,40 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>        
 </div>
-<div id="carrusel-home-cont"class="bg-color-general">
-    <span class="mayus SueEllen"><h1>Los chefs del Club</h1></span>
-    <div id="all-chefs" class="row">
-        <?php if (!empty($chefsCarrusel)): ?>
-            <?php foreach ($chefsCarrusel as $chef): ?>
-                <?php
-                if ($chef['avatar'] == '')
-                    $imgChef = '10-top-celebrity-chefs.jpg';
-                else
-                    $imgChef = $chef['avatar'];
-                $urlChef = $chef['link'] !== '' ? 'chef/'.$chef['link'] : 'chefs/verDatosChef/' . $chef['idUsuario'];
-                ?>
-                <div class="col-md-2 col-sm-2 col-xs-6 avatar">
-                    <div class="front">
-                        <img class="img-responsive img-chef" src="<?= base_url('avatar/' . $imgChef); ?>" alt="avatar chef" />
-                    </div>
-                    <div class="back col-md-12 col-sm-12 col-xs-12">
-                        <h2 class="nombre-chef-carrusel"><a href="<?= base_url($urlChef); ?>"><?= $chef['nombre'] . ' ' . $chef['apellidoPaterno']; ?></a></h2>
-                        <p class="hidden-xs hidden-sm">
-                            <?= isset($chef['dato']) && $chef['dato'] != '' ? $chef['dato'] : '' ?>
-                        </p>
-                        <p class="datos-chef-hidden hidden-md hidden-lg">¡Conoce las experiencias!</p>
-                        <a class="btn btn-danger btn-experiencias" href="<?= base_url($urlChef); ?>">Las experiencias</a>
-                    </div>
-                </div>
-            <?php endforeach; ?>
-        <?php endif;?>
-    </div>    
+<div class="row">
+    <div class="col-md-10 col-sm-10 col-xs-12 margin-center">
+        <div id="carrusel-home-cont"class="bg-color-general">
+            <span class="mayus SueEllen"><h1>Los chefs del Club</h1></span>
+            <div id="all-chefs" class="row">
+                <?php if (!empty($chefsCarrusel)): ?>
+                    <?php foreach ($chefsCarrusel as $chef): ?>
+                        <?php
+                        if ($chef['avatar'] == '')
+                            $imgChef = '10-top-celebrity-chefs.jpg';
+                        else
+                            $imgChef = $chef['avatar'];
+                        $urlChef = $chef['link'] !== '' ? 'chef/'.$chef['link'] : 'chefs/verDatosChef/' . $chef['idUsuario'];
+                        ?>
+                        <div class="col-md-2 col-sm-2 col-xs-6 avatar">
+                            <div class="front">
+                                <img class="img-responsive img-chef" src="<?= base_url('avatar/' . $imgChef); ?>" alt="avatar chef" />
+                            </div>
+                            <div class="back col-md-12 col-sm-12 col-xs-12">
+                                <h2 class="nombre-chef-carrusel"><a href="<?= base_url($urlChef); ?>"><?= $chef['nombre'] . ' ' . $chef['apellidoPaterno']; ?></a></h2>
+                                <p class="hidden-xs hidden-sm">
+                                    <?= isset($chef['dato']) && $chef['dato'] != '' ? $chef['dato'] : '' ?>
+                                </p>
+                                <p class="datos-chef-hidden hidden-md hidden-lg">¡Conoce las experiencias!</p>
+                                <a class="btn btn-danger btn-experiencias" href="<?= base_url($urlChef); ?>">Las experiencias</a>
+                            </div>
+                        </div>
+                    <?php endforeach; ?>
+                <?php endif;?>
+            </div>    
+        </div>
+    </div>
 </div>
 <script>
     $(document).ready(function(){

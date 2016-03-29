@@ -4,7 +4,7 @@
 <!--div id="wrapper-footer"-->
 <div id="container-footer" class="container-fluid">
     <div class="row">
-        <div id="footer" class="bg-color-general mayus col-md-12 col-sm-12 col-xs-12">
+        <div id="footer" class="bg-color-general mayus col-md-10 col-sm-10 col-xs-12 margin-center">
             <div id="links-paginas" class="centerbox">
                 <?php $pages = $this->page_model->getPage(); ?>
                 <?php foreach ($pages as $page) : ?>
