@@ -1324,11 +1324,12 @@ li.nobottomline {
 }
 
 .info-actividad {
-    width:250px;
+    /*width:250px;*/
     /*height: 300px;*/
-    margin-left: 20px;
+    /*margin-left: 20px;*/
     color: white;
     border-radius: 5px;
+    margin-right: 10px;
 }
 
 .datos-info {
@@ -1341,12 +1342,18 @@ li.nobottomline {
 }
 
 #cont-derecha{
-    width: 250px;
-    margin-left: 20px;
-    margin-top: -250px;
+    /*width: 250px;*/
+    /*margin-left: 20px;*/
+    /*margin-top: -250px;*/
     z-index: 9999;
     margin-bottom: 17px;
+    margin-left: 0;
+}
 
+@media (min-width: 768px){
+    #cont-derecha{
+        margin-left: 0px;
+    }
 }
 
 #resumen-reviews {
@@ -1813,14 +1820,22 @@ li.nobottomline {
 }
 
 .titulo-tags{
-    font-size: 30px;
+    font-size: 25px;
     font-family: "SueEllen";
-    font-weight: 700;
+    font-weight: 0;
     color:#333333;
     line-height: 30px;
     padding-top: 15px;
-    margin-left: 15px;
+    margin-left: auto;
     letter-spacing: 0.4px;
+}
+
+@media (min-width: 768px){
+    .titulo-tags{
+        font-size: 30px;
+        margin-left: 15px;
+        font-weight: 700;
+    }
 }
 
 #display-tags {
@@ -2055,17 +2070,17 @@ li.nobottomline {
 
 
 #slide-chef {
-    width: 980px;
+    /*width: 980px;
     height: 280px;
-    overflow:hidden;
-    z-index: -9999;
-    opacity: 0.7;
+    overflow:hidden;*/
+    /*z-index: -9999;*/
+    /*opacity: 0.7;*/
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
 }
 
 #slide-chef img{
-    width: 980px;
+    /*width: 980px;*/
 }
 
 .carousel-inner > .item > img{
@@ -2074,14 +2089,21 @@ li.nobottomline {
 }
 
 #infochef {
-    width: 700px;
-    float: left;
+    /*width: 700px;
+    float: left;*/
     /*margin-left: 20px;*/
     margin-bottom: 10px;
+    margin-left: auto;
+}
+
+@media (min-width: 768px){
+    #infochef{
+        margin-left: 0px;
+    }
 }
 
 #metas {
-    width: 672px;
+    /*width: 672px;*/
     background: rgba(255,255,255,0.6);
     padding: 10px;
     margin-top: 2px;
@@ -2092,7 +2114,7 @@ li.nobottomline {
 }
 
 #contenedor-central {
-    width: 700px;
+    /*width: 700px;*/
     margin-top: 15px;
 }
 
@@ -2105,6 +2127,7 @@ li.nobottomline {
     color: #333333;
     border-radius: 5px;
     margin-left: 8px;
+    float: left;
 }
 
 #descripcion p {
@@ -2126,12 +2149,14 @@ li.nobottomline {
     font-weight: 400;
     /*padding-bottom: 10px;*/
     line-height: 135%;
-    width: 100%; 
+    /*width: 100%; */
     background: rgba(0,0,0,0.7); 
     /*color:#ffffff; */
     padding: 10px 0;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 #nuestras-experiencias{
@@ -2152,8 +2177,8 @@ li.nobottomline {
 }
 
 #nombre-chef span{
-    padding-left: 25px;
-    padding-right: 25px;
+    /*padding-left: 25px;
+    padding-right: 25px;*/
     letter-spacing: 5px;
 }
 
@@ -2163,7 +2188,20 @@ li.nobottomline {
 
 }
 
+/*
 #experiencias-chef h3 {
+    font-family: "SueEllen";
+    font-size: 30px;
+    background: rgba(255,255,255,0.6);
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 14px 0px 10px 28px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}
+*/
+
+.menu-chef{    
     font-family: "SueEllen";
     font-size: 30px;
     background: rgba(255,255,255,0.6);
@@ -2189,7 +2227,7 @@ li.nobottomline {
 
 .img-experiencia {
     width: 100%;
-    height: 200px;
+    /*height: 200px;*/
     margin-bottom: 10px;
     margin-top: 10px;
     border-radius: 5px;
@@ -2203,6 +2241,7 @@ li.nobottomline {
 .img-experiencia img {
     width: 100%;
     height: auto;
+    border-radius: 5px;
 }
 
 .descripcion-fantasia {
@@ -2213,14 +2252,14 @@ li.nobottomline {
 
 .texto-fantasia {
     padding-top: 0px;
-    width: 690px;
+    /*width: 690px;*/
     font-size: 14px;
     line-height: 16px;
     text-align: center;
     background: rgba(255,255,255,0.6);
-    min-height: 470px;
+    /*min-height: 470px;*/
     border-radius: 5px;
-    margin-left: 10px;
+    /*margin-left: 10px;*/
 }
 
 .texto-plato {
@@ -2228,7 +2267,7 @@ li.nobottomline {
 }
 
 .texto-fantasia-wrapper {
-    padding: 0 24px;
+    padding: 5px 24px;
 }
 
 .titulo-plato {
@@ -2252,6 +2291,16 @@ li.nobottomline {
         font-size: 18px;
         padding: 15px;
     }
+}
+
+.titulo-cotizador{
+    height: 10px;
+    font-size: 18px;
+    padding: 0px;
+    font-family: "SueEllen";
+    letter-spacing: 2px;
+    text-align: center;    
+    padding-top: 10px;
 }
 
 .especialidades2{
@@ -2288,7 +2337,7 @@ li.nobottomline {
     width: 180px;
     margin-left: 3px;
     padding: 6px;
-    height: 22px;
+    /*height: 22px;*/
 }
 
 span.ui-spinner {
@@ -2422,17 +2471,43 @@ span.ui-spinner {
 }
 
 .foto-ver-chef {
-    height: 247px;
-    width: 247px;
+    /*height: 247px;
+    width: 247px;*/
     /* position: absolute;*/
     /*left: 669px;*/
-    background: white;
+    /*background: white;*/
     /* top: 230px;*/
     overflow: hidden;
     /*border: 2px solid #FFFFFF;*/
     /*border-top-left-radius: 3px;
     border-top-right-radius: 3px;*/
     border-radius: 5px;
+    z-index: 99;
+}
+
+.foto-avatar-chef {
+    /*margin-left: 80%;*/
+    padding-top: 30px;
+}
+
+.foto-avatar-chef > img {
+    border: 2px solid #FFF;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 768px){
+    .foto-avatar-chef > img {
+        border: 2px solid #FFF;
+        margin-left: 65%;
+    }    
+}
+
+@media (min-width: 992px){
+    .foto-avatar-chef > img {
+        border: 2px solid #FFF;
+        margin-left: 72%;
+    }    
 }
 
 .avatar-chef{
@@ -2469,7 +2544,7 @@ span.ui-spinner {
 }
 
 .foto-ver-chef img{
-    width: 247px; 
+    /*width: 247px; */
 }
 
 .display-tags {
@@ -2482,6 +2557,63 @@ span.ui-spinner {
     padding: 7px 10px;
     margin-top: 11px;
     margin-left: 10px;
+    /*float: none;*/
+}
+/*
+@media (min-width: 768px){
+    .display-tags{
+        float: left;
+    }
+}
+*/
+
+.tags-btn{
+    background-color: #FF1849;
+    color: #FFF;
+    border-color: #FF1849;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.tags-btn:hover, .tags-btn:active{
+    background-color: #FFAA22;
+    border-color: #FFAA22;
+    color: #FFF;
+}
+
+.btn-xs-option{    
+    background-color: #FF1849;
+    color: #FFF;
+    border-color: #FF1849;
+    margin-top: 5px;    
+    margin-bottom: 20px;
+}
+
+.btn-xs-option:hover{
+    background-color: #FFAA22;
+    border-color: #FFAA22;
+    color: #FFF;
+}
+
+.btn-xs-option:active, .btn-xs-option:focus{
+    background-color: #E8AC13;
+    border-color: #E8AC13 !important;   
+}
+
+.btn-xs-option-active{
+    background-color: #E8AC13;
+    border-color: #E8AC13;   
+}
+
+.btn-xs-option-active:focus, .btn-xs-option-active:hover, .btn-xs-option-active:active{
+    background-color: #E8AC13;
+    border-color: #E8AC13 !important;   
+}
+
+@media (min-width: 768px){
+    .tags-btn{
+        width: auto;
+    }
 }
 
 .row-info {
@@ -3350,12 +3482,35 @@ input::-webkit-inner-spin-button {
 }
 
 .social-buttons {
-    float: right;
+    /*float: right;*/
+    font-size: 25px;
+    line-height: 100%;
 }
 
-.social-buttons .fa {
-    margin-right: 12px;
+
+.social-buttons > .fa{
+    /*float: right;*/
+    font-size: 25px;
 }
+
+
+.social-buttons .fa {
+    margin-right: 0px;
+}
+
+@media (min-width: 768px){
+    .social-buttons{
+        font-size: 35px;
+        line-height: 135% !important;
+    }
+
+    .social-buttons > .fa{
+        /*float: right;*/
+        font-size: 35px;
+        margin-right: 12px;
+    }
+}
+
 
 .por-persona {
     font-size: 14px;

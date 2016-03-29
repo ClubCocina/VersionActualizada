@@ -25,219 +25,270 @@
             foreach ($experiencias as $experiencia) :
                 $idExperiencia = $experiencia['idExperiencia'];
                 ?>
-                <li class="overflowauto" id="<?= str_replace(" ", "_", $experiencia['nombre']);?>">
-                    <h2 class="titulo-fantasia SueEllen mayus"><?= $experiencia['nombre']; ?>
+                <li class="" id="<?= str_replace(" ", "_", $experiencia['nombre']);?>">                    
+                    <!--h2 class="titulo-fantasia SueEllen mayus"><?= $experiencia['nombre']; ?>
                         <span class="social-buttons">
                             <a href="   
                     http://facebook.com/sharer.php?u=<?= urlencode(base_url('chef/'.$chefLink).'#'.str_replace(" ", "_", $experiencia['nombre']))?>"><i class="fa fa-facebook"></i></a>
                             <a href="   
                     https://twitter.com/intent/tweet?text=<?= urlencode(base_url('chef/'.$chefLink).'#'.str_replace(" ", "_", $experiencia['nombre']))?>"><i class="fa fa-twitter"></i></a>        
                         </span>
-                    </h2>
+                    </h2-->
+                    <div class="titulo-fantasia col-md-12 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                <div class="SueEllen mayus"><?= $experiencia['nombre']; ?></div>
+                            </div>        
+                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                <div class="social-buttons">
+                                    <a href="http://facebook.com/sharer.php?u=<?= urlencode(base_url('chef/'.$chefLink).'#'.str_replace(" ", "_", $experiencia['nombre']))?>"><i class="fa fa-facebook"></i></a>
+                                    <a href="https://twitter.com/intent/tweet?text=<?= urlencode(base_url('chef/'.$chefLink).'#'.str_replace(" ", "_", $experiencia['nombre']))?>"><i class="fa fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <script type="text/javascript">
+                        $(document).ready(function(){
+                            $('#platos-btn<?= $idExperiencia; ?>').click(function(){
+                                $('#cotizador<?= $idExperiencia; ?>').fadeOut(900);
+                                $('#cotizador<?= $idExperiencia; ?>').removeClass('show');
+                                $('#cotizador<?= $idExperiencia; ?>').addClass('hidden');
+                                $('#platos-experiencia<?= $idExperiencia; ?>').removeClass('hidden');
+                                $('#platos-experiencia<?= $idExperiencia; ?>').fadeIn(900);
+                                $('#platos-experiencia<?= $idExperiencia; ?>').addClass('show');
+                                $('#cotizador-btn<?= $idExperiencia; ?>').removeClass('btn-xs-option-active');
+                                $('#platos-btn<?= $idExperiencia; ?>').addClass('btn-xs-option-active');
+                            });
 
-                    <div class="float-left texto-fantasia">
-                        <div class="texto-fantasia-wrapper">
-                            <div class="img-experiencia overflowauto"><img src="<?= base_url('images/experiencias/' . $experiencia['imagen']); ?>" alt="imagen experiencia <?= $experiencia['nombre'] ?>"/></div>
-                            <p class="descripcion-fantasia"><?= $experiencia['descripcion']; ?></p><br>
-                            <?php foreach ($experiencia['platos'] as $plato): ?>
-                                <span class="titulo-plato mayus"><?= $plato['nombre']; ?></span>
-                                <p class="texto-plato"><?= $plato['descripcion']; ?></p><br>
-                            <?php endforeach; ?>
+                            $('#cotizador-btn<?= $idExperiencia; ?>').click(function(){
+                                $('#platos-experiencia<?= $idExperiencia; ?>').fadeOut(900);
+                                $('#platos-experiencia<?= $idExperiencia; ?>').removeClass('show');
+                                $('#platos-experiencia<?= $idExperiencia; ?>').addClass('hidden');
+                                $('#cotizador<?= $idExperiencia; ?>').removeClass('hidden hidden-xs');
+                                $('#cotizador<?= $idExperiencia; ?>').fadeIn(900);
+                                $('#cotizador<?= $idExperiencia; ?>').addClass('show');     
+                                $('#cotizador-btn<?= $idExperiencia; ?>').addClass('btn-xs-option-active');
+                                $('#platos-btn<?= $idExperiencia; ?>').removeClass('btn-xs-option-active');
+                            });
+                        });    
+                    </script>
+                    <div class="row">
+                        <div class="col-md-8 col-sm-8 col-xs-12">
+                            <div class="texto-fantasia">
+                                <div class="texto-fantasia-wrapper">
+                                    <div class="img-experiencia"><img src="<?= base_url('images/experiencias/' . $experiencia['imagen']); ?>" alt="imagen experiencia <?= $experiencia['nombre'] ?>"/></div>
+                                    <p class="descripcion-fantasia"><?= $experiencia['descripcion']; ?></p><br>
+                                    <div class="hidden-sm hidden-md">
+                                        <button id="platos-btn<?= $idExperiencia; ?>" class="btn btn-default btn-xs-option btn-xs-option-active">Platos</button>
+                                        <button id="cotizador-btn<?= $idExperiencia; ?>" class="btn btn-default btn-xs-option">Cotizador</button>
+                                    </div>
+                                    <div id="platos-experiencia<?= $idExperiencia; ?>" class="show">
+                                        <?php foreach ($experiencia['platos'] as $plato): ?>
+                                            <span class="titulo-plato mayus"><?= $plato['nombre']; ?></span>
+                                            <p class="texto-plato"><?= $plato['descripcion']; ?></p><br>
+                                        <?php endforeach; ?>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="float-left info-actividad bg-rojo">
-                        <div class="mayus titulo-info bg-rojo-oscuro">COTIZADOR</div>
-                        <!--Form experiencia -->
-                        <form class="form-compra" action="<?= base_url('chefs/verDatosChef/' . $datosChef['idUsuario']); ?>" method="POST">
-                            <div class="datos-info">
-                                <div class="overflowauto row-detalle">
-                                    <div class="titulo-datos">Chef</div>
-                                    <div class="row-info">
-                                        <div class="input-vista-chef"><?= ucwords($datosChef['nombre'] . ' ' . $datosChef['apellidoPaterno']) ?></div>
-                                    </div>
+                        <div id="cotizador<?= $idExperiencia; ?>" class="col-md-4 col-sm-4 col-xs-8 col-xs-offset-2 hidden-xs">
+                            <div class="info-actividad bg-rojo">
+                                <div class="mayus bg-rojo-oscuro">
+                                    <p class="titulo-cotizador">COTIZADOR</p>
                                 </div>
-                            <!--    <div class="overflowauto row-detalle">
-                                    <div class="titulo-datos">Experiencia</div>
-                                    <div class="row-info">
-                                        <div class="input-vista-chef"><?= $experiencia['nombre']; ?></div>
-                                    </div>
-                                </div>  -->
-                                <div class="overflowauto row-detalle">
-                                    <div class="titulo-datos">¿Cuántos Comen?</div>
-                                    <div class="row-info cantidad-invitados prompt-input">
-                                        <input id="invitados<?= $idExperiencia; ?>"
-                                               name="invitados<?= $idExperiencia; ?>"
-                                               class="spinner-invitados"
-                                               value="<?= set_value('invitados' . $idExperiencia, $comensales_default); ?>"
-                                               />
-                                    </div>
-                                </div>
-                    
-                                <div class="overflowauto row-detalle">
-                                    <div class="titulo-datos">Fecha y Hora (llegada del chef)</div>
-                                    <div class="row-info horario-evento prompt-input">
-                                        <input id="horario<?= $idExperiencia; ?>"
-                                               name="horario<?= $idExperiencia; ?>"
-                                               class="input-vista-chef input-normal ui-corner-all"
-                                               value="<?= set_value('horario' . $idExperiencia, $fecha_default); ?>"
-                                               placeholder="dd/mm/aaaa h:m"
-                                               required
-                                               />
-                                        <input type="hidden" name="bool_hora<?= $idExperiencia; ?>" id="bool_hora<?= $idExperiencia; ?>" value="<?= set_value('bool_hora', $this->session->userdata('boolHora') !== FALSE ? '1' : '0'); ?>" />
-                                        <script>
-                                            var horas = [];
-                                            $(function() {
-                                                $("#horario<?= $idExperiencia; ?>").datetimepicker({
-                                                    onGenerate: function(ct) {
-                                                        if (horas.length !== 0) {
-                                                            this.setOptions({
-                                                                allowTimes: horas
-                                                            });
-                                                            horas = [];
-                                                        }
-                                                        var diasSemana = filtroDias();
-                                                        for (var index in diasSemana) {
-                                                            $(this).find(diasSemana[index]).addClass('xdsoft_disabled');
-                                                        }
-                                                        var fecha = ct.toISOString();
-                                                        $.post('<?= base_url('chefs/diasNoDisponiblesMes'); ?>', {
-                                                            fecha: fecha,
-                                                            idChef: <?= $datosChef['idUsuario'] ?>
-                                                        }).done(function(data) {
-                                                            var diasMes = eval(data);
-                                                            for (var index in diasMes) {
-                                                                var fecha = new Date(diasMes[index].fecha);
-                                                                var fecha_local = new Date(fecha.valueOf() + fecha.getTimezoneOffset() * 60000);
-                                                                $('[data-date="' + fecha_local.getDate() + '"][data-month="' + fecha_local.getMonth() + '"]')
-                                                                        .addClass('xdsoft_disabled');
-                                                            }
-                                                        });
-                                                        $('.xdsoft_time_variant').css('margin-top', '0px');
-                                                    },
-                                                    onSelectDate: function(current_time, $input) {
-                                                        var fecha = $input[0].value;
-                                                        var dtp = this; //datetimepicker
-                                                        $.post('<?= base_url('chefs/horasDisponibles'); ?>', {
-                                                            fecha: fecha,
-                                                            idChef: <?= $datosChef['idUsuario'] ?>
-                                                        }).done(function(data) {
-                                                            horas = eval(data);
-                                                            var horaPre = new Date('1970/01/01 ' + horas[0]);
-                                                            console.log(horaPre);
-                                                            console.log(current_time);
-                                                            dtp.setOptions({
-                                                                timepicker: true,
-                                                                allowTimes: horas,
-                                                                defaultDate: current_time,
-                                                                defaultTime: horaPre
-                                                            });
-                                                        });
-                                                    },
-                                                    onSelectTime: function(ct) {
-                                                        $('#bool_hora<?= $idExperiencia; ?>').val('1');
-                                                        this.setOptions({
-                                                            format: 'd/m/Y H:i',
-                                                            defaultTime: ct,
-                                                            value: parseDateValue(ct)
-                                                        });
-                                                    },
-                                                    onChangeDateTime: function(ct) {
-                                                        if ($('#bool_hora<?= $idExperiencia; ?>').val() === '1') {
-                                                            this.setOptions({
-                                                                value: parseDateValue(ct)
-                                                            });
-                                                        }
-                                                    },
-                                                    onShow: function(ct) {
-                                                            <?php if (form_error('bool_hora' . $idExperiencia) != '' OR $this->session->userdata('fecha')): ?>
-                                                            var fecha = ct.toISOString();
-                                                            var dtp = this; //datetimepicker
-                                                            $.post('<?= base_url('chefs/horasDisponibles'); ?>', {
-                                                                fecha: fecha,
-                                                                idChef: <?= $datosChef['idUsuario'] ?>
-                                                            }).done(function(data) {
-                                                                var horas = eval(data);
-                                                                dtp.setOptions({
-                                                                    timepicker: true,
-                                                                    allowTimes: horas,
-                                                                    defaultDate: ct
+                                <!--Form experiencia -->
+                                <form class="form-compra" action="<?= base_url('chefs/verDatosChef/' . $datosChef['idUsuario']); ?>" method="POST">
+                                    <div class="datos-info">
+                                        <div class="overflowauto row-detalle">
+                                            <div class="titulo-datos">Chef</div>
+                                            <div class="row-info">
+                                                <div class="input-vista-chef"><?= ucwords($datosChef['nombre'] . ' ' . $datosChef['apellidoPaterno']) ?></div>
+                                            </div>
+                                        </div>
+                                    <!--    <div class="overflowauto row-detalle">
+                                            <div class="titulo-datos">Experiencia</div>
+                                            <div class="row-info">
+                                                <div class="input-vista-chef"><?= $experiencia['nombre']; ?></div>
+                                            </div>
+                                        </div>  -->
+                                        <div class="overflowauto row-detalle">
+                                            <div class="titulo-datos">¿Cuántos Comen?</div>
+                                            <div class="row-info cantidad-invitados prompt-input">
+                                                <input id="invitados<?= $idExperiencia; ?>"
+                                                       name="invitados<?= $idExperiencia; ?>"
+                                                       class="spinner-invitados"
+                                                       value="<?= set_value('invitados' . $idExperiencia, $comensales_default); ?>"
+                                                       />
+                                            </div>
+                                        </div>
+                            
+                                        <div class="overflowauto row-detalle">
+                                            <div class="titulo-datos">Fecha y Hora (llegada del chef)</div>
+                                            <div class="row-info horario-evento prompt-input">
+                                                <input id="horario<?= $idExperiencia; ?>"
+                                                       name="horario<?= $idExperiencia; ?>"
+                                                       class="input-vista-chef input-normal ui-corner-all"
+                                                       value="<?= set_value('horario' . $idExperiencia, $fecha_default); ?>"
+                                                       placeholder="dd/mm/aaaa h:m"
+                                                       required
+                                                       />
+                                                <input type="hidden" name="bool_hora<?= $idExperiencia; ?>" id="bool_hora<?= $idExperiencia; ?>" value="<?= set_value('bool_hora', $this->session->userdata('boolHora') !== FALSE ? '1' : '0'); ?>" />
+                                                <script>
+                                                    var horas = [];
+                                                    $(function() {
+                                                        $("#horario<?= $idExperiencia; ?>").datetimepicker({
+                                                            onGenerate: function(ct) {
+                                                                if (horas.length !== 0) {
+                                                                    this.setOptions({
+                                                                        allowTimes: horas
+                                                                    });
+                                                                    horas = [];
+                                                                }
+                                                                var diasSemana = filtroDias();
+                                                                for (var index in diasSemana) {
+                                                                    $(this).find(diasSemana[index]).addClass('xdsoft_disabled');
+                                                                }
+                                                                var fecha = ct.toISOString();
+                                                                $.post('<?= base_url('chefs/diasNoDisponiblesMes'); ?>', {
+                                                                    fecha: fecha,
+                                                                    idChef: <?= $datosChef['idUsuario'] ?>
+                                                                }).done(function(data) {
+                                                                    var diasMes = eval(data);
+                                                                    for (var index in diasMes) {
+                                                                        var fecha = new Date(diasMes[index].fecha);
+                                                                        var fecha_local = new Date(fecha.valueOf() + fecha.getTimezoneOffset() * 60000);
+                                                                        $('[data-date="' + fecha_local.getDate() + '"][data-month="' + fecha_local.getMonth() + '"]')
+                                                                                .addClass('xdsoft_disabled');
+                                                                    }
                                                                 });
-                                                            });
-                                                            <?php endif; ?>
-                                                    },
-                                                    format: '<?= $this->session->userdata('boolHora') ? 'd/m/Y H:i' : 'd/m/Y' ?>',
-                                                    minDate: '<?= $inicio_calendario->format('Y/m/d') ?>',
-                                                    lang: 'es',
-                                                    dayOfWeekStart: 1,
-                                                    todayButton: false,
-                                                    lazyInit: true,
-                                                    timepicker: false,
-                                                    defaultSelect: false,
-                                                    roundTime: 'floor',
-                                                    allowBlank: true,
-                                                    defaultDate: '<?= $this->session->userdata('fecha') !== FALSE ? date('d/m/Y', strtotime($this->session->userdata('fecha'))) : ''; ?>',
-                                                    defaultTime: '<?= $this->session->userdata('boolHora') ? date('H:i', strtotime($this->session->userdata('fecha'))) : ''; ?>'
-                                                });
-                                            });
-                                        </script>
+                                                                $('.xdsoft_time_variant').css('margin-top', '0px');
+                                                            },
+                                                            onSelectDate: function(current_time, $input) {
+                                                                var fecha = $input[0].value;
+                                                                var dtp = this; //datetimepicker
+                                                                $.post('<?= base_url('chefs/horasDisponibles'); ?>', {
+                                                                    fecha: fecha,
+                                                                    idChef: <?= $datosChef['idUsuario'] ?>
+                                                                }).done(function(data) {
+                                                                    horas = eval(data);
+                                                                    var horaPre = new Date('1970/01/01 ' + horas[0]);
+                                                                    console.log(horaPre);
+                                                                    console.log(current_time);
+                                                                    dtp.setOptions({
+                                                                        timepicker: true,
+                                                                        allowTimes: horas,
+                                                                        defaultDate: current_time,
+                                                                        defaultTime: horaPre
+                                                                    });
+                                                                });
+                                                            },
+                                                            onSelectTime: function(ct) {
+                                                                $('#bool_hora<?= $idExperiencia; ?>').val('1');
+                                                                this.setOptions({
+                                                                    format: 'd/m/Y H:i',
+                                                                    defaultTime: ct,
+                                                                    value: parseDateValue(ct)
+                                                                });
+                                                            },
+                                                            onChangeDateTime: function(ct) {
+                                                                if ($('#bool_hora<?= $idExperiencia; ?>').val() === '1') {
+                                                                    this.setOptions({
+                                                                        value: parseDateValue(ct)
+                                                                    });
+                                                                }
+                                                            },
+                                                            onShow: function(ct) {
+                                                                    <?php if (form_error('bool_hora' . $idExperiencia) != '' OR $this->session->userdata('fecha')): ?>
+                                                                    var fecha = ct.toISOString();
+                                                                    var dtp = this; //datetimepicker
+                                                                    $.post('<?= base_url('chefs/horasDisponibles'); ?>', {
+                                                                        fecha: fecha,
+                                                                        idChef: <?= $datosChef['idUsuario'] ?>
+                                                                    }).done(function(data) {
+                                                                        var horas = eval(data);
+                                                                        dtp.setOptions({
+                                                                            timepicker: true,
+                                                                            allowTimes: horas,
+                                                                            defaultDate: ct
+                                                                        });
+                                                                    });
+                                                                    <?php endif; ?>
+                                                            },
+                                                            format: '<?= $this->session->userdata('boolHora') ? 'd/m/Y H:i' : 'd/m/Y' ?>',
+                                                            minDate: '<?= $inicio_calendario->format('Y/m/d') ?>',
+                                                            lang: 'es',
+                                                            dayOfWeekStart: 1,
+                                                            todayButton: false,
+                                                            lazyInit: true,
+                                                            timepicker: false,
+                                                            defaultSelect: false,
+                                                            roundTime: 'floor',
+                                                            allowBlank: true,
+                                                            defaultDate: '<?= $this->session->userdata('fecha') !== FALSE ? date('d/m/Y', strtotime($this->session->userdata('fecha'))) : ''; ?>',
+                                                            defaultTime: '<?= $this->session->userdata('boolHora') ? date('H:i', strtotime($this->session->userdata('fecha'))) : ''; ?>'
+                                                        });
+                                                    });
+                                                </script>
+                                            </div>
+                                        </div>
+                                        <div class="row-detalle">
+                                            <div class="titulo-datos">Tiempo que el chef estar&aacute; en tu casa</div>
+                                            <div class="row-info horario-evento">
+                                                <input id="duracion<?= $idExperiencia; ?>"
+                                                       name="duracion<?= $idExperiencia; ?>"
+                                                       class="input-vista-chef duracion"
+                                                       readOnly
+                                                       value="<?= set_value('duracion' . $idExperiencia, gmdate('H:i', $experiencia['tiempo' . $comensales_default] * 60 * 60)); ?>"
+                                                       /><span class="input-vista-chef duracion no-upper">Horas</span>
+                                            </div>
+                                        </div>
+                                        <div class="row-detalle">
+                                            <div class="titulo-datos">Precio por persona</div>
+                                            <div class="row-info total-evento">
+                                                <input type="text"
+                                                       id="precioporpersona<?= $idExperiencia; ?>"
+                                                       name="precioporpersona<?= $idExperiencia; ?>"
+                                                       class="input-vista-chef total"
+                                                       readonly
+                                                       value="<?= set_value('precioporpersona' . $idExperiencia, number_format($parametrosChef['4'] * $experiencia['tiempo' . $comensales_default] / $comensales_default, 0, ',', '.')); ?>"
+                                                       />
+                                            </div>
+                                        </div>
+                                        <div class="overflowauto">
+                                            <div class="titulo-datos">Total</div>
+                                            <div class="row-info total-evento">
+                                                <input type="text"
+                                                       id="total<?= $idExperiencia; ?>"
+                                                       name="total<?= $idExperiencia; ?>"
+                                                       class="input-vista-chef total"
+                                                       readonly
+                                                       value="<?= set_value('total' . $idExperiencia, number_format($parametrosChef['4'] * $experiencia['tiempo' . $comensales_default], 0, ',', '.')); ?>"
+                                                       />
+                                            </div>
+                                        </div>
+                                        <input type="hidden" name="id" value="<?= $idExperiencia; ?>">
+                                        <input type="hidden" name="fecha<?= $idExperiencia; ?>" id="fecha<?= $idExperiencia; ?>" />
                                     </div>
-                                </div>
-                                <div class="overflowauto row-detalle">
-                                    <div class="titulo-datos">Tiempo que el chef estar&aacute; en tu casa</div>
-                                    <div class="row-info horario-evento">
-                                        <input id="duracion<?= $idExperiencia; ?>"
-                                               name="duracion<?= $idExperiencia; ?>"
-                                               class="input-vista-chef duracion"
-                                               readOnly
-                                               value="<?= set_value('duracion' . $idExperiencia, gmdate('H:i', $experiencia['tiempo' . $comensales_default] * 60 * 60)); ?>"
-                                               /><span class="input-vista-chef duracion no-upper">Horas</span>
+                                    <?php if (form_error('invitados' . $idExperiencia) != '' OR form_error('horario' . $idExperiencia) != '' OR form_error('fecha' . $idExperiencia) != '' OR form_error('bool_hora' . $idExperiencia) != ''): ?>
+                                        <div class="compra-error">
+                                            <?php
+                                            echo form_error('invitados' . $idExperiencia, '<p>!', '¡</p>');
+                                            echo form_error('horario' . $idExperiencia, '<p>!', '¡</p>');
+                                            echo form_error('fecha' . $idExperiencia, '<p>!', '¡</p>');
+                                            echo form_error('bool_hora' . $idExperiencia, '<p>!', '¡</p>');
+                                            ?>
+                                        </div>
+                                    <?php endif; ?>
+                                    <div class="bg-rojo-oscuro-btn">
+                                        <?php $disabled = is_numeric($parametrosChef['4']) ? '' : 'disabled'; ?>
+                                        <input <?= $disabled; ?> class="btn-comprar" type="submit" value="Confirmar reserva"/>
                                     </div>
-                                </div>
-                                <div class="overflowauto row-detalle">
-                                    <div class="titulo-datos">Precio por persona</div>
-                                    <div class="row-info total-evento">
-                                        <input type="text"
-                                               id="precioporpersona<?= $idExperiencia; ?>"
-                                               name="precioporpersona<?= $idExperiencia; ?>"
-                                               class="input-vista-chef total"
-                                               readonly
-                                               value="<?= set_value('precioporpersona' . $idExperiencia, number_format($parametrosChef['4'] * $experiencia['tiempo' . $comensales_default] / $comensales_default, 0, ',', '.')); ?>"
-                                               />
-                                    </div>
-                                </div>
-                                <div class="overflowauto">
-                                    <div class="titulo-datos">Total</div>
-                                    <div class="row-info total-evento">
-                                        <input type="text"
-                                               id="total<?= $idExperiencia; ?>"
-                                               name="total<?= $idExperiencia; ?>"
-                                               class="input-vista-chef total"
-                                               readonly
-                                               value="<?= set_value('total' . $idExperiencia, number_format($parametrosChef['4'] * $experiencia['tiempo' . $comensales_default], 0, ',', '.')); ?>"
-                                               />
-                                    </div>
-                                </div>
-                                <input type="hidden" name="id" value="<?= $idExperiencia; ?>">
-                                <input type="hidden" name="fecha<?= $idExperiencia; ?>" id="fecha<?= $idExperiencia; ?>" />
+                                </form>
+                                <div></div>
+                                <div></div>
                             </div>
-                            <?php if (form_error('invitados' . $idExperiencia) != '' OR form_error('horario' . $idExperiencia) != '' OR form_error('fecha' . $idExperiencia) != '' OR form_error('bool_hora' . $idExperiencia) != ''): ?>
-                                <div class="compra-error">
-                                    <?php
-                                    echo form_error('invitados' . $idExperiencia, '<p>!', '¡</p>');
-                                    echo form_error('horario' . $idExperiencia, '<p>!', '¡</p>');
-                                    echo form_error('fecha' . $idExperiencia, '<p>!', '¡</p>');
-                                    echo form_error('bool_hora' . $idExperiencia, '<p>!', '¡</p>');
-                                    ?>
-                                </div>
-                            <?php endif; ?>
-                            <div class="bg-rojo-oscuro-btn">
-                                <?php $disabled = is_numeric($parametrosChef['4']) ? '' : 'disabled'; ?>
-                                <input <?= $disabled; ?> class="btn-comprar" type="submit" value="Confirmar reserva"/>
-                            </div>
-                        </form>
-                        <div></div>
-                        <div></div>
-                    </div>
+                        </div>                
+                    </div>                                           
                     <script>
                         $('#invitados<?= $idExperiencia; ?>').on("spinstop", function(event, ui) {
                             var total = 0;

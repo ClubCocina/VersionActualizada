@@ -15,35 +15,53 @@
             });
     });
 </script>
-<div id="nombre-chef">
-    <span><?= ucwords($datosChef['nombre'] . ' ' . $datosChef['apellidoPaterno']) ?></span>
-    <span class="social-buttons">
-        <a href="   
-http://facebook.com/sharer.php?u=<?= urlencode(base_url($chefLink))?>"><i class="fa fa-facebook"></i></a>
-        <a href="   
-https://twitter.com/intent/tweet?text=<?= urlencode(base_url($chefLink))?>"><i class="fa fa-twitter"></i></a>        
-    </span>
+<div id="nombre-chef" class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="col-md-10 col-sm-10 col-xs-8">
+            <div class="social-buttons"><?= ucwords($datosChef['nombre'] . ' ' . $datosChef['apellidoPaterno']) ?></div>
+        </div>        
+        <div class="col-md-2 col-sm-2 col-xs-4">
+            <div class="social-buttons">
+                <a href="   
+        http://facebook.com/sharer.php?u=<?= urlencode(base_url($chefLink))?>"><i class="fa fa-facebook"></i></a>
+                <a href="   
+        https://twitter.com/intent/tweet?text=<?= urlencode(base_url($chefLink))?>"><i class="fa fa-twitter"></i></a>        
+            </div>
+        </div>
+    </div>
 </div>
-<div id="slide-chef" style='position: relative'>
-    <img src="<?= isset($fotos['23']) ? base_url('images/' . $fotos['27']) : ''; ?>" alt="Imagen Portada"/>
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <!--img id="slide-chef" class="img-responsive" src="<?= isset($fotos['23']) ? base_url('images/' . $fotos['27']) : ''; ?>" alt="Imagen Portada"/-->
+        <div id="slide-chef" style='background-image: url(<?= isset($fotos['23']) ? base_url('images/' . $fotos['27']) : ''; ?>);'>
+            <!--div class="col-md-offset-9 col-md-3 col-sm-offset-9 col-sm-3 col-xs-12 foto-avatar-chef"-->
+            <div class="foto-avatar-chef">
+                <img class="img-responsive" src="<?= base_url('avatar/' . $datosChef['avatar']); ?>" /> 
+            </div> 
+        </div>
+    </div>
 </div>
-<div id="contenido-chef">
-    <div id="infochef" class="overflowauto centerbox">
-        <div id="contenedor-central" class="float-left">
+<div id="contenido-chef" class="row">
+    <div id="infochef" class="col-md-8 col-sm-8 col-xs-6">
+        <div id="contenedor-central" class="">
             <div id="metas">
                 <div class="titulo-tags white">Especialidades</div>
-                <div><?php if (!empty($tagsChef)): ?>
-                    <ul>
-                            <?php foreach ($tagsChef as $tagChef): ?>
-                                <li class="float-left display-tags">
-                                    <a href="<?= base_url('chefs/busquedaForm/' . $tagChef['idMetaKey']); ?>"><?= $this->functions->meta_a_ui($tagChef['nombreMeta']); ?></a>
-                                </li>
-                            <?php endforeach; ?>
-                        </ul>
+                <div>
+                    <?php if (!empty($tagsChef)): ?>
+                    <!--ul>
+                        <?php foreach ($tagsChef as $tagChef): ?>
+                            <li class="display-tags">
+                                <a href="<?= base_url('chefs/busquedaForm/' . $tagChef['idMetaKey']); ?>"><?= $this->functions->meta_a_ui($tagChef['nombreMeta']); ?></a>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul-->
+                    <?php foreach ($tagsChef as $tagChef): ?>
+                        <a class="btn btn-default tags-btn" href="<?= base_url('chefs/busquedaForm/' . $tagChef['idMetaKey']); ?>"><?= $this->functions->meta_a_ui($tagChef['nombreMeta']); ?></a>                        
+                    <?php endforeach; ?>
                     <?php endif; ?>
                 </div>
             </div>
-            <div id="descripcion">
+            <div id="descripcion" class="hidden-xs">
                 <?php foreach($descripcionesChef as $descripcion): ?>
                 <span class="titulo-descripcion"><?=$this->functions->meta_a_ui($descripcion['nombreMeta']); ?></span>
                 <p><?= $descripcion['dato']; ?></p>
@@ -57,22 +75,7 @@ https://twitter.com/intent/tweet?text=<?= urlencode(base_url($chefLink))?>"><i c
     </div>
 
     <!-- Columna derecha con detalles respecto al servicio que entrega el chef -->
-    <div id="cont-derecha" class="float-left">
-        <div class="foto-ver-chef">
-            <img src="<?= base_url('avatar/' . $datosChef['avatar']); ?>" /> 
-        </div>
-  <!--      <div id="resumen-reviews" class="bg-blanco">
-            <div class="globo-conteo">
-                <div class="float-left conteo">
-                    <?= $datosChef['conteo'] ?>
-                </div>
-                <div class="float-left reviews">Reviews</div>
-            </div>
-            <div class="positivo">
-                <div class="fork-rate"></div>
-                <div><a href="#comentarios" id="masreviews">Mira comentarios de sus clientes</a></div>
-            </div>
-        </div>  -->
+    <div id="cont-derecha" class="col-md-4 col-sm-4 col-xs-6">        
         <div id="precio" class="bg-rojo">
             <span class="preview-clp mayus">Desde</span>
             <br>
@@ -117,7 +120,7 @@ https://twitter.com/intent/tweet?text=<?= urlencode(base_url($chefLink))?>"><i c
 
     <!-- Experiencias -->
     <div id="experiencias-chef" class="clear">
-        <h3>Menú del Chef</h3>
+        <h3 class="menu-chef">Menú del Chef</h3>
         <!-- Mostrar experiencias -->
         <?php $this->load->view('detallechef/experiencias'); ?>
     </div>
