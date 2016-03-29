@@ -35,6 +35,7 @@ $maxTime = max($fines);
 ?>
 
 <?php
+date_default_timezone_set('America/Santiago');
 $diasMinimos = new DateInterval('P3D');
 $inicio_calendario = date_add(date_create(), $diasMinimos);
 ?>

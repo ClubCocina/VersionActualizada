@@ -3,6 +3,7 @@
         <p>El Chef no registra Experiencias</p>
     <?php else : ?>
         <?php
+        date_default_timezone_set('America/Santiago');
         $diasMinimos = new DateInterval('P3D');
         $inicio_calendario = date_add(date_create(), $diasMinimos);
         ?>
