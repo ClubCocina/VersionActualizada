@@ -1332,6 +1332,11 @@ li.nobottomline {
     margin-right: 10px;
 }
 
+.info-cotizador{
+    border-radius: 5px;
+    color: #FFF;
+}
+
 .datos-info {
     /*height: 194px;*/
     padding: 15px 5px 15px 13px;
@@ -2513,7 +2518,7 @@ span.ui-spinner {
 .avatar-chef{
     height: 80px;
     border-radius: 5px;
-    margin-left: -10px;
+    margin-left: 15px;
     margin-top: 10px;    
 }
 
@@ -2616,6 +2621,16 @@ span.ui-spinner {
     }
 }
 
+.container-cotizador{
+    margin-left: 16.6667%;
+}
+
+@media (min-width: 768px){
+    .container-cotizador{
+        margin-left: 0;
+    }
+}
+
 .row-info {
     margin-top: 3px;
 }
@@ -2644,6 +2659,14 @@ span.ui-spinner {
 
 .bg-rojo-oscuro-btn:hover{
     background-color: #FF1849 !important;
+}
+
+.bg-rojo-oscuro-btn-cotizador{
+    background: #FFAA22;
+}
+
+.bg-rojo-oscuro-btn-cotizador:hover{
+    background-color: #FF1849;    
 }
 
 .bg-blanco {

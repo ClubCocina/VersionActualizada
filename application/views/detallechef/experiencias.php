@@ -91,7 +91,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="cotizador<?= $idExperiencia; ?>" class="col-md-4 col-sm-4 col-xs-8 col-xs-offset-2 hidden-xs">
+                        <div id="cotizador<?= $idExperiencia; ?>" class="container-cotizador col-md-4 col-sm-4 col-xs-8 hidden-xs">
                             <div class="info-actividad bg-rojo">
                                 <div class="mayus bg-rojo-oscuro">
                                     <p class="titulo-cotizador">COTIZADOR</p>
