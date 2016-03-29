@@ -104,6 +104,30 @@
     </div>    
 </div>
 <script>
+    $(document).ready(function(){
+        /*$('.back').css('height', $('.front').height());
+        /*console.log('sin event load '+$('.front').height());
+        $('.front').load(function(){
+            console.log($('.front').height());
+        });
+        console.log('sin event load '+$('.front').height());
+        $('img-chef').on('load', function(){
+            console.log('CON event load '+$('.front').height());
+        });*/
+
+    });
+
+    var imgs = document.getElementsByClassName('img-chef');
+    imgs = imgs[imgs.length-2];
+    imgs.onload = function(){
+        var altura = document.getElementsByClassName('front')[0].offsetHeight;
+        var width = document.getElementsByClassName('front')[0].offsetWidth;
+        var backs = document.getElementsByClassName('back');        
+        for(var i = 0; i < backs.length; i++){
+            backs[i].style.height = altura+'px';
+            backs[i].style.width = width+'px';
+        }
+    }
     $('#carrusel-home').contentcarousel({
         navigationAt: 4
     });

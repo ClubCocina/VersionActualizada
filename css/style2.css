@@ -3607,7 +3607,7 @@ input::-webkit-inner-spin-button {
 
 .avatar > .back{
     top: 0;
-    left: 0;
+    overflow: hidden;
     position: absolute;
     -webkit-transform: perspective(600px) rotateY(180deg);
     transform: perspective(600px) rotateY(180deg);
