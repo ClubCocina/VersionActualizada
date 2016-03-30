@@ -187,10 +187,30 @@ a:visited {
 
 .header-top {
     /*padding-top: 18px;*/
-    height: 36px; 
+    height: 55px; 
     font-family: "SueEllen", sans-serif;
     font-size: 17px;
     letter-spacing: 0.4px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+@media (min-width: 768px){
+    .header-top{
+        height: 44px;
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+}
+
+.hidde-icons{
+    padding-left: 0%;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .hidde-icons{
+        padding-left: 20%;
+    }
 }
 
 .header-bot {
@@ -1659,6 +1679,17 @@ li.nobottomline {
     }
 }
 
+.margin-header{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+@media (min-width: 768px){
+    .margin-header{
+        margin-left: 8.3333%;
+        margin-right: 8.6667%;
+    }
+}
 
 #links-paginas {
     /*width: 830px;*/
@@ -3606,7 +3637,7 @@ input::-webkit-inner-spin-button {
 }
 
 #gorro-chef{
-    margin-left: 10px;
+    margin-left: 18px;
 }
 
 #all-chefs{
@@ -3667,6 +3698,44 @@ input::-webkit-inner-spin-button {
     font-weight: bold;   
 }
 
+.show-chef-text{
+    display: none !important;
+}
+
+.datos-chef-hidden{
+    display: block !important;
+}
+
+@media (min-width: 400px) and (max-width: 767px){
+    .show-chef-text{
+        display: block !important;
+    }
+
+    .datos-chef-hidden{
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px){    
+    .datos-chef-hidden{
+        display: none !important;
+    }
+
+    .datos-chef-hidden{
+        display: block !important;
+    }
+}
+
+@media (min-width: 1280px){
+    .show-chef-text{
+        display: block !important;
+    }
+
+    .datos-chef-hidden{
+        display: none !important;
+    }
+}
+
 .btn-experiencias{
     max-width: inherit;
     background-color: #FF1849;
@@ -3675,6 +3744,13 @@ input::-webkit-inner-spin-button {
     padding: 2px 8px;
     margin: 5px 0;
     font-size: 12px;
+    display: block !important;
+}
+
+@media (min-width: 768px) and (max-width: 1279px){    
+    .btn-experiencias{
+        display: none !important;
+    }
 }
 
 .btn-default:focus,
@@ -3724,6 +3800,20 @@ a {
 
 #header-nav-collapse:focus{
     background-color: transparent;
+}
+
+#bs-example-navbar-collapse-1{
+    margin-left: -60px;
+}
+
+.navbar-padding{
+    padding: 10px !important;
+}
+
+@media (min-width: 768px) and (max-width: 795px){
+    .navbar-padding{
+        padding: 10px 7px !important;
+    }
 }
 
 #container-footer{

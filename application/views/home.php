@@ -39,9 +39,9 @@
     <div class="col-md-3 col-sm-3 col-xs-12">
         <div id="conteo-home" class="bg-rojo">
             <div class="row">
-                <div id="nrochefs" class="col-md-5 col-sm-5 col-xs-5">
+                <div id="nrochefs" class="col-md-5 col-sm-5 col-xs-5 hidde-icons">
                     <div class="row">
-                        <div class="col-md-7 col-xs-7 col-sm-7">
+                        <div class="col-md-7 col-xs-7 hidden-sm">
                             <img id="gorro-chef" class="img-responsive" src="<?= base_url('images/gorroChef.png'); ?>" alt="imagen conteo chef"/>
                         </div>
                         <div class="col-md-5 col-sm-5 col-xs-5">
@@ -50,10 +50,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-6 col-xs-6">                    
+                <div class="col-md-6 col-sm-6 col-xs-6 hidde-icons">                    
                     <a class="experiencias-home" href="<?= base_url('home/ver_experiencias')?>">
                         <div class="row">
-                            <div class="col-md-6 col-sm-6 col-xs-6">
+                            <div class="col-md-6 col-xs-6 hidden-sm">
                                 <img class="img-responsive" src="<?= base_url('images/imagenPlato.png'); ?>" alt="imagen conteo platos"/>
                             </div>
                             <div id="experiencias-conteo" class="col-md-5 col-sm-5 col-xs-5">
@@ -94,10 +94,10 @@
                             </div>
                             <div class="back col-md-12 col-sm-12 col-xs-12">
                                 <h2 class="nombre-chef-carrusel"><a href="<?= base_url($urlChef); ?>"><?= $chef['nombre'] . ' ' . $chef['apellidoPaterno']; ?></a></h2>
-                                <p class="hidden-xs hidden-sm">
+                                <p class="show-chef-text">
                                     <?= isset($chef['dato']) && $chef['dato'] != '' ? $chef['dato'] : '' ?>
                                 </p>
-                                <p class="datos-chef-hidden hidden-md hidden-lg">¡Conoce las experiencias!</p>
+                                <p class="datos-chef-hidden">¡Conoce las experiencias!</p>
                                 <a class="btn btn-danger btn-experiencias" href="<?= base_url($urlChef); ?>">Las experiencias</a>
                             </div>
                         </div>
@@ -108,28 +108,19 @@
     </div>
 </div>
 <script>
-    $(document).ready(function(){
-        /*$('.back').css('height', $('.front').height());
-        /*console.log('sin event load '+$('.front').height());
-        $('.front').load(function(){
-            console.log($('.front').height());
-        });
-        console.log('sin event load '+$('.front').height());
-        $('img-chef').on('load', function(){
-            console.log('CON event load '+$('.front').height());
-        });*/
-
-    });
-
     var imgs = document.getElementsByClassName('img-chef');
     imgs = imgs[imgs.length-2];
     imgs.onload = function(){
-        var altura = document.getElementsByClassName('front')[0].offsetHeight;
-        var width = document.getElementsByClassName('front')[0].offsetWidth;
+        //var altura = document.getElementsByClassName('front')[0].offsetHeight;
+        var altura = document.getElementsByClassName('img-chef')[0].offsetHeight;
+        //var width = document.getElementsByClassName('front')[0].offsetWidth;
+        var width = document.getElementsByClassName('img-chef')[0].offsetWidth;
         var backs = document.getElementsByClassName('back');        
+        var imgsChef = document.getElementsByClassName('img-chef');
         for(var i = 0; i < backs.length; i++){
             backs[i].style.height = altura+'px';
             backs[i].style.width = width+'px';
+            imgsChef[i].style.height = altura+'px';
         }
     }
     $('#carrusel-home').contentcarousel({
