@@ -633,7 +633,8 @@ a:visited {
 }
 
 .buscador input {
-    height: 95%;
+    height: 100%;
+    width: 100%;
     font-size: 19px;
     text-transform: uppercase;
     background: rgba(0,0,0,0.7);
@@ -641,6 +642,7 @@ a:visited {
     border: none;
     font-family: "SueEllen";
     cursor: pointer;
+    margin: auto 0;
 }
 
 
@@ -3300,7 +3302,7 @@ div.thumb-sf {
 
 
 .buscador.interior input, .buscador.interior .nombrechef-buscador{
-    font-size: 17px !important;
+    font-size: 16px !important;
     width: 99.5% !important;
     border-radius: 2px;
     letter-spacing: 1px;

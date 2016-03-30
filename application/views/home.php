@@ -38,7 +38,7 @@
     </div>
     <div class="col-md-3 col-sm-3 col-xs-12">
         <div id="conteo-home" class="bg-rojo">
-            <div class="row">
+            <div id="row-conteo" class="row">
                 <div id="nrochefs" class="col-md-5 col-sm-5 col-xs-5 hidde-icons">
                     <div class="row">
                         <div class="col-md-7 col-xs-7 hidden-sm">
@@ -111,9 +111,7 @@
     var imgs = document.getElementsByClassName('img-chef');
     imgs = imgs[imgs.length-2];
     imgs.onload = function(){
-        //var altura = document.getElementsByClassName('front')[0].offsetHeight;
         var altura = document.getElementsByClassName('img-chef')[0].offsetHeight;
-        //var width = document.getElementsByClassName('front')[0].offsetWidth;
         var width = document.getElementsByClassName('img-chef')[0].offsetWidth;
         var backs = document.getElementsByClassName('back');        
         var imgsChef = document.getElementsByClassName('img-chef');
@@ -123,6 +121,26 @@
             imgsChef[i].style.height = altura+'px';
         }
     }
+    /*
+    $(window).ready(function(){
+        var carruselHeight = document.getElementById('carousel-home').offsetHeight;
+        var conteo = document.getElementById('conteo-home');
+        var addHeight = parseInt((carruselHeight - conteo.offsetHeight)/2);
+        console.log(addHeight);
+    });
+    */
+
+    var imgCarrusel = document.getElementsByClassName('img-slide');
+    imgCarrusel = imgCarrusel[imgCarrusel.length-1];
+    imgCarrusel.onload = function(){
+        var carruselHeight = document.getElementById('carousel-home').offsetHeight;
+        var conteo = document.getElementById('conteo-home').offsetHeight;
+        var addHeight = parseInt((carruselHeight - conteo)/2);
+        var rowConteo = document.getElementById('row-conteo');
+        
+        rowConteo.style.padding = addHeight+'px 0px';        
+    }
+
     $('#carrusel-home').contentcarousel({
         navigationAt: 4
     });
