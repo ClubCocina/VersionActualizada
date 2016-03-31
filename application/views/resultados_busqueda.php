@@ -19,59 +19,6 @@
                 </form>
             </div>
         </div>
-        <!--div class="row">
-            <div id="display-tags" class="col-xs-6 col-xs-offset-2 hidden-sm hidden-md">
-                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <div class="panel panel-default filtro-tags2">
-                        <div class="panel-heading filtro-tags2" role="tab" id="headingOne">
-                            <h6 class="especialidades2">
-                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                  Especialidades
-                                </a>
-                            </h6>
-                        </div>
-                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-                            <?php foreach ($tags as $tag) : ?>
-                                <?php
-                                $tagsSession = $this->session->userdata('tag') ? $this->session->userdata('tag') : array();
-                                $checked = in_array($tag['idMetaKey'], $tagsSession) ? 'checked' : '';
-                                
-                                ?>
-                                <div class="tag-row">
-                                    <label for="tag<?= $tag['idMetaKey']; ?>2"><?= $this->functions->meta_a_ui($tag['nombreMeta']); ?></label>
-                                    <input 
-                                        type="checkbox" 
-                                        name="tags" 
-                                        <?= $checked; ?> 
-                                        id="tag<?= $tag['idMetaKey']; ?>2" 
-                                        value="<?= $tag['idMetaKey']; ?>2"
-                                        <?= $tag['idMetaKey'] == $this->session->userdata('tagSeleccionado') ? 'disabled' : ''; ?>
-                                        />
-                                </div>
-                                <script>
-                                    $("#tag<?= $tag['idMetaKey']; ?>2").click(function() {
-                                        var url = '';
-                                        $.blockUI({ message: $('#mensaje-carga') }); 
-                                        if ($(this).is(':checked')){
-                                            console.log('entra');
-                                            url = "<?= base_url('chefs/filtroTag/agregar'); ?>";                                            
-                                        }
-                                        else{
-                                            console.log('quita D:');
-                                            url = "<?= base_url('chefs/filtroTag/quitar'); ?>";   
-                                        }
-                                        $.post(url, {tags: $(this).val()}).done(function(data) {
-                                            $('#result').html(data);
-                                            $.unblockUI();
-                                        });
-                                    });
-                                </script>
-                            <?php endforeach; ?>
-                        </div>
-                    </div>
-                </div>                
-            </div>
-        </div-->
         <div id="result-container" class="row">
             <div id="filtro-tags" class="col-md-3 col-sm-3 hidden-xs">
                 <div><span class="mayus titulo-info">Especialidades</span></div>
@@ -123,16 +70,12 @@
                         <?php foreach ($chefs as $chef): ?>
                             <li class="">
                                 <div class="col-md-12 col-sm-12 col-xs-12 one-chef">
-                                    <!--div class="preview-chef"-->
                                     <div class="">
                                         <a href="<?= base_url('chefs/verDatosChef/' . $chef['idUsuario']); ?>">                                        
-                                            <!--div class="overflowauto"-->
                                             <div class="row">
-                                                <!--div class="main-dish"-->
                                                 <div class="col-md-8 col-sm-8 col-xs-8 no-padding">
-                                                    <img class="img-responsive white-border" src="<?= isset($chef['fotos']['23']) ? base_url('images/' . $chef['fotos']['23']) : ''; ?>" alt="foto plato 1"/>
+                                                    <img class="main-dish-img img-responsive white-border" src="<?= isset($chef['fotos']['23']) ? base_url('images/' . $chef['fotos']['23']) : ''; ?>" alt="foto plato 1"/>
                                                 </div>
-                                                <!--div class="second-dish"-->
                                                 <div class="col-md-3 col-sm-3 col-xs-3 no-padding mini-dish">
                                                     <div>
                                                         <img class="img-responsive white-border" src="<?= isset($chef['fotos']['24']) ? base_url('images/' . $chef['fotos']['24']) : ''; ?>" alt="foto plato 2"/>
@@ -141,10 +84,6 @@
                                                         <img class="img-responsive white-border" src="<?= isset($chef['fotos']['25']) ? base_url('images/' . $chef['fotos']['25']) : ''; ?>" alt="foto plato 3"/>
                                                     </div>                                                
                                                 </div>
-                                                <!--div class="third-dish"-->
-                                                <!--div class="col-md-3 no-padding">
-                                                    <img class="img-responsive white-border" src="<?= isset($chef['fotos']['25']) ? base_url('images/' . $chef['fotos']['25']) : ''; ?>" alt="foto plato 3"/>
-                                                </div-->
                                             </div>
                                             <div class="row">
                                                 <!--div class="preview-left-bot overflowauto"-->
@@ -176,7 +115,7 @@
                                                             });
                                                         });
                                                     </script>                                                
-                                                    <div class="col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1 no-padding ">
+                                                    <div class="col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1 no-padding ">
                                                         <div class="precio-preview bg-rojo">
                                                             <span class="preview-clp mayus">Valores desde </span>
                                                             <br>
@@ -206,6 +145,17 @@
     </div>    
 </div>
 <script>
+    var miniDish = document.getElementsByClassName('mini-dish');
+    var mainDish = document.getElementsByClassName('main-dish-img');
+    mainDishAux = mainDish[mainDish.length-1];
+    miniDish = miniDish[miniDish.length-1];
+    mainDishAux.onload = function(){
+        var height = miniDish.offsetHeight;
+        for(i = 0; i < mainDish.length; i++){
+            mainDish[i].style.height = height+'px';
+        }        
+    }
+
     $(document).ready(function() {
         $("ul.pagination").quickPagination({pageSize: "10"});
     });

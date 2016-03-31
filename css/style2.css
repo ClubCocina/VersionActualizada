@@ -1942,7 +1942,6 @@ li.nobottomline {
 }
 
 .mini-dish{
-    padding-bottom: 10px !important;
     background-color: rgba(255, 255, 255, 0.7);
 }
 
@@ -1956,6 +1955,10 @@ li.nobottomline {
 
 .show-dishs{
     margin-right: -35px;
+}
+
+.main-dish-img{
+    width: 100%;
 }
 
 .avatar-preview-chef{
@@ -2570,6 +2573,13 @@ span.ui-spinner {
     .foto-avatar-chef > img {
         border: 2px solid #FFF;
         margin-left: 64%;
+    }    
+}
+
+@media (min-width: 1200px){
+    .foto-avatar-chef > img {
+        border: 2px solid #FFF;
+        margin-left: 72%;
     }    
 }
 
