@@ -2,13 +2,13 @@
 <div id="result" class="row">
     <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1">
         <div id="barra-info" class="mayus row">
-            <div class="resultado-texto col-md-10 col-sm-10 hidden-xs">
+            <div class="resultado-texto col-md-10 col-sm-10 col-lg-10 hidden-xs">
                 <span >Chefs disponibles en <?= isset($comunaNombre) ? $comunaNombre : 'todas las comunas'; ?></span>
                 <span class=" hidden-sm">para el día: <?= isset($fecha) ? $fecha : 'sin fecha'?></span>
             </div>
-            <div class="col-md-2 col-sm-2 col-xs-4">
+            <div class="col-md-2 col-sm-2 col-xs-4 col-lg-2">
                 <form action="<?= base_url('') ?>">
-                    <div class="constraint-select">
+                    <div id="select-ordenar" class="constraint-select">
                         <select name="ordenar" class="ordenar">
                             <?php $orden = $this->session->userdata('orden'); ?>
                             <option value="">Ordenar</option>

@@ -109,6 +109,7 @@
                         <div class="info-cotizador bg-rojo">
                             <a href="<?= base_url('chef/'.$experiencia['chef'][0]['link']);?>">
                                 <img class="avatar-chef" src="<?= base_url('avatar/' . $experiencia['chef'][0]['avatar']); ?>" /> 
+                                <br>
                                 <span class="mayus titulo-info nombre-chef-avatar">
                                     <?= $experiencia['chef'][0]['nombre'].' '.$experiencia['chef'][0]['apellidoPaterno'] ?>
                                 </span>
@@ -283,7 +284,9 @@
                                                    class="input-vista-chef duracion no-padding"
                                                    readOnly
                                                    value="<?= set_value('duracion' . $experiencia['idExperiencia'], gmdate('H:i', $experiencia['tiempo' . $comensales_default] * 60 * 60)); ?>"
-                                                   /><span class="input-vista-chef duracion no-upper">Horas</span>
+                                                   />
+                                                   <span class="input-vista-chef duracion no-upper hidden-xs hidden-sm">Horas</span>
+                                                   <span class="input-vista-chef duracion no-upper hidden-md hidden-lg">Hrs</span>
                                         </div>
                                     </div>
                                     <div class="overflowauto row-detalle">

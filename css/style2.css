@@ -665,9 +665,15 @@ a:visited {
 
 .ordenar{
     font-size: 16px !important;
-    min-width: 125px !important;
+    /*min-width: 125px !important;
+    max-width: 160px !important;*/
+    width: 130px !important;
     padding-left: 3px;
     padding-top: 2px;
+}
+
+#select-ordenar{
+    width: 85px !important;
 }
 
 .buscador input::-webkit-input-placeholder {
@@ -2073,10 +2079,23 @@ li.nobottomline {
 
 .precio-preview {
     /*width:137px;*/
-    /*height: 71px;*/
+    /*height: 71px;*/    
+    width: auto;
     font-weight: 700;
     padding: 15px;
     margin-right: -10px;
+}
+
+@media (min-width: 992px){
+    .precio-preview{
+        width: 150%;
+    }
+}
+
+@media (min-width: 1280px){
+    .precio-preview{
+        width: 130%;
+    }
 }
 
 .preview-clp {
@@ -2112,6 +2131,12 @@ li.nobottomline {
     line-height: 40px;
     font-size: 120% !important;
     color: #FFFFFF;
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    .preview-valor{
+        font-size: 110% !important;
+    }
 }
 
 .barra-raty > img {
@@ -2262,8 +2287,15 @@ li.nobottomline {
     padding: 14px 0px 10px 28px;
     border-radius: 5px;
     letter-spacing: 2px;
-    width: 83.333%;
-    margin-left: 8.333%;
+    /*width: 83.333%;
+    margin-left: 8.333%;*/
+}
+
+@media (min-width: 768px){
+    .menu-chef{
+        width: 83.333%;
+        margin-left: 8.333%;       
+    }
 }
 
 .titulo-fantasia {
@@ -2388,7 +2420,7 @@ li.nobottomline {
     font-size: 16px;
     margin-top: 2px;
     /*text-transform: uppercase;*/
-    width: 100%;
+    width: 80%;
     margin-left: 3px;
     padding: 6px;
     /*height: 22px;*/
@@ -2606,6 +2638,7 @@ span.ui-spinner {
 .nombre-chef-avatar{
     padding: 0;
     margin-bottom: -20px;
+    padding-left: 15px;
 }
 
 #calendario{
@@ -3122,6 +3155,16 @@ span.ui-spinner {
 
 .ui-datepicker td span, .ui-datepicker td a{
     height:  20px;
+}
+
+.datepick{
+    max-width: 70%;
+}
+
+@media (min-width: 769px){
+    .datepick{
+        max-width: 80%;
+    }
 }
 
 .fixed{
