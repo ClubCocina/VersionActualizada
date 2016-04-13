@@ -98,7 +98,7 @@
                                                         <img class="img-responsive avatar-preview-chef white-border" src="<?= base_url('avatar/' . $imgChef); ?>" alt="miniatura avatar chef" />
                                                     </div>
                                                     <div class="preview-nombre col-md-4 col-sm-4 col-xs-4 no-padding ">
-                                                        <?= ucwords($chef['nombre'] . " " . $chef['apellidoPaterno'] . (!empty($chef['apellidoMaterno']) ? " " . $chef['apellidoMaterno'][0] : '')) . "."; ?>
+                                                        <?= ucwords($chef['nombre'] . " " . $chef['apellidoPaterno'] . (!empty($chef['apellidoMaterno']) ? " " . $chef['apellidoMaterno'][0] : '')) ; ?>
                                                         <div id="barra-general<?= $chef['idUsuario']; ?>" class="barra-raty"></div>
                                                     </div>
                                                     <!--div id="grafica-review<?= $chef['idUsuario']; ?>" class="review-prev col-md-4">
@@ -115,7 +115,7 @@
                                                             });
                                                         });
                                                     </script>                                                
-                                                    <div class="col-md-2 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-5 col-xs-offset-1 no-padding ">
+                                                    <div class="col-md-2 col-sm-3 col-xs-4 col-xs-offset-1 no-padding ">
                                                         <div class="precio-preview bg-rojo">
                                                             <span class="preview-clp mayus">Valores desde </span>
                                                             <br>
@@ -152,7 +152,7 @@
     mainDishAux.onload = function(){
         var height = miniDish.offsetHeight;
         for(i = 0; i < mainDish.length; i++){
-            mainDish[i].style.height = height+'px';
+            mainDish[i].style.height = (height+1)+'px';
         }        
     }
 
