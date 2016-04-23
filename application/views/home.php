@@ -108,39 +108,47 @@
     </div>
 </div>
 <script>
-    var imgs = document.getElementsByClassName('img-chef');
-    imgs = imgs[imgs.length-2];
-    imgs.onload = function(){
-        var altura = document.getElementsByClassName('img-chef')[0].offsetHeight;
-        var width = document.getElementsByClassName('img-chef')[0].offsetWidth;
-        var backs = document.getElementsByClassName('back');        
-        var imgsChef = document.getElementsByClassName('img-chef');
-        for(var i = 0; i < backs.length; i++){
-            backs[i].style.height = altura+'px';
-            backs[i].style.width = width+'px';
-            imgsChef[i].style.height = altura+'px';
-        }
-    }
-    /*
-    $(window).ready(function(){
-        var carruselHeight = document.getElementById('carousel-home').offsetHeight;
-        var conteo = document.getElementById('conteo-home');
-        var addHeight = parseInt((carruselHeight - conteo.offsetHeight)/2);
-        console.log(addHeight);
+    $(document).ready(function(){
+        $('.img-chef').last().ready(function(){
+            console.log('entra en el load de los chef');
+            var altura = document.getElementsByClassName('img-chef')[0].offsetHeight;
+            var width = document.getElementsByClassName('img-chef')[0].offsetWidth;
+            var backs = document.getElementsByClassName('back');        
+            var imgsChef = document.getElementsByClassName('img-chef');
+            for(var i = 0; i < backs.length; i++){
+                backs[i].style.height = altura+'px';
+                backs[i].style.width = width+'px';
+                imgsChef[i].style.height = altura+'px';
+            }
+        });
+
+        $('.img-slide').last().ready(function(){
+            var carruselHeight = document.getElementById('carousel-home').offsetHeight;
+            var conteo = document.getElementById('conteo-home').offsetHeight;
+            var addHeight = parseInt((carruselHeight - conteo)/2);
+            var rowConteo = document.getElementById('row-conteo');
+            
+            rowConteo.style.padding = addHeight+'px 0px';
+        });
+        /*
+        var imgCarrusel = document.getElementsByClassName('img-slide');
+        imgCarrusel = imgCarrusel[imgCarrusel.length-1];
+        console.log(imgCarrusel);
+        imgCarrusel.onload = function(){
+            var carruselHeight = document.getElementById('carousel-home').offsetHeight;
+            var conteo = document.getElementById('conteo-home').offsetHeight;
+            var addHeight = parseInt((carruselHeight - conteo)/2);
+            var rowConteo = document.getElementById('row-conteo');
+            
+            rowConteo.style.padding = addHeight+'px 0px';        
+            console.log('igualando la altura con el carrusel');
+        } 
+        */
     });
-    */
-
-    var imgCarrusel = document.getElementsByClassName('img-slide');
-    imgCarrusel = imgCarrusel[imgCarrusel.length-1];
-    imgCarrusel.onload = function(){
-        var carruselHeight = document.getElementById('carousel-home').offsetHeight;
-        var conteo = document.getElementById('conteo-home').offsetHeight;
-        var addHeight = parseInt((carruselHeight - conteo)/2);
-        var rowConteo = document.getElementById('row-conteo');
-        
-        rowConteo.style.padding = addHeight+'px 0px';        
-    }
-
+    
+    
+</script>
+<script>
     $('#carrusel-home').contentcarousel({
         navigationAt: 4
     });
