@@ -469,8 +469,8 @@ a:visited {
 }
 
 #content-panel {
-    width: 980px;
-    margin: 0 auto;
+    /*width: 980px;
+    margin: 0 auto;*/
 
 }
 
@@ -1107,11 +1107,10 @@ li.nobottomline {
 }
 
 #container-form {
-
     color: #FFFFFF;
     font-size: 17px;
     font-style: italic;
-    position: relative;
+    /*position: relative;*/
 }
 
 .error-form-panel {
@@ -1121,19 +1120,22 @@ li.nobottomline {
     background: #DF1E49
 }
 
+.campo-conf{
+    color: #333;
+}
+
 #datos-configuracion input.apellido {
-    width: 168px;
+    width: 100%;
 }
 
 #datos-configuracion {
-    width: 360px;
+    /*width: 360px;*/
     padding:19px 33px 0px 41px;
 }
 
 #datos-configuracion input {
     width: 100%;
     height: 21px;
-
     font-size: 17px;
     margin-bottom: 29px;
     margin-top: 6px;
@@ -1142,14 +1144,23 @@ li.nobottomline {
 #datos-configuracion label {
     height: 16px;
     line-height: 16px;
+    color: #fff;
+}
+
+.row-margin-bottom{
+    margin-bottom: 30px;
+}
+
+.upload-file{
+    width: 100%;
 }
 
 #avatar-configuracion {
-    width: 508px;
-    margin-left: 24px;
+    /*width: 508px;*/
+    /*margin-left: 24px;*/
     margin-top: 36px;
     margin-bottom: 29px;
-    overflow: hidden;
+    /*overflow: hidden;*/
 }
 
 #titulo-avatar {
@@ -1183,7 +1194,7 @@ li.nobottomline {
 }
 
 .medio-div {
-    width: 160px;
+    /*width: 160px;*/
 }
 
 .gap-region-comuna {
@@ -1209,10 +1220,18 @@ li.nobottomline {
 }
 
 #header-panel {
-    height: 106px;
+    /*height: 106px;*/
     background-color: #FFAA22;
     padding: 16px 30px 0px 40px;
     margin-top: 17px;
+}
+
+.menu-panel-item{
+    color: #ffffff;
+    font-size: 22px;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333333;
 }
 
 #header-panel li.menu-panel-item {
@@ -1300,7 +1319,7 @@ li.nobottomline {
 
 #form-panel {
     margin-top: 30px;
-    width: 980px;
+    /*width: 980px;*/
 }
 
 #container-form {
@@ -3616,7 +3635,7 @@ input::-webkit-inner-spin-button {
 }
 
 .container-imagen {
-    height: 290px;
+    /*height: 290px;*/
 }
 
 #aviso-terminos-condiciones {

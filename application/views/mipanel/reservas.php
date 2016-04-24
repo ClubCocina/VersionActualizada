@@ -5,13 +5,13 @@
 </script>
 <div>
     <?php $this->load->view('mipanel/menu') ?>
-    <div id="content-panel">
+    <div id="content-panel" class="col-xs-10 col-xs-offset-1">
         <?php if (empty($actividades)): ?>
             <div id="no-data">
                 <h2>No existen registros</h2>
             </div>
         <?php else: ?>
-            <div id="reservas" class="overflowauto">
+            <div id="reservas" class="">
                 <?php $contador = 1 ?>
                 <ul class="pagination reservas">
                     <?php foreach ($actividades as $actividad): ?>
