@@ -1,4 +1,4 @@
-<style>
+<!--style>
     h1 {
         font-size: 32px;
         font-weight: 700;
@@ -48,11 +48,25 @@
         font-style: italic;
     }
 
-</style>
-<div id="content-nosotros" class="bg-color-general">
-    <div id="texto-nosotros">
-        <div class="titulo-contacto mayus"><?= $pagina['titulo']; ?></div>
-        <div><?= $pagina['bajada']; ?></div>
-        <div><?= $pagina['contenido'] ?></div>
+</style-->
+<div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+    <div id="content-nosotros" class="bg-color-general">
+            <div id="texto-nosotros">
+                <div class="titulo-contacto mayus"><?= $pagina['titulo']; ?></div>
+                <div><?= $pagina['bajada']; ?></div>
+                <div><?= $pagina['contenido'] ?></div>
+            </div>
+        </div>
     </div>
 </div>
+<script>
+    $(document).ready(function(){
+        if($("iframe").attr('src')){
+            console.log($("iframe").attr('src'));
+            $("iframe").removeAttr('width');
+            $("iframe").removeAttr('height');
+            $("iframe").addClass('embed-responsive-item');
+        }
+    });
+</script>

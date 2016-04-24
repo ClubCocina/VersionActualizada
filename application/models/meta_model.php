@@ -1,4 +1,4 @@
-<?
+<?php
 
 class meta_model extends CI_Model {
 

@@ -145,16 +145,16 @@
     </div>    
 </div>
 <script>
-    var miniDish = document.getElementsByClassName('mini-dish');
-    var mainDish = document.getElementsByClassName('main-dish-img');
-    mainDishAux = mainDish[mainDish.length-1];
-    miniDish = miniDish[miniDish.length-1];
-    mainDishAux.onload = function(){
+    $('.main-dish-img').last().ready(function(){
+        var miniDish = document.getElementsByClassName('mini-dish');
+        var mainDish = document.getElementsByClassName('main-dish-img');
+        mainDishAux = mainDish[mainDish.length-1];
+        miniDish = miniDish[miniDish.length-1];
         var height = miniDish.offsetHeight;
         for(i = 0; i < mainDish.length; i++){
             mainDish[i].style.height = (height+1)+'px';
-        }        
-    }
+        }
+    });
 
     $(document).ready(function() {
         $("ul.pagination").quickPagination({pageSize: "10"});

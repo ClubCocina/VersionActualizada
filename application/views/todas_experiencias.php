@@ -91,7 +91,7 @@
                                 <img src="<?= base_url('images/experiencias/' . $experiencia['imagen']); ?>" alt="imagen experiencia <?= $experiencia['nombre'] ?>"/>
                             </div>
                             <p class="descripcion-fantasia"><?= $experiencia['descripcion']; ?></p><br>
-                            <div class="hidden-sm hidden-md">
+                            <div class="hidden-sm hidden-md hidden-lg">
                                 <button id="platos-btn<?= $experiencia['idExperiencia']; ?>" class="btn btn-default btn-xs-option btn-xs-option-active">Platos</button>
                                 <button id="cotizador-btn<?= $experiencia['idExperiencia']; ?>" class="btn btn-default btn-xs-option">Cotizador</button>
                             </div>
