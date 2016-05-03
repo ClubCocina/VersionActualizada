@@ -145,7 +145,7 @@
     </div>    
 </div>
 <script>
-    $('.main-dish-img').last().ready(function(){
+    $('.mini-dish').last().ready(function(){
         var miniDish = document.getElementsByClassName('mini-dish');
         var mainDish = document.getElementsByClassName('main-dish-img');
         mainDishAux = mainDish[mainDish.length-1];
