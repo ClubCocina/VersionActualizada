@@ -81,7 +81,7 @@
                                                         <img class="img-responsive white-border" src="<?= isset($chef['fotos']['24']) ? base_url('images/' . $chef['fotos']['24']) : ''; ?>" alt="foto plato 2"/>
                                                     </div>
                                                     <div>
-                                                        <img class="img-responsive white-border" src="<?= isset($chef['fotos']['25']) ? base_url('images/' . $chef['fotos']['25']) : ''; ?>" alt="foto plato 3"/>
+                                                        <img class="img-responsive white-border mini-dish-2" src="<?= isset($chef['fotos']['25']) ? base_url('images/' . $chef['fotos']['25']) : ''; ?>" alt="foto plato 3"/>
                                                     </div>                                                
                                                 </div>
                                             </div>
@@ -145,15 +145,27 @@
     </div>    
 </div>
 <script>
-    $('.mini-dish').last().ready(function(){
-        var miniDish = document.getElementsByClassName('mini-dish');
-        var mainDish = document.getElementsByClassName('main-dish-img');
-        mainDishAux = mainDish[mainDish.length-1];
-        miniDish = miniDish[miniDish.length-1];
-        var height = miniDish.offsetHeight;
-        for(i = 0; i < mainDish.length; i++){
-            mainDish[i].style.height = (height+1)+'px';
-        }
+    $(document).ready(function(){
+        $('.main-dish-img').last().ready(function(){
+            $('.mini-dish-2').last().load(function(){
+                var miniDish = document.getElementsByClassName('mini-dish');
+                var mainDish = document.getElementsByClassName('main-dish-img');
+                miniDish = miniDish[miniDish.length-1];
+                var height = miniDish.offsetHeight;
+                for(i = 0; i < mainDish.length; i++){
+                    mainDish[i].style.height = (height+1)+'px';
+                }
+            });
+            $('.mini-dish-2').last().ready(function(){
+                var miniDish = document.getElementsByClassName('mini-dish');
+                var mainDish = document.getElementsByClassName('main-dish-img');
+                miniDish = miniDish[miniDish.length-1];
+                var height = miniDish.offsetHeight;
+                for(i = 0; i < mainDish.length; i++){
+                    mainDish[i].style.height = (height+1)+'px';
+                }
+            });
+        });
     });
 
     $(document).ready(function() {
