@@ -81,7 +81,7 @@
                                     <p class="descripcion-fantasia"><?= $experiencia['descripcion']; ?></p><br>
                                     <div class="hidden-sm hidden-md hidden-lg">
                                         <button id="platos-btn<?= $idExperiencia; ?>" class="btn btn-default btn-xs-option btn-xs-option-active">Platos</button>
-                                        <button id="cotizador-btn<?= $idExperiencia; ?>" class="btn btn-default btn-xs-option">Cotizador</button>
+                                        <button id="cotizador-btn<?= $idExperiencia; ?>" class="btn btn-default btn-xs-option">Comprar</button>
                                     </div>
                                     <div id="platos-experiencia<?= $idExperiencia; ?>" class="show">
                                         <?php foreach ($experiencia['platos'] as $plato): ?>

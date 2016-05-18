@@ -117,7 +117,7 @@
                                                     </script>                                                
                                                     <div class="col-md-2 col-sm-3 col-xs-4 col-xs-offset-1 no-padding ">
                                                         <div class="precio-preview bg-rojo">
-                                                            <span class="preview-clp mayus">Valores desde </span>
+                                                            <span class="preview-clp">Valores desde </span>
                                                             <br>
                                                             <div class="preview-valor">
                                                                 <? //is_numeric($chef['precio_persona']) ? number_format($chef['precio_persona'], 0, ',', '.') : 0; 
