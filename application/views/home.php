@@ -38,17 +38,19 @@
     </div>
     <div class="col-md-3 col-sm-3 col-xs-12">
         <div id="conteo-home" class="bg-rojo">
+            <div class="contadores">Click para ver</div>
             <div id="row-conteo" class="row">
                 <div id="nrochefs" class="col-md-5 col-sm-5 col-xs-5 hidde-icons">
-                    <div class="row">
-                        <div class="col-md-7 col-xs-7 hidden-sm">
-                            <img id="gorro-chef" class="img-responsive" src="<?= base_url('images/gorroChef.png'); ?>" alt="imagen conteo chef"/>
+                    <a class="experiencias-home" href="<?= base_url('home/ver_experiencias')?>">
+                        <div class="row">
+                            <div class="col-md-7 col-xs-7 hidden-sm">
+                                <img id="gorro-chef" class="img-responsive" src="<?= base_url('images/gorroChef.png'); ?>" alt="imagen conteo chef"/>
+                            </div>
+                            <div class="col-md-5 col-sm-5 col-xs-5">
+                                <div class="conteo"><?= $nro_chefs; ?></div>
+                                <div class="contados">Chefs <span class="hidden-sm">para elegir</span></div>
+                            </div>
                         </div>
-                        <div class="col-md-5 col-sm-5 col-xs-5">
-                            <div class="conteo"><?= $nro_chefs; ?></div>
-                            <div class="contados">Chefs <span class="hidden-sm">para elegir</span></div>
-                        </div>
-                    </div>
                 </div>
                 <div class="col-md-6 col-sm-6 col-xs-6 hidde-icons">                    
                     <a class="experiencias-home" href="<?= base_url('home/ver_experiencias')?>">

@@ -101,6 +101,7 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 input {
+    color:#000;
 
 }
 ul {
@@ -315,7 +316,8 @@ a:visited {
 }
 
 #nrochefs {
-    padding-left: 7px;
+    margin-left: 12px;
+    margin-right: 12px;
     /*width: 130px;*/
 }
 
@@ -327,6 +329,7 @@ a:visited {
 .conteo {
     font-size: 40px;
     font-weight: 700;
+    text-align: center;
 }
 
 .img-conteo {
@@ -341,7 +344,18 @@ a:visited {
 .contados {
     font-weight: 300;
     font-size: 11px;
+    text-align: center;
     line-height: 120%;
+    min-width: 55px;
+}
+
+.contadores {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
 }
 
 #header-video-home {
@@ -537,7 +551,7 @@ a:visited {
 
 .fecha-buscador {
     width: 145px;
-    text-indent: 8px;
+    text-indent: 3px;
 }
 
 .comuna-buscador {
@@ -3112,6 +3126,7 @@ span.ui-spinner {
     resize: none;
     margin-top: 10px;
     border-radius: 5px;
+    color: #000;
 }
 
 #contacto input[type="text"] {
