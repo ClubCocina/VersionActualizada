@@ -1,5 +1,4 @@
-<!--div class="col-xs-10 col-xs-offset-1"-->
-<div>
+<div class="col-xs-10 col-xs-offset-1">
     <div id="pasos">
         <ul class="centerbox">
             <li class="paso-activo">Detalles de tu evento</li>
