@@ -156,7 +156,7 @@
                                         <input type="text" placeholder="NOMBRE DEL CHEF" id="nombre_chef" name="nombre_chef" class="input_autocomplete"/>
                                     </div>
                                     <div class="submit-buscador float-left">
-                                        <input type="submit" class="enviar-buscador" value="BUSCAR"/>
+                                        <input type="submit" class="enviar-buscador" value="VER CHEFS"/>
                                     </div>
                                     <input type="hidden" name="bool_hora" value="0" id="bool_hora"/>
                                 </div>

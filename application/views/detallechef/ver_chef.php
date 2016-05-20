@@ -79,7 +79,7 @@
     <!-- Columna derecha con detalles respecto al servicio que entrega el chef -->
     <div id="cont-derecha" class="col-md-3 col-sm-3 col-xs-6">        
         <div id="precio" class="bg-rojo">
-            <span class="preview-clp mayus">Desde</span>
+            <span class="preview-clp">Desde</span>
             <br>
             <div class="preview-valor">
                 <span>
@@ -98,14 +98,14 @@
         <div id="invitados-comunas" class="bg-rojo white overflowauto">
         <!--    <div>REQUISITOS DEL CHEF</div>  -->
             <div id="maxpersonas">
-                <span class="preview-clp mayus">RANGO DE COMENSALES</span>
+                <span class="preview-clp">Rango de Comensales</span>
                 <br>
                 <div class="info">
                     <img src="<?= base_url('images/max-invitados.png'); ?>"/>
-                    <span>De <?= str_replace('-', ' a ', $parametrosChef['5']) ?> Personas</span>
+                    <span>De <?= str_replace('-', ' a ', $parametrosChef['5']) ?> </span>
                 </div>
             </div>
-            <div id="comunas">
+        <!--    <div id="comunas">
                 <span class="preview-clp mayus">DONDE COCINA</span>
                 <div class="info"><img src="<?= base_url('images/comunas.png'); ?>" class="float-left"/>
                     <?php if (isset($comunas)): ?>
@@ -116,7 +116,7 @@
                         </ul>
                     <?php endif; ?>
                 </div>
-            </div>
+            </div>  -->
         </div>
     </div>
 
