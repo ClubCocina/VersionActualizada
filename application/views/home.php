@@ -79,6 +79,10 @@
         <div id="carrusel-home-cont"class="bg-color-general">
             <span class="mayus SueEllen"><h1>Los chefs del Club</h1></span>
             <div id="all-chefs" class="row">
+                <?php if (empty($chefsCarrusel)) {
+                    echo "No hay chefs";
+                }
+                ?>
                 <?php if (!empty($chefsCarrusel)): ?>
                     <?php foreach ($chefsCarrusel as $chef): ?>
                         <?php

@@ -65,7 +65,7 @@
                 <!--div class="magic-fixed"></div-->
                 <div id="header">
                     <div class="header-top mayus margin-header bg-color-general">
-                        <div class="row" class="">
+                        <div class="row">
                             <div id="logo" class="col-md-3 col-sm-3 col-xs-6">
                                 <a href="<?= base_url() ?>"><img class="img-responsive" src="<?= base_url('images/logo.png'); ?>" alt="logo club cocina"/></a>
                             </div>
@@ -163,7 +163,9 @@
                                 <?php echo form_close(); ?>
                             </div>
                         <?php else: ?>
-                        <div id="banner-pasos">Confirma las caracter&iacute;sticas de tu evento</div>
+                        <div class="">
+                            <div id="banner-pasos">Confirma las caracter&iacute;sticas de tu evento</div>                        
+                        </div>
                         <?php endif; ?>
                     </div>
                 </div>
