@@ -1403,6 +1403,10 @@ li.nobottomline {
     }
 }
 
+#tabla-info{
+    margin-left: 0px;
+}
+
 .info-cotizador{
     border-radius: 5px;
     color: #FFF;
@@ -2885,6 +2889,16 @@ span.ui-spinner {
     padding-bottom: 18px;
 }
 
+#donde-sera{
+    font-size: 25px;
+}
+
+@media(min-width: 768px){
+    #donde-sera{
+        font-size: 30px;
+    }    
+}
+
 .subtitulo-ubicacion {
     font-size: 13px;
     font-style: normal;
@@ -2964,7 +2978,7 @@ span.ui-spinner {
 }
 
 .titulo-ingreso {
-    width: 764px;
+    /*width: 764px;*/
     font-family: 'SueEllen';
     font-size: 30px;
     line-height: 135%;
@@ -2972,12 +2986,12 @@ span.ui-spinner {
 }
 
 #ingreso-datos div.centerbox {
-    width: 800px;
+    /*width: 800px;*/
 }
 
 #ingreso-datos div.titulo-tags{
     padding-bottom: 27px;
-    margin-left: 97px;
+    /*margin-left: 97px;*/
 }
 
 #ingreso-datos input, #ingreso-datos select {
@@ -2994,7 +3008,7 @@ span.ui-spinner {
 }
 
 #ingreso-izq {
-    width: 300px;
+    /*width: 300px;*/
 }
 
 .wrapper-campos {
@@ -3028,8 +3042,8 @@ span.ui-spinner {
 }
 
 #ingreso-der {
-    margin-left: 34px;
-    width: 420px;
+    /*margin-left: 34px;
+    width: 420px;*/
 }
 
 #ingreso-datos input.radio-gigante {
@@ -3057,7 +3071,7 @@ span.ui-spinner {
 }
 
 #ingreso-datos-centro #msje-izquierda{
-    width: 525px;
+    /*width: 525px;*/
 }
 
 #texto-ingreso-datos {
@@ -3067,7 +3081,7 @@ span.ui-spinner {
 }
 
 #detalle-derecha {
-    margin-left: 20px;
+    /*margin-left: 20px;*/
     font-style: normal;
 }
 
@@ -3327,7 +3341,7 @@ span.ui-spinner {
 
 #pasofinal {
     background-color: #262626;
-    width: 980px;
+    /*width: 980px;*/
     color: #FFFFFF;
     margin-bottom: 20px;
     padding-top: 30px;
@@ -3346,7 +3360,7 @@ span.ui-spinner {
 
 #cont-confirmacion div.info-actividad, #detalle-derecha div.info-actividad {
     /*width: 300px;*/
-    margin-left: 25px;
+    /*margin-left: 25px;*/
     height: 100%;
     padding-bottom: 10px;
     margin-bottom: 10px;
@@ -3401,7 +3415,7 @@ div.thumb-sf {
     padding-left: 15px;
     padding-right: 15px;
     font-weight: 500;
-    width: 150px;
+    /*width: 150px;*/
 }
 
 #datos-adicionales {
@@ -3727,9 +3741,9 @@ input::-webkit-inner-spin-button {
 .logo-wp-pago {
     background: #fff;
     padding: 10px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     width: 171px;
-    float: right;
+    /*float: right;*/
 }
 
 .social-buttons {

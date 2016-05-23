@@ -1,4 +1,4 @@
-<div class="col-xs-10 col-xs-offset-1">
+<div class="col-xs-12 col-sm-10 col-sm-offset-1">
     <div id="pasos">
         <ul class="centerbox">
             <li class="paso-activo">Detalles de tu evento</li>
@@ -77,7 +77,7 @@
             </ul>
         </div>
         <div class="row">
-            <div id="avanzar-compra" class="col-xs-offset-7 col-sm-10">
+            <div id="avanzar-compra" class="col-xs-offset-7 col-sm-offset-9">
                 <form action="<?= base_url('comprar/confirmaServicio'); ?>" method="POST">
                     <input type="hidden" value="siguiente" name="siguiente" />
                     <input type="submit" id="siguiente" value="Siguiente" />
