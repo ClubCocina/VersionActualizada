@@ -118,19 +118,17 @@
     </div>
 </div>
 <script>
-    $(document).ready(function(){
-        $('.img-chef').last().ready(function(){
-            $('.img-chef').last().load(function(){
-                var altura = document.getElementsByClassName('img-chef')[0].offsetHeight;
-                var width = document.getElementsByClassName('img-chef')[0].offsetWidth;
-                var backs = document.getElementsByClassName('back');        
-                var imgsChef = document.getElementsByClassName('img-chef');
-                for(var i = 0; i < backs.length; i++){
-                    backs[i].style.height = altura+'px';
-                    backs[i].style.width = width+'px';
-                    imgsChef[i].style.height = altura+'px';
-                }
-            });
+    $(window).load(function(){
+        $('.img-chef').ready(function(){
+            var altura = document.getElementsByClassName('img-chef')[0].offsetHeight;
+            var width = document.getElementsByClassName('img-chef')[0].offsetWidth;
+            var backs = document.getElementsByClassName('back');        
+            var imgsChef = document.getElementsByClassName('img-chef');
+            for(var i = 0; i < backs.length; i++){
+                backs[i].style.height = altura+'px';
+                backs[i].style.width = width+'px';
+                imgsChef[i].style.height = altura+'px';
+            }
         });
 
         $('.img-slide').last().ready(function(){
