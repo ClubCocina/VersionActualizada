@@ -81,17 +81,21 @@
         <div id="carrusel-home-cont"class="bg-color-general">
             <span class="mayus SueEllen"><h1>Los chefs del Club</h1></span>
             <div id="all-chefs" class="row">
-                <?php if (empty($chefsCarrusel)) {
+                <?php 
+                if (empty($chefsCarrusel)) {
                     echo "No hay chefs";
                 }
                 ?>
                 <?php if (!empty($chefsCarrusel)): ?>
                     <?php foreach ($chefsCarrusel as $chef): ?>
                         <?php
-                        if ($chef['avatar'] == '')
+                        if ($chef['avatar'] == ''){                            
                             $imgChef = '10-top-celebrity-chefs.jpg';
-                        else
+                            echo "no se carga la imagen del chef";
+                        }
+                        else{                            
                             $imgChef = $chef['avatar'];
+                        }
                         $urlChef = $chef['link'] !== '' ? 'chef/'.$chef['link'] : 'chefs/verDatosChef/' . $chef['idUsuario'];
                         ?>
                         <div class="col-md-2 col-sm-2 col-xs-6 avatar">
@@ -116,16 +120,17 @@
 <script>
     $(document).ready(function(){
         $('.img-chef').last().ready(function(){
-            console.log('entra en el load de los chef');
-            var altura = document.getElementsByClassName('img-chef')[0].offsetHeight;
-            var width = document.getElementsByClassName('img-chef')[0].offsetWidth;
-            var backs = document.getElementsByClassName('back');        
-            var imgsChef = document.getElementsByClassName('img-chef');
-            for(var i = 0; i < backs.length; i++){
-                backs[i].style.height = altura+'px';
-                backs[i].style.width = width+'px';
-                imgsChef[i].style.height = altura+'px';
-            }
+            $('.img-chef').last().load(function(){
+                var altura = document.getElementsByClassName('img-chef')[0].offsetHeight;
+                var width = document.getElementsByClassName('img-chef')[0].offsetWidth;
+                var backs = document.getElementsByClassName('back');        
+                var imgsChef = document.getElementsByClassName('img-chef');
+                for(var i = 0; i < backs.length; i++){
+                    backs[i].style.height = altura+'px';
+                    backs[i].style.width = width+'px';
+                    imgsChef[i].style.height = altura+'px';
+                }
+            });
         });
 
         $('.img-slide').last().ready(function(){
@@ -136,20 +141,6 @@
             
             rowConteo.style.padding = addHeight+'px 0px';
         });
-        /*
-        var imgCarrusel = document.getElementsByClassName('img-slide');
-        imgCarrusel = imgCarrusel[imgCarrusel.length-1];
-        console.log(imgCarrusel);
-        imgCarrusel.onload = function(){
-            var carruselHeight = document.getElementById('carousel-home').offsetHeight;
-            var conteo = document.getElementById('conteo-home').offsetHeight;
-            var addHeight = parseInt((carruselHeight - conteo)/2);
-            var rowConteo = document.getElementById('row-conteo');
-            
-            rowConteo.style.padding = addHeight+'px 0px';        
-            console.log('igualando la altura con el carrusel');
-        } 
-        */
     });
     
     
