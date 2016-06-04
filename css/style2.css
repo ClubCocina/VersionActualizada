@@ -3159,7 +3159,7 @@ span.ui-spinner {
     height: 100%;
     padding: 24px;
     color: #FFFFFF;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: 400;
     border-radius: 5px;
     margin-bottom: 14px;
@@ -3206,6 +3206,7 @@ span.ui-spinner {
     font-family: "SueEllen";
     line-height: 30px;
     padding-bottom: 20px;
+    letter-spacing: 1px;
 }
 
 .boton-contacto{
@@ -3232,6 +3233,7 @@ span.ui-spinner {
 
 .label {
     margin-bottom: 3px;
+    letter-spacing: 1px;
 }
 
 .enviar-contacto {
@@ -3487,7 +3489,7 @@ div.thumb-sf {
 }
 
 .buscador.interior select {
-    font-size: 17px !important;
+    font-size: 15px !important;
     width: 164px;
     padding-left: 10px;
 }
