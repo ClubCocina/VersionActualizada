@@ -8,7 +8,7 @@
             <div id="links-paginas" class="centerbox">
                 <?php $pages = $this->page_model->getPage(); ?>
                 <?php foreach ($pages as $page) : ?>
-                    <div class="col-md-2 col-sm-2 col-xs-12 link-page">
+                    <div class="col-md-3 col-sm-3 col-xs-12 link-page">
                         <a href="<?= base_url('home/page/' . $page['idPage']); ?>"><?= $page['titulo']; ?></a>
                     </div>
                 <?php endforeach; ?>
