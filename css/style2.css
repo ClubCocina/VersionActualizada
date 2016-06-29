@@ -166,7 +166,7 @@ a:visited {
 
 #wrapper-header{
     height: 51px;
-    margin-bottom: 180px;
+    margin-bottom: 165px;
 
 }
 
@@ -183,6 +183,9 @@ a:visited {
 
 #logo img {
     /*width: 220px;*/
+    padding-top: 65px;
+    padding-left: 20px;
+    max-height: 170px;
 }
 
 
@@ -534,7 +537,7 @@ a:visited {
 .buscador {
     padding-top: 5px;
 
-    margin: 30px 0 0 25px;
+    margin: 20px 0 0 15px;
 }
 .buscador span {
     font-size: 30px;
@@ -545,7 +548,7 @@ a:visited {
 }
 
 .buscador form {
-    margin-top: 13px;
+    margin-top: 5px;
     margin-bottom: 20px;
 }
 
@@ -613,7 +616,7 @@ a:visited {
 
 .submit-buscador {
     width: 98px;
-    height: 42px;
+    height: 39px;
 }
 
 .constraint-select {
@@ -1726,6 +1729,7 @@ li.nobottomline {
 
 .margin-center{
     margin-left: 0px;
+    margin-bottom: 5px;
 }
 
 @media (min-width: 768px){
@@ -3993,7 +3997,7 @@ a {
 }
 
 #bs-example-navbar-collapse-1{
-    margin-left: -60px;
+    margin-left: -30px;
 }
 
 .navbar-padding{

@@ -67,7 +67,7 @@
                     <div class="header-top mayus margin-header bg-color-general">
                         <div class="row">
                             <div id="logo" class="col-md-3 col-sm-3 col-xs-6">
-                                <a href="<?= base_url() ?>"><img class="img-responsive" src="<?= base_url('images/logo.png'); ?>" alt="logo club cocina"/></a>
+                                <a href="<?= base_url() ?>"><img class="img-responsive" src="<?= base_url('images/CdlC_logo.png'); ?>" alt="logo club cocina"/></a>
                             </div>
                             <div class="col-md-9 col-sm-9 col-xs-6">
                                 <nav class="navbar navbar-default header-nav">
@@ -83,7 +83,7 @@
                                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                             <ul class="nav navbar-nav">
                                                 <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/2') ?>">¿Cómo Funciona?</a></li>
-                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/4') ?>">Preguntas Frecuentes</a></li>
+                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/22') ?>" style="color:#ffaa22">Arma tu evento</a></li>
                                                 <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/contacto') ?>">Contacto</a></li>        
                                             </ul>
                                             <?php if (isset($this->session->userdata['username'])): ?>
