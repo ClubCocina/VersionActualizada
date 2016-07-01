@@ -5,7 +5,7 @@
     </div>  -->
     <!--div id="slide-home" class="float-left col-md-8"-->
     <div class="col-md-7 col-sm-7 col-xs-12 margin-center">
-        <div id="carousel-home" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <div id="carousel-home" class="carousel slide" data-ride="carousel" data-interval="3000">
             <ol class="carousel-indicators">
                 <?php for ($i=0; $i < sizeof($slides) ; $i++) { ?>
                     <?php if ($i == 0) { ?>
