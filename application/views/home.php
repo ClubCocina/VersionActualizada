@@ -4,7 +4,7 @@
         <img src="<?= base_url('images/mensaje-imagen-home.png'); ?>" />
     </div>  -->
     <!--div id="slide-home" class="float-left col-md-8"-->
-    <div class="col-md-7 col-sm-7 col-xs-12 margin-center">
+    <div class="col-md-10 col-sm-10 col-xs-12 margin-center">
         <div id="carousel-home" class="carousel slide" data-ride="carousel" data-interval="3000">
             <ol class="carousel-indicators">
                 <?php for ($i=0; $i < sizeof($slides) ; $i++) { ?>
@@ -36,7 +36,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-3 col-sm-3 col-xs-12">
+ <!--   <div class="col-md-3 col-sm-3 col-xs-12">
         <div id="conteo-home" class="bg-rojo">
             <div class="contadores">Click para ver</div>
             <div id="row-conteo" class="row">
@@ -74,7 +74,7 @@
                 </div>
             </div>
         </div>
-    </div>        
+    </div>  -->      
 </div>
 <div class="row">
     <div class="col-md-10 col-sm-10 col-xs-12 margin-center">
@@ -113,8 +113,25 @@
                         </div>
                     <?php endforeach; ?>
                 <?php endif;?>
-            </div>    
+            </div> 
         </div>
+        <!-- Subscription Form --> 
+            <div class="buscador interior">  
+                    <div class="float-left">
+                        <span class="mayus SueEllen"><h1>Enterate de las noticias del Club</h1></span>
+                    </div>
+                    <div class="float-left">
+                        <form action="form/form.php" method="post">
+                            <div class="input-buscador float-left">
+                            <input name="email" class="email" type="text" placeholder="Ingresa tu email">
+                            </div>
+                            <div class="submit-buscador float-left">
+                            <input type="submit" class="enviar-buscador" value="Enviar"/>
+                            </div>
+                    </div>
+                </form>
+            </div>
+        <!-- End Subscription Form -->  
     </div>
 </div>
 <script>

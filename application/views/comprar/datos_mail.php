@@ -14,7 +14,7 @@
             </tr>
             <tr>
                 <td width="167">
-                    <img src="<?= base_url('images/email_04.jpg'); ?>" width="167" height="136" alt="">
+                    <img src="<?= base_url('images/CdlC_logo.jpg'); ?>" width="167" height="136" alt="">
                 </td>
                 <td width="293">
                     <span style="font-family:Arial; font-size:13px; font-weight:bold">Hola</span>
@@ -36,42 +36,42 @@
             <tr>
                 <td colspan="2">
                     <table width="100%" border="0" cellpadding="2" cellspacing="2">
-                        <tr><th colspan="2">DETALLE DE LA COMPRA</th></tr>
+                        <tr><th colspan="2">Detalle del evento</th></tr>
                         <tr>
                             <td width="49%" height="25" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px; font-weight:bold">Chef</span></td>
                             <td width="51%" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px;"><?= $nombreChef; ?></span></td>
                         </tr>
                         <tr>
-                            <td width="49%" height="25" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px; font-weight:bold">Experiencia</span></td>
-                            <td width="51%" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px;"><?= $experiencia['nombre']; ?></span></td>
+                            <td width="49%" height="25" bgcolor="#F8F8F8"><span style="font-family:Arial; font-size:13px; font-weight:bold">Experiencia</span></td>
+                            <td width="51%" bgcolor="#F8F8F8"><span style="font-family:Arial; font-size:13px;"><?= $experiencia['nombre']; ?></span></td>
                         </tr>
                         <tr>
                             <td width="49%" height="25" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px; font-weight:bold">¿Cu&aacute;ntos comen?</span></td>
                             <td width="51%" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px;"><?= $this->session->userdata('invitados'); ?></span></td>
                         </tr>
                         <tr>
-                            <td width="49%" height="25" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px; font-weight:bold">Fecha</span></td>
-                            <td width="51%" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px;"><?= date('d/m/Y', strtotime($actividad['fecha'])); ?></span></td>
+                            <td width="49%" height="25" bgcolor="#F8F8F8"><span style="font-family:Arial; font-size:13px; font-weight:bold">Fecha</span></td>
+                            <td width="51%" bgcolor="#F8F8F8"><span style="font-family:Arial; font-size:13px;"><?= date('d/m/Y', strtotime($actividad['fecha'])); ?></span></td>
                         </tr>
                         <tr>
                             <td width="49%" height="25" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px; font-weight:bold">Horario</span></td>
                             <td width="51%" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px;"><?= date('H:i', strtotime($this->session->userdata('horario'))); ?> Hrs.</span></td>
                         </tr>
+                    <!--    <tr>
+                            <td width="49%" height="25" bgcolor="#F8F8F8"><span style="font-family:Arial; font-size:13px; font-weight:bold">Duraci&oacute;n</span></td>
+                            <td width="51%" bgcolor="#F8F8F8"><span style="font-family:Arial; font-size:13px;"><?= gmdate('H:i', $experiencia['tiempo' . $this->session->userdata('invitados')] * 60 * 60 ); ?> HRS.</span></td>
+                        </tr>  -->
                         <tr>
-                            <td width="49%" height="25" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px; font-weight:bold">Duraci&oacute;n</span></td>
-                            <td width="51%" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px;"><?= gmdate('H:i', $experiencia['tiempo' . $this->session->userdata('invitados')] * 60 * 60 ); ?> HRS.</span></td>
-                        </tr>
-                        <tr>
-                            <td width="49%" height="25" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px; font-weight:bold">Direcci&oacute;n</span></td>
-                            <td width="51%" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px;"><?= $actividad['direccion']; ?></span></td>
+                            <td width="49%" height="25" bgcolor="#F8F8F8"><span style="font-family:Arial; font-size:13px; font-weight:bold">Direcci&oacute;n</span></td>
+                            <td width="51%" bgcolor="#F8F8F8"><span style="font-family:Arial; font-size:13px;"><?= $actividad['direccion']; ?></span></td>
                         </tr>
                         <tr>
                             <td width="49%" height="25" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px; font-weight:bold">Comuna</span></td>
                             <td width="51%" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px;"><?= $comuna['nombreMeta']; ?></span></td>
                         </tr>
                         <tr>
-                            <td width="49%" height="25" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px; font-weight:bold">Tel&eacute;fono</span></td>
-                            <td width="51%" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px;"><?= $actividad['nroContacto']; ?></span></td>
+                            <td width="49%" height="25" bgcolor="#F8F8F8"><span style="font-family:Arial; font-size:13px; font-weight:bold">Tel&eacute;fono</span></td>
+                            <td width="51%" bgcolor="#F8F8F8"><span style="font-family:Arial; font-size:13px;"><?= $actividad['nroContacto']; ?></span></td>
                         </tr>
                         <tr>
                             <td width="49%" height="25" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px; font-weight:bold">Precio por persona</span></td>
@@ -79,7 +79,7 @@
                         </tr>
                         <!-- fin datos evento -->
                         <tr><td colspan="2"></td></tr>
-                        <tr><th colspan="2">Datos compra transbank</th></tr>
+                        <tr><th colspan="2">Detalle compra Transbank</th></tr>
                         <tr>
                             <td width="49%" height="25" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px; font-weight:bold">Nro. Tarjeta</span></td>
                             <td width="51%" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px;">********<?= $TBK_FINAL_NUMERO_TARJETA[1]; ?></span></td>
@@ -113,16 +113,16 @@
                             <td bgcolor="#F8F8F8"><span style="font-family:Arial; font-size:13px;"><?= date('d/m/Y', time()); ?></span></td>
                         </tr>
                         <tr>
-                            <td height="25" bgcolor="#F8F8F8"><span style="font-family:Arial; font-size:13px; font-weight:bold">C&oacute;digo Autorizaci&oacute;n</span></td>
-                            <td bgcolor="#F8F8F8"><span style="font-family:Arial; font-size:13px;"><?= $TBK_CODIGO_AUTORIZACION[1]; ?></span></td>
+                            <td height="25" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px; font-weight:bold">C&oacute;digo Autorizaci&oacute;n</span></td>
+                            <td bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px;"><?= $TBK_CODIGO_AUTORIZACION[1]; ?></span></td>
                         </tr>
                         <tr>
-                            <td height="25" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px; font-weight:bold">Tipo Transacci&oacute;n</span></td>
-                            <td bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px;"><?= 'Venta'; ?></span></td>
+                            <td height="25" bgcolor="#F8F8F8"><span style="font-family:Arial; font-size:13px; font-weight:bold">Tipo Transacci&oacute;n</span></td>
+                            <td bgcolor="#F8F8F8"><span style="font-family:Arial; font-size:13px;"><?= 'Venta'; ?></span></td>
                         </tr>
                         <tr>
-                            <td height="25" bgcolor="#F8F8F8"><span style="font-family:Arial; font-size:13px; font-weight:bold">Nro. Cuotas</span></td>
-                            <td bgcolor="#F8F8F8"><span style="font-family:Arial; font-size:13px;"><?= $TBK_NUMERO_CUOTAS[1]; ?></span></td>
+                            <td height="25" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px; font-weight:bold">Nro. Cuotas</span></td>
+                            <td bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px;"><?= $TBK_NUMERO_CUOTAS[1]; ?></span></td>
                         </tr>
                         <tr>
                             <td height="25" bgcolor="#F8F8F8"><span style="font-family:Arial; font-size:13px; font-weight:bold">Tipo Cuota</span></td>

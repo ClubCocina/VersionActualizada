@@ -2504,7 +2504,7 @@ li.nobottomline {
     color: white;
     font-weight: 400;
     font-size: 16px;
-    margin-top: 2px;
+    margin-top: 0px;
     /*text-transform: uppercase;*/
     width: 80%;
     margin-left: 3px;
@@ -2826,8 +2826,8 @@ span.ui-spinner {
     font-size: 15px;
     font-weight: 400;
     color: #FFCF00;
-    margin-top: 2px;
-    margin-bottom: 5px;
+    margin-top: 8px;
+    margin-bottom: 2px;
 }
 
 .one-chef{

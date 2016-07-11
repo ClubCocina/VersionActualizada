@@ -232,7 +232,7 @@
                                                 </script>
                                             </div>
                                         </div>
-                                        <div class="row-detalle">
+                                  <!--      <div class="row-detalle">
                                             <div class="titulo-datos">Tiempo que el chef estar&aacute; en tu casa</div>
                                             <div class="row-info horario-evento">
                                                 <input id="duracion<?= $idExperiencia; ?>"
@@ -242,7 +242,7 @@
                                                        value="<?= set_value('duracion' . $idExperiencia, gmdate('H:i', $experiencia['tiempo' . $comensales_default] * 60 * 60)); ?>"
                                                        /><span class="input-vista-chef duracion no-upper">Horas</span>
                                             </div>
-                                        </div>
+                                        </div>  -->
                                         <div class="row-detalle">
                                             <div class="titulo-datos">Precio por persona</div>
                                             <div class="row-info total-evento">

@@ -57,12 +57,12 @@
                                     <div class="input-finalizacompra"><?= date('H:i', strtotime($this->session->userdata('horario'))); ?> HRS.</div>
                                 </td>
                             </tr>
-                            <tr class="datos-confirm">
+                        <!--    <tr class="datos-confirm">
                                 <td class="titulo-datos">TIEMPO QUE EL CHEF ESTARÁ EN TU CASA</td>
                                 <td class="row-info">
                                     <div class="input-finalizacompra"><?= gmdate('H:i', $experiencia['tiempo' . $this->session->userdata('invitados')] * 60 * 60); ?> HRS.</div>
                                 </td>
-                            </tr>
+                            </tr>  -->
                             <tr class="datos-confirm">
                                 <td class="titulo-datos">DIRECCIÓN</td>
                                 <td class="row-info"><div class="input-finalizacompra"><?= $actividad['direccion']; ?></div></td>
