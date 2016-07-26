@@ -59,6 +59,19 @@
         <?php endif; ?>
 	<meta property="og:image" content="<?= $img ?>" />
     </head>
+        <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/579236045f1699a469a98524/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
     <body>
         <div id="super-wrapper">
             <div id="wrapper-header">
@@ -82,9 +95,9 @@
                                         </div>  
                                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                             <ul class="nav navbar-nav">
+                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/contacto') ?>" style="font-size:160%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9993;&nbsp;&nbsp;&nbsp;&nbsp;</a></li> 
                                                 <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/2') ?>">¿Cómo Funciona?</a></li>
-                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/22') ?>" style="color:#ffaa22">Arma tu evento</a></li>
-                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/contacto') ?>">Contacto</a></li>        
+                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/22') ?>" style="color:#ffaa22">Arma tu evento</a></li>    
                                             </ul>
                                             <?php if (isset($this->session->userdata['username'])): ?>
                                                 <ul class="logged nav navbar-nav navbar-right">

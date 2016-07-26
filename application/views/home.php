@@ -15,8 +15,39 @@
                         <li data-target="#carousel-home" data-slide-to="<?= $i ?>"></li>
                     <? }
                 } ?>          
-            </ol>            
+            </ol> 
+            <!--comienzo Link fotos -->
             <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <a href="<?= base_url('home/ver_experiencias')?>"> 
+                                <img src="<?= base_url('slides/CdlC-slide1.png'); ?>" alt="Ver Experiencias" class="img-slide">
+                                <div class="carousel-caption">
+                                <!--    <h4>First Thumbnail label</h4>
+                                        <p>el texto de prueba 1</p>  -->
+                                </div>
+                            </a>    
+                        </div>
+                        <div class="item">
+                            <a href="<?= base_url('home/ver_experiencias')?>"> 
+                                <img src="<?= base_url('slides/CdlC-slide2.png'); ?>" alt="Ver Experiencias" class="img-slide">
+                                <div class="carousel-caption">
+                                <!--    <h4>Second Thumbnail label</h4>
+                                        <p>el texto de prueba 2</p>  -->
+                                </div>
+                            </a>    
+                        </div>
+                         <div class="item">
+                            <a href="<?= base_url('home/ver_experiencias')?>"> 
+                                <img src="<?= base_url('slides/CdlC-slide3.png'); ?>" alt="Ver Experiencias" class="img-slide">
+                                <div class="carousel-caption">
+                                <!--    <h4>Second Thumbnail label</h4>
+                                        <p>el texto de prueba 2</p>  -->
+                                </div>
+                            </a>    
+                        </div>
+            </div> 
+            <!--Fin link fotos -->          
+       <!--     <div class="carousel-inner" role="listbox">
                 <? 
                     $flag = true;
                 ?>
@@ -33,7 +64,7 @@
                         </div>
                 <?php }
                 } ?>
-            </div>
+            </div>  -->
         </div>
     </div>
  <!--   <div class="col-md-3 col-sm-3 col-xs-12">
@@ -108,30 +139,23 @@
                                     <?= isset($chef['dato']) && $chef['dato'] != '' ? $chef['dato'] : '' ?>
                                 </p>
                                 <p class="datos-chef-hidden">¡Conoce las experiencias!</p>
-                                <a class="btn btn-danger btn-experiencias" href="<?= base_url($urlChef); ?>">Las experiencias</a>
+                                <a class="btn btn-danger btn-experiencias" href="<?= base_url($urlChef); ?>">Ver Chef</a>
                             </div>
                         </div>
                     <?php endforeach; ?>
                 <?php endif;?>
-            </div> 
-        </div>
-        <!-- Subscription Form --> 
-            <div class="buscador interior">  
-                    <div class="float-left">
-                        <span class="mayus SueEllen"><h1>Enterate de las noticias del Club</h1></span>
-                    </div>
-                    <div class="float-left">
-                        <form action="form/form.php" method="post">
-                            <div class="input-buscador float-left">
-                            <input name="email" class="email" type="text" placeholder="Ingresa tu email">
+                <!-- Begin MailChimp Signup Form -->
+                <div id="mc_embed_signup" class="interior">
+                    <form id="mc-embedded-subscribe-form" class="validate" action="//clubdelacocina.us11.list-manage.com/subscribe/post?u=ba52aedb3826e25b8ae2856f6&amp;id=0a2ca393da" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank">
+                        <div id="mc_embed_signup_scroll" class="SueEllen mayus suscripcion"><label for="mce-EMAIL">Ent&eacute;rate de nuestras novedades</label> <input id="mce-EMAIL" class="email" name="EMAIL" required="" type="email" value="" placeholder="  TU EMAIL" /> <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;"><input tabindex="-1" name="b_ba52aedb3826e25b8ae2856f6_0a2ca393da" type="text" value="" />
                             </div>
-                            <div class="submit-buscador float-left">
-                            <input type="submit" class="enviar-buscador" value="Enviar"/>
+                            <div class="suscripcion"><input class="enviar-suscripcion" name="subscribe" type="submit" value="Suscribirse" />
                             </div>
-                    </div>
-                </form>
-            </div>
-        <!-- End Subscription Form -->  
+                        </div>
+                    </form>
+                </div>
+                <!--End mc_embed_signup--> 
     </div>
 </div>
 <script>

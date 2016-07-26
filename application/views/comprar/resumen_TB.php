@@ -36,6 +36,6 @@ var google_remarketing_only = false;
 </script>
 <noscript>
 <div style="display:inline;">
-<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/959054721/?value=<? echo $TBK_MONTO[1]/100 ?>&conversion_currency=<? echo $currency ?>&amp;label=mvo3COik_WAQgYeoyQM&amp;guid=ON&amp;script=0"/>
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/959054721/?label=mvo3COik_WAQgYeoyQM&amp;guid=ON&amp;script=0"/>
 </div>
 </noscript>
