@@ -1,10 +1,10 @@
 <div>
     <div id="pasos" class="menu overflowauto">
         <ul class="centerbox overflowauto">
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li class="paso-activo">4</li>
+            <li>Detalles de tu evento</li>
+            <li>Ubicaci&oacute;n del evento</li>
+            <li>Realizar pago</li>
+            <li class="paso-activo">Comprobante</li>
         </ul>
     </div>
 </div>

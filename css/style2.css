@@ -183,9 +183,11 @@ a:visited {
 
 #logo img {
     /*width: 220px;*/
-    padding-top: 60px;
-    padding-left: 20px;
-    max-height: 170px;
+    padding-top: 2px;
+    padding-left: 30px;
+    max-height: 100px;
+    margin-top: -5px;
+    margin-bottom: 5px;
 }
 
 
@@ -409,7 +411,7 @@ a:visited {
 }
 
 #carrusel-home-cont span {
-    font-size: 25px;
+    font-size: 20px;
     color: #FFFFFF;
     height: 43px;
     padding-bottom: 14px;
@@ -609,7 +611,7 @@ a:visited {
 
 @media (min-width: 768px) {
     #encuentra-resultado{
-        font-size: 28px;
+        font-size: 25px;
         letter-spacing: 2px;
     }
 }
@@ -630,6 +632,7 @@ a:visited {
     /*overflow: hidden;*/
     border-radius: 3px;
     max-width: 149px;
+    max-height: 40px;
 }
 
 .constraint-select select {
@@ -691,7 +694,7 @@ a:visited {
 }
 
 #select-ordenar{
-    width: 135px !important;
+    width: 120px !important;
     padding: 8px;
 }
 
@@ -1684,8 +1687,8 @@ li.nobottomline {
     color: white;
     /*height: 10px;*/
     font-size: 17px;
-    padding-top: 19px;
-    padding-bottom: 19px;
+    padding-top: 14px;
+    padding-bottom: 10px;
     /*background: url('../images/background_footer.png') no-repeat;*/
     background-image: none;
     background-color: transparent;
@@ -1864,7 +1867,7 @@ li.nobottomline {
 }
 
 #registro select {
-    width: 92%;
+    width: 90%;
     margin-bottom: 6px;
     -webkit-appearance: menulist;
     appearance: initial;
@@ -1902,12 +1905,12 @@ li.nobottomline {
 #barra-info {
     background: #FFAA22;
     color: #FFFFFF;
-    font-size: 22px;
+    font-size: 18px;
     /*float: left;
     width: 930px;
     height: 40px;*/
     border-radius: 5px;
-    margin-top: 15px;
+    margin-top: 25px;
     padding: 10px 0px;
     /*margin-left: 22px;*/
 }
@@ -2158,7 +2161,7 @@ li.nobottomline {
 }
 
 .preview-clp {
-    font-size: 85%;
+    font-size: 90%;
     color: #FFAA22;
     font-weight: 500;
 }
@@ -2176,7 +2179,7 @@ li.nobottomline {
 #precio div.desc-precio, #precio-detalle div.desc-precio {
     font-size: 12px;
     color: #FFAA22;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .desc-precio-preview {
@@ -2364,11 +2367,11 @@ li.nobottomline {
 }
 
 .titulo-fantasia {
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 15px;
     text-align: left;
     padding-top: 5px;
-    padding-left: 25px;
+    padding-left: 20px;
     padding-right: 25px;
     background: #FF1849;
     line-height: 45px;
@@ -2378,7 +2381,7 @@ li.nobottomline {
 
 @media(min-width: 768px){
     .titulo-fantasia{
-        font-size: 30px;
+        font-size: 25px;
     }
 }
 
@@ -2421,7 +2424,7 @@ li.nobottomline {
 
 @media(min-width: 768px){
     .texto-fantasia{
-        margin-left: 16.666%;
+        margin-left: 8.666%;
     }
 }
 
@@ -2900,7 +2903,7 @@ span.ui-spinner {
 
 @media(min-width: 768px){
     #donde-sera{
-        font-size: 30px;
+        font-size: 25px;
     }    
 }
 
@@ -2967,7 +2970,6 @@ span.ui-spinner {
 #ingreso-datos {
     color: #FFFFFF;
     font-size: 17px;
-    font-style: italic;
     padding: 25px 45px 0px 55px;
     font-weight: 400;
     margin-bottom: 20px;
@@ -2985,9 +2987,10 @@ span.ui-spinner {
 .titulo-ingreso {
     /*width: 764px;*/
     font-family: 'SueEllen';
-    font-size: 30px;
+    font-size: 15px;
     line-height: 135%;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    margin-left: 10px;
 }
 
 #ingreso-datos div.centerbox {
@@ -3096,7 +3099,7 @@ span.ui-spinner {
 }
 
 #msje-izquierda p {
-    font-size: 18px;
+    font-size: 15px;
 }
 
 #mensaje-404{
@@ -3514,7 +3517,7 @@ div.thumb-sf {
     background: #FFFFFF;
     color: #000000;
     margin-left: 30px;
-    height: 100%;
+    height: 105%;
 }
 
 #resumen-TB table {
@@ -3721,7 +3724,7 @@ input::-webkit-inner-spin-button {
     margin-top: -10px;
     margin-bottom: 10px;
     font-size: 14px;
-    background: #C1173C;
+    /*background: #C1173C; */
     color: #FFCF00;
 }
 
@@ -3743,7 +3746,7 @@ input::-webkit-inner-spin-button {
 @media(min-width: 768px){
     #banner-pasos{
         float: left;
-        font-size: 45px;
+        font-size: 30px;
     }
 }
 
@@ -3999,7 +4002,8 @@ a {
 }
 
 #bs-example-navbar-collapse-1{
-    margin-left: 0px;
+    margin-left: -40px;
+    margin-right: 0px;
 }
 
 .navbar-padding{
@@ -4027,9 +4031,9 @@ a {
 }
 
 .suscripcion{
-    font-size: 25px;
+    font-size: 20px;
     font-family: "SueEllen";
-    line-height: 30px;
+    line-height: 25px;
     padding-bottom: 5px;
     letter-spacing: 1px;
     color: #fff;
@@ -4041,4 +4045,14 @@ a {
     font-size: 17px;
     text-transform: uppercase;
     color:#000;
+}
+#social-logo img {
+    /*width: 220px;*/
+    padding-top: 5px;
+    padding-left: 25px;
+    max-height: 28px;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    background-color: none;
+    float: left;
 }

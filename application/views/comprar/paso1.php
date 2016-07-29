@@ -14,7 +14,7 @@
                 <?php foreach ($experiencias as $experiencia) : ?>
                     <li class="overflowauto menu-paso1 centerbox">
                         <div class="row">
-                            <div class="texto-fantasia col-xs-10 col-md-5">
+                            <div class="texto-fantasia col-xs-10 col-md-6">
                                 <h2 class="titulo-fantasia SueEllen mayus"><?= $nombreChef . ' - ' . $experiencia['nombre']; ?></h2>
                                 <div class="texto-fantasia-wrapper">
                                  <!--   <p class="descripcion-fantasia"><?= $experiencia['descripcion']; ?></p> <br> -->
@@ -24,7 +24,7 @@
                                     <?php endforeach; ?>
                                 </div>
                             </div>
-                            <div class="info-actividad bg-rojo col-xs-10 col-md-3">
+                            <div class="info-actividad bg-rojo col-xs-10 col-md-4">
                                 <div id="titulo-info-confirmacion" class="mayus titulo-info bg-rojo-oscuro">Detalle de tu cotizaci&oacute;n</div>
                                 <div class="datos-info">
                                     <div class="overflowauto row-detalle">
@@ -51,12 +51,12 @@
                                             <input type="text" class="input-vista-chef" disabled value="<?= $horario; ?>">
                                         </div>
                                     </div>
-                                    <div class="overflowauto row-detalle">
+                                <!--    <div class="overflowauto row-detalle">
                                         <div class="titulo-datos">Tiempo que el Chef estará en tu casa</div>
                                         <div class="row-info horario-evento">
                                             <input type="text" class="input-vista-chef" disabled value="<?= gmdate('H:i', $duracion * 60 * 60); ?> Horas">
                                         </div>
-                                    </div>
+                                    </div> -->
                                     <div class="overflowauto row-detalle">
                                         <div class="titulo-datos">Precio por persona</div>
                                         <div class="row-info total-evento">

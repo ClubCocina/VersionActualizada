@@ -9,7 +9,7 @@
     </div>
     <div id="pasofinal" class="">
         <div class="mayus titulo-ingreso centerbox">
-            <div>¡Listo! El Chef que has escogido está reservado para el evento. Te escribiremos en un plazo de 24 horas, ¡quédate atento!</div>
+            <div>¡Listo! El Chef que has escogido está reservado para el evento. Pronto nos pondremos en contacto.</div>
             <div>Mientras tanto, ¡puedes compartirlo con tus amigos en las redes sociales!
                 <span>
                     <a href="http://facebook.com/sharer.php?u=<?= urlencode(base_url($chefLink).'#'.str_replace(" ", "_", $experiencia['nombre']))?>"><i class="fa fa-facebook fa-2x"></i></a>
@@ -19,10 +19,10 @@
         </div>
         <div id="detalles">
             <div id="cont-confirmacion" class="">
-                <div class="info-actividad bg-rojo">
+                <div class="info-actividad">
                     <table>
                         <tr>
-                            <th class="mayus titulo-info bg-rojo-oscuro tit-datos-fin" colspan="2">detalle de compra</th>
+                            <th class="mayus titulo-info tit-datos-fin" colspan="2">detalle de compra</th>
                         </tr>
                         <tr class="datos-confirm">
                             <td class="titulo-datos">CHEF</td>

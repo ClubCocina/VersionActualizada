@@ -79,10 +79,30 @@
                 <div id="header">
                     <div class="header-top mayus margin-header bg-color-general">
                         <div class="row">
-                            <div id="logo" class="col-md-3 col-sm-3 col-xs-6">
-                                <a href="<?= base_url() ?>"><img class="img-responsive" src="<?= base_url('images/CdlC_logo.png'); ?>" alt="logo club cocina"/></a>
+                            <div id="logo" class="col-md-4 col-sm-4 col-xs-7">
+                                <nav class="navbar navbar-default header-nav">
+                                                 <ul class="navbar-nav navbar-left">
+                                                    <li>
+                                                        <a href="https://www.instagram.com/clubdelacocinacl/" target="_blank" id="social-logo"><img class="img-responsive" src="<?= base_url('images/logo.insta.png'); ?>" alt="Instagram Club de la Cocina" />
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://www.facebook.com/Club-de-la-Cocina-687305784636215/" target="_blank" id="social-logo"><img class="img-responsive" src="<?= base_url('images/fb-logo.png'); ?>" alt="Facebook Club de la Cocina" />
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://twitter.com/clubdelacocina" target="_blank" id="social-logo"><img class="img-responsive" src="<?= base_url('images/twitter-logo.png'); ?>" alt="Twitter Club de la Cocina" />
+                                                        </a>
+                                                    </li>
+                                                     <li>
+                                                        <a href="<?= base_url('home/contacto') ?>" id="social-logo"><img class="img-responsive" src="<?= base_url('images/email.png'); ?>" alt="Contacto Club de la Cocina" />
+                                                        </a>
+                                                     </li> 
+                                                </ul>
+                                </nav> 
+                                <a href="<?= base_url() ?>"><img class="img-responsive" src="<?= base_url('images/CdlC_logo.png'); ?>" alt="Club de la Cocina"/></a>
                             </div>
-                            <div class="col-md-9 col-sm-9 col-xs-6">
+                            <div class="col-md-8 col-sm-8 col-xs-5">
                                 <nav class="navbar navbar-default header-nav">
                                     <div class="container-fluid">
                                         <div class="navbar-header">
@@ -95,7 +115,7 @@
                                         </div>  
                                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                             <ul class="nav navbar-nav">
-                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/contacto') ?>" style="font-size:160%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#9993;&nbsp;&nbsp;&nbsp;&nbsp;</a></li> 
+
                                                 <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/2') ?>">¿Cómo Funciona?</a></li>
                                                 <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/22') ?>" style="color:#ffaa22">Arma tu evento</a></li>    
                                             </ul>
