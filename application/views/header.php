@@ -117,7 +117,7 @@
                                             <ul class="nav navbar-nav">
 
                                                 <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/2') ?>">¿Cómo Funciona?</a></li>
-                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/22') ?>" style="color:#ffaa22">Arma tu evento</a></li>    
+                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/22') ?>" style="color:#ff6600">Arma tu evento</a></li>    
                                             </ul>
                                             <?php if (isset($this->session->userdata['username'])): ?>
                                                 <ul class="logged nav navbar-nav navbar-right">

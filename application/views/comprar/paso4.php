@@ -12,44 +12,44 @@
             <div>¡Listo! El Chef que has escogido está reservado para el evento. Pronto nos pondremos en contacto.</div>
             <div>Mientras tanto, ¡puedes compartirlo con tus amigos en las redes sociales!
                 <span>
-                    <a href="http://facebook.com/sharer.php?u=<?= urlencode(base_url($chefLink).'#'.str_replace(" ", "_", $experiencia['nombre']))?>"><i class="fa fa-facebook fa-2x"></i></a>
-                    <a href="https://twitter.com/intent/tweet?text=<?= urlencode(base_url($chefLink).'#'.str_replace(" ", "_", $experiencia['nombre']))?>"><i class="fa fa-twitter fa-2x"></i></a>        
+                    <a href="http://facebook.com/sharer.php?u=<?= urlencode(base_url($chefLink).'#'.str_replace(" ", "_", $experiencia['nombre']))?>" class="gap-region-comuna"><i class="fa fa-facebook fa-2x"></i></a>
+                    <a href="https://twitter.com/intent/tweet?text=<?= urlencode(base_url($chefLink).'#'.str_replace(" ", "_", $experiencia['nombre']))?>" class="gap-region-comuna"><i class="fa fa-twitter fa-2x"></i></a>        
                 </span>
             </div>
         </div>
         <div id="detalles">
-            <div id="cont-confirmacion" class="">
+            <div id="resumen-TB" class="">
                 <div class="info-actividad">
                     <table>
                         <tr>
-                            <th class="mayus titulo-info tit-datos-fin" colspan="2">detalle de compra</th>
+                            <th class="titulo-tb" colspan="2">detalle de compra</th>
                         </tr>
-                        <tr class="datos-confirm">
-                            <td class="titulo-datos">CHEF</td>
+                        <tr>
+                            <td class="frst-col">CHEF</td>
                             <td class="row-info">
                                 <div class="input-finalizacompra"><?= $nombreChef ?></div>
                             </td>
                         </tr>
-                        <tr class="datos-confirm">
-                            <td class="titulo-datos">EXPERIENCIA</td>
+                        <tr class="even">
+                            <td class="frst-col">EXPERIENCIA</td>
                             <td class="row-info">
                                 <div class="input-finalizacompra"><?= $experiencia['nombre'] ?></div>
                             </td>
                         </tr>
-                        <tr class="datos-confirm">
-                            <td class="titulo-datos">¿CUÁNTOS COMEN?</td>
+                        <tr>
+                            <td class="frst-col">¿CUÁNTOS COMEN?</td>
                             <td class="row-info">
                                 <div class="input-finalizacompra"><?= $invitados; ?></div>
                             </td>
                         </tr>
-                        <tr class="datos-confirm">
-                            <td class="titulo-datos">FECHA</td>
+                        <tr class="even">
+                            <td class="frst-col">FECHA</td>
                             <td class="row-info">
                                 <div class="input-finalizacompra"><?= date('d/m/Y', strtotime($actividad['fecha'])); ?></div>
                             </td>
                         </tr>
-                        <tr class="datos-confirm">
-                            <td class="titulo-datos">HORARIO</td>
+                        <tr>
+                            <td class="frst-col">HORARIO</td>
                             <td class="row-info">
                                 <div class="input-finalizacompra"><?= date('H:i', strtotime($horario)); ?> HRS.</div>
                             </td>
@@ -60,30 +60,30 @@
                                 <div class="input-finalizacompra"><?= gmdate('H:i', $experiencia['tiempo' . $invitados] * 60 * 60); ?> HRS.</div>
                             </td>
                         </tr>  -->
-                        <tr class="datos-confirm">
-                            <td class="titulo-datos">DIRECCIÓN</td>
+                        <tr class="even">
+                            <td class="frst-col">DIRECCIÓN</td>
                             <td class="row-info"><div class="input-finalizacompra"><?= $actividad['direccion']; ?></div></td>
                         </tr>
-                        <tr class="datos-confirm">
-                            <td class="titulo-datos">COMUNA</td>
+                        <tr>
+                            <td class="frst-col">COMUNA</td>
                             <td class="row-info"><div class="input-finalizacompra"><?= $comuna['nombreMeta']; ?></div></td>
                         </tr>
                         <!-- <tr>
                             <td class="titulo-datos">COMUNA</td>
                             <td class="row-info"><div class="input-finalizacompra"><?= ''//comuna;                 ?></div></td>
                         </tr> -->
-                        <tr class="datos-confirm">
-                            <td class="titulo-datos">TELÉFONO</td>
+                        <tr class="even">
+                            <td class="frst-col">TELÉFONO</td>
                             <td class="row-info"><div class="input-finalizacompra"><?= $actividad['nroContacto']; ?></div></td>
                         </tr>
-                        <tr class="datos-confirm">
-                            <td class="titulo-datos">PRECIO POR PERSONA</td>
+                        <tr>
+                            <td class="frst-col">PRECIO POR PERSONA</td>
                             <td class="row-info">
                                 <div class="input-finalizacompra">$ <?= number_format($total / $invitados, 0, ',', '.'); ?></div>
                             </td>
                         </tr>
-                        <tr class="datos-confirm">
-                            <td class="titulo-datos">TOTAL</td>
+                        <tr class="even">
+                            <td class="frst-col">TOTAL</td>
                             <td class="row-info">
                                 <div class="input-finalizacompra">$ <?= number_format($total, 0, ',', '.'); ?></div>
                             </td>
@@ -103,6 +103,6 @@
                 </div>
             </div>
         </div>
-        <div id="aviso-terminos-condiciones"><p>En caso de requerir devoluciones o reembolsos primero revisa los "Términos y Condiciones" y cualquier duda contactanos a <a href="mailto:hola@clubdelacocina.cl">hola@clubdelacocina.cl</a></p></div>
+     <!--   <div id="aviso-terminos-condiciones"><p>En caso de requerir devoluciones o reembolsos primero revisa los "Términos y Condiciones" y cualquier duda contactanos a <a href="mailto:hola@clubdelacocina.cl">hola@clubdelacocina.cl</a></p></div>  -->
     </div>
 </div>

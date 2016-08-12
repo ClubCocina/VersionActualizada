@@ -70,14 +70,15 @@ a{
 }
 
 a:hover{
-    text-decoration:underline;	
+    text-decoration:underline;
+    color: #ff6600;	
 }
 
 input[type=submit]{
     -webkit-transition: color 1s, background 1s, opacity 1s; /* For Safari 3.1 to 6.0 */
     transition: color 1s, background 1s, opacity 1s;	
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 3px;
 
 }
 
@@ -145,7 +146,7 @@ a:visited {
 }
 
 .bg-rojo {
-    background-color: #FF1849;
+    background-color: #FF6600;
 }
 
 .float-left {
@@ -265,7 +266,7 @@ a:visited {
 }
 
 .nav > li > a {
-    padding: 10px;
+    padding: 8px;
 }
 
 #login {
@@ -579,20 +580,20 @@ a:visited {
 
 .enviar-buscador {
     height: 100% !important;
-    background-color: #FF1849 !important;
+    background-color: #FF6600 !important;
     -webkit-transition: opacity 2s; /* For Safari 3.1 to 6.0 */
     transition: opacity 2s;
 }
 
 .enviar-buscador:hover{
     /* opacity: 0.8;	*/
-    background-color: #FFAA22 !important;
+    background-color: rgba(255,102,0,0.5);
 }
 
 .input-buscador {
     width: 120px;
     height: 40px;
-    border: 3px solid #FFAA22;
+    border: 3px solid #FF6600;
     margin-right: 12px;
     margin-bottom: 3px;
     border-radius: 4px;
@@ -612,7 +613,7 @@ a:visited {
 @media (min-width: 768px) {
     #encuentra-resultado{
         font-size: 25px;
-        letter-spacing: 2px;
+        letter-spacing: 3px;
     }
 }
 
@@ -630,7 +631,7 @@ a:visited {
     background-position: right;
     background-repeat: no-repeat;
     /*overflow: hidden;*/
-    border-radius: 3px;
+    border-radius: 1px;
     max-width: 149px;
     max-height: 40px;
 }
@@ -879,14 +880,14 @@ a:visited {
 #comentarios {
     margin-top: 30px;
     /*width: 927px;*/
-    background-color: #FFAB00;
+    background-color: rgba(0,0,0,0.7);
     padding-bottom: 38px;
     margin-bottom: 17px;
     border-radius: 5px;
 }
 
 #comentarios div.SueEllen {
-    font-size: 30px;
+    font-size: 25px;
     padding-top: 16px;
     padding-left: 13px;
     color: #FFFFFF;
@@ -916,18 +917,18 @@ a:visited {
 
 .texto-comentario{
     width: 720px;
-    background-color: #EDD6A8;
+    /*background-color: #EDD6A8;*/
     font-size: 13px;
     padding: 19px 29px 26px 12px;
     min-height: 72px;
-    color: #262626;
+    color: #ffffff;
     font-style: italic;
     line-height: 16px;;
 }
 
 .footer-comentario {
     height: 12px;
-    background-color: #DE9322;
+    background-color: #ff6600;
 }
 
 #calificar {
@@ -1815,7 +1816,7 @@ li.nobottomline {
 }
 
 #registro h2{
-    background: #FF1849;
+    background: #FF6600;
 }
 
 #inicio-sesion h2 {
@@ -1854,7 +1855,7 @@ li.nobottomline {
 }
 
 #login-light h2{
-    background: #FF1849;
+    background: #FF6600;
 }
 
 #registro form {
@@ -1874,7 +1875,7 @@ li.nobottomline {
 }
 
 #registrarme {
-    background: #FFAA22; 
+    background: #FF6600; 
     /*float: right;*/
     /*margin-right: 75px;*/        
 }
@@ -1892,7 +1893,7 @@ li.nobottomline {
 }
 
 #login-light .bot-light{
-    background: #FFAA22; 
+    background: #FF6600; 
 }
 
 .fb-login-button{
@@ -1903,7 +1904,7 @@ li.nobottomline {
 /****************** Resultado de la búsqueda **********************/
 
 #barra-info {
-    background: #FFAA22;
+    background: #FF6600;
     color: #FFFFFF;
     font-size: 18px;
     /*float: left;
@@ -1933,7 +1934,7 @@ li.nobottomline {
     font-size: 25px;
     font-family: "SueEllen";
     font-weight: 0;
-    color:#333333;
+    color:#ffffff;
     line-height: 30px;
     padding-top: 8px;
     margin-left: auto;
@@ -1944,7 +1945,7 @@ li.nobottomline {
     .titulo-tags{
         font-size: 30px;
         margin-left: 15px;
-        font-weight: 700;
+        font-weight: 500;
     }
 }
 
@@ -2003,11 +2004,11 @@ li.nobottomline {
 }
 
 .mini-dish{
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .bg-white-t{
-    background-color: rgba(255,255,255,0.7);
+    background-color: rgba(0,0,0,0.7);
 }
 
 .white-border{
@@ -2114,7 +2115,7 @@ li.nobottomline {
     font-family: "SueEllen";
     font-weight: 500;
     letter-spacing: 1px;
-    color: #FF1849;
+    color: #FF6600;
     padding: 8px;
     margin-left: 8.333%;
 }
@@ -2122,6 +2123,7 @@ li.nobottomline {
 @media (min-width: 768px){
     .preview-nombre{
         margin-left: 0;
+        margin-top: 15px;
     }
 }
 
@@ -2129,7 +2131,7 @@ li.nobottomline {
     background: url("../images/fondo-review.png");
     width: 37px;
     height: 33px;
-    color: #FFFFFF;
+    color: #FF6600;
     text-align: center;
     line-height: 27px;
     margin-right: 15px;
@@ -2144,7 +2146,7 @@ li.nobottomline {
     /*height: 71px;*/    
     width: auto;
     font-weight: 700;
-    padding: 15px;
+    padding: 8px;
     margin-right: -10px;
 }
 
@@ -2162,7 +2164,7 @@ li.nobottomline {
 
 .preview-clp {
     font-size: 90%;
-    color: #FFAA22;
+    color: #fff;
     font-weight: 500;
 }
 
@@ -2178,7 +2180,7 @@ li.nobottomline {
 
 #precio div.desc-precio, #precio-detalle div.desc-precio {
     font-size: 12px;
-    color: #FFAA22;
+    color: #FFCF00;
     font-weight: 500;
 }
 
@@ -2191,7 +2193,7 @@ li.nobottomline {
 .preview-valor {
     /*margin-top: 15px;*/
     line-height: 30px;
-    font-size: 90% !important;
+    font-size: 110% !important;
     color: #FFFFFF;
 }
 
@@ -2249,7 +2251,7 @@ li.nobottomline {
 
 #metas {
     /*width: 672px;*/
-    background: rgba(255,255,255,0.6);
+    background: rgba(0,0,0,0.7);
     padding: 10px;
     margin-top: 2px;
     min-height: 95px;
@@ -2267,9 +2269,9 @@ li.nobottomline {
 #descripcion {
     padding: 8px 23px 27px;
     font-size: 14px;
-    background: rgba(255,255,255,0.6);
+    background: rgba(0,0,0,0.7);
     font-weight: 500; 
-    color: #333333;
+    color: #ffffff;
     border-radius: 5px;
     margin-left: 8px;
     float: left;
@@ -2283,14 +2285,14 @@ li.nobottomline {
 .titulo-descripcion {
     font-size: 30px;
     line-height: 30px;
-    font-weight: 700;
+    font-weight: 500;
     font-family: "SueEllen";
 }
 
 #nombre-chef{
     font-family: "SueEllen";
     font-size: 35px;
-    color: #FFAA22;
+    color: #FF6600;
     font-weight: 400;
     /*padding-bottom: 10px;*/
     line-height: 135%;
@@ -2307,7 +2309,7 @@ li.nobottomline {
 #nuestras-experiencias{
     font-family: "SueEllen";
     font-size: 35px;
-    color: #FFAA22;
+    color: #FF6600;
     font-weight: 400;
     line-height: 135%;
     width: 100%; 
@@ -2349,7 +2351,8 @@ li.nobottomline {
 .menu-chef{    
     font-family: "SueEllen";
     font-size: 25px;
-    background: rgba(255,255,255,0.6);
+    background: rgba(0,0,0,0.7);
+    color: #ffffff;
     margin-top: 20px;
     margin-bottom: 5px;
     padding: 14px 0px 10px 28px;
@@ -2373,7 +2376,7 @@ li.nobottomline {
     padding-top: 5px;
     padding-left: 20px;
     padding-right: 25px;
-    background: #FF1849;
+    background: #FF6600;
     line-height: 45px;
     color: #FFFFFF;
     border-radius: 5px;
@@ -2407,16 +2410,17 @@ li.nobottomline {
 .descripcion-fantasia {
     text-align: left;
     font-size: 12px;
-    color: gray;
+    color: #FFCF00;
 }
 
 .texto-fantasia {
     padding-top: 0px;
     /*width: 690px;*/
     font-size: 14px;
+    color: #fff;
     line-height: 16px;
     text-align: center;
-    background: rgba(255,255,255,0.6);
+    background: rgba(0,0,0,0.7);
     /*min-height: 470px;*/
     border-radius: 5px;
     margin-left: 8.333%;
@@ -2433,7 +2437,7 @@ li.nobottomline {
 }
 
 .texto-fantasia-wrapper {
-    padding: 5px 24px;
+    padding: 5px 20px;
 }
 
 .titulo-plato {
@@ -2503,14 +2507,14 @@ li.nobottomline {
 }
 
 .input-vista-chef {
-    background: #FF1849;
+    background: #FF6600;
     border: none;
     color: white;
     font-weight: 400;
     font-size: 16px;
     margin-top: 0px;
     /*text-transform: uppercase;*/
-    width: 80%;
+    width: 75%;
     margin-left: 3px;
     padding: 6px;
     /*height: 22px;*/
@@ -2550,27 +2554,27 @@ span.ui-spinner {
 
 .cantidad-invitados:before {
     content: url(../images/thumb-invitados.png);
-    background: #FF1849;
+    background: #FF6600;
     padding: 0 7px;
     padding-bottom: 3px;
 }
 
 .horario-evento:before {
     content: url(../images/thumb-horario.png);
-    background: #FF1849;
+    background: #FF6600;
     padding: 0 7px;
     padding-bottom: 3px;
 }
 
 .total-evento:before {
     content: url(../images/thumb-total.png);
-    background: #FF1849;
+    background: #FF6600;
     padding: 0 9px;
     padding-bottom: 2px;
 }
 
 .prompt-input:before {
-    background: #FFAA22;
+    background: #FFCF00;
 }
 
 .ui-widget-content {
@@ -2609,14 +2613,14 @@ span.ui-spinner {
     background: inherit;
     border: none;
     font-family: Roboto, Arial, Helvetica, sans-serif;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.3px;
     color: white;
     text-align: center;
     width: 100%;
     height: 50px;
-    font-weight: 400;
+    font-weight: 600;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 15px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     -webkit-transition: opacity 1s; /* For Safari 3.1 to 6.0 */
@@ -2644,7 +2648,7 @@ span.ui-spinner {
 
 .compra-error {
     background: #FFFFFF;
-    color: #FF1849;
+    color: #FF6600;
     padding-top: 4px;
     padding-left: 3px;
     font-size: 15px;
@@ -2764,9 +2768,9 @@ span.ui-spinner {
 */
 
 .tags-btn{
-    background-color: #FF1849;
+    background-color: #FF6600;
     color: #FFF;
-    border-color: #FF1849;
+    border-color: #FF6600;
     width: 100%;
     margin-top: 5px;
 }
@@ -2778,9 +2782,9 @@ span.ui-spinner {
 }
 
 .btn-xs-option{    
-    background-color: #FF1849;
+    background-color: #FF6600;
     color: #FFF;
-    border-color: #FF1849;
+    /*border-color: #FF1849;*/
     margin-top: 5px;    
     margin-bottom: 20px;
 }
@@ -2797,12 +2801,12 @@ span.ui-spinner {
 }
 
 .btn-xs-option-active{
-    background-color: #E8AC13;
+    background-color: #ff6600;
     border-color: #E8AC13;   
 }
 
 .btn-xs-option-active:focus, .btn-xs-option-active:hover, .btn-xs-option-active:active{
-    background-color: #E8AC13;
+    background-color: rgba(0,0,0,0.7);
     border-color: #E8AC13 !important;   
 }
 
@@ -2839,7 +2843,7 @@ span.ui-spinner {
 }
 
 .bg-rojo-oscuro {
-    background: #FF1849;
+    background: #FF6600;
     border-radius: 5px;
 }
 
@@ -2849,15 +2853,15 @@ span.ui-spinner {
 }
 
 .bg-rojo-oscuro-btn:hover{
-    background-color: #FF1849 !important;
+    background-color: #FF6600 !important;
 }
 
 .bg-rojo-oscuro-btn-cotizador{
-    background: #FFAA22;
+    background: #FFCF00;
 }
 
 .bg-rojo-oscuro-btn-cotizador:hover{
-    background-color: #FF1849;    
+    background-color: #FF6600;    
 }
 
 .bg-blanco {
@@ -2987,6 +2991,7 @@ span.ui-spinner {
 .titulo-ingreso {
     /*width: 764px;*/
     font-family: 'SueEllen';
+    letter-spacing: 0.5px;
     font-size: 15px;
     line-height: 135%;
     padding-bottom: 20px;
@@ -3249,7 +3254,7 @@ span.ui-spinner {
     border: none;
     width: 135px;
     height: 48px;
-    background-color: #FFAA22;
+    background-color: #FF6600;
     margin-top: 20px;
     font-size: 16px;
     font-weight: 400;
@@ -3257,7 +3262,7 @@ span.ui-spinner {
 
 .enviar-contacto:hover {
 
-    background-color: #a1162f !important;
+    background-color: rgba(255,102,0,0.5); !important;
 }
 
 
@@ -3352,7 +3357,7 @@ span.ui-spinner {
 }
 
 #pasofinal {
-    background-color: #262626;
+    /*background-color: #262626;*/
     /*width: 980px;*/
     color: #FFFFFF;
     margin-bottom: 20px;
@@ -3516,7 +3521,8 @@ div.thumb-sf {
     width: 385px;
     background: #FFFFFF;
     color: #000000;
-    margin-left: 30px;
+    margin-left: 2px;
+    margin-bottom: 8px;
     height: 105%;
 }
 
@@ -3674,7 +3680,7 @@ input::-webkit-inner-spin-button {
 .success-grp {
     height: 100%;
     width: 200px;
-    margin-top: 290px;
+    margin-top: 30px;
 }
 
 #fin-ver-reservas input {
@@ -3793,6 +3799,7 @@ input::-webkit-inner-spin-button {
     font-size: 13px;
     font-weight: 300;
     line-height: 12px;
+    color: #fff;
 }
 
 #orden-exp{
@@ -3801,8 +3808,8 @@ input::-webkit-inner-spin-button {
 }
 
 .btn-select{
-    background-color: #fa2;
-    border-color: #B5860F;
+    background-color: #ff6600;
+    border-color: rgba(0,0,0,0.7);
     font-size: 0.6em;
 }
 
@@ -3886,7 +3893,7 @@ input::-webkit-inner-spin-button {
 
 .nombre-chef-carrusel{
     border-radius: 5px;
-    background-color: #FF1849;
+    background-color: #FF6600;
     color: #fff;
     margin-top: 5px;
 }
@@ -3898,10 +3905,14 @@ input::-webkit-inner-spin-button {
 
 .show-chef-text{
     display: none !important;
+    font-size: 85%;
 }
 
 .datos-chef-hidden{
     display: block !important;
+    margin-bottom: 12px;
+    margin-top: 15px;
+    text-decoration: none;
 }
 
 @media (min-width: 400px) and (max-width: 767px){
@@ -3921,6 +3932,7 @@ input::-webkit-inner-spin-button {
 
     .datos-chef-hidden{
         display: block !important;
+        margin-top: 15px;
     }
 }
 
@@ -3936,9 +3948,9 @@ input::-webkit-inner-spin-button {
 
 .btn-experiencias{
     max-width: inherit;
-    background-color: #FF1849;
+    background-color: #FF6600;
     color: #FFF !important;
-    border-color: #FF1849;
+    border-color: #FF6600;
     padding: 2px 8px;
     margin: 5px 0;
     font-size: 12px;
@@ -4007,7 +4019,7 @@ a {
 }
 
 .navbar-padding{
-    padding: 10px !important;
+    padding: 8px !important;
 }
 
 @media (min-width: 768px) and (max-width: 795px){
@@ -4042,9 +4054,12 @@ a {
 
 .enviar-suscripcion {
     height: 39px;
-    font-size: 17px;
+    font-size: 15px;
     text-transform: uppercase;
-    color:#000;
+    color:#fff;
+    background-color: #ff6600;
+    font-weight: 600;
+    border-color: #ff6600;
 }
 #social-logo img {
     /*width: 220px;*/
@@ -4055,4 +4070,9 @@ a {
     margin-bottom: 0px;
     background-color: none;
     float: left;
+}
+.btn-danger:hover {
+    background-color: rgba(255,102,0,0.5);
+    border-color:rgba(255,102,0,0.5);
+
 }

@@ -116,7 +116,7 @@
                                                         });
                                                     </script>                                                
                                                     <div class="col-md-2 col-sm-3 col-xs-4 col-xs-offset-1 no-padding ">
-                                                        <div class="precio-preview bg-rojo">
+                                                        <div class="precio-preview">
                                                             <span class="preview-clp">Valores desde </span>
                                                             <br>
                                                             <div class="preview-valor">

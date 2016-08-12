@@ -7,12 +7,12 @@
         <table width="600" border="0" align="center" cellpadding="0" cellspacing="0" id="Tabla_01" style="border:#EFEFEF 1px solid; margin-top: 20px;">
             <tr>
                 <td width="220" style="text-align: center; padding: 50px 0;">
-                    <img src="<?= base_url('images/email_04.jpg'); ?>" width="167" height="136" alt="">
+                    <img src="<?= base_url('images/CdlC_logo.png'); ?>" width="167" height="136" alt="">
                 </td>
                 <td style="font-family: Arial; font-size: 15px; font-weight: bold">
-                    <p>Hola <span style="color: #F9A33F"><?= $nombreChef?></span></p>
+                    <p>Hola <span style="color: #FF6600"><?= $nombreChef?></span></p>
                     <p>
-                        <span style="color:#F9A33F">¡Felicitaciones!</span><br>
+                        <span style="color:#FF6600">¡Felicitaciones!</span><br>
                         Te han contratado para una nueva experiencia. 
                         A continuación, te enviamos el detalle del evento. 
                         Por favor, confirma la recepción de este email.
@@ -48,10 +48,10 @@
                             <td width="49%" height="25" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px; font-weight:bold">¿Cu&aacute;ntos comen?</span></td>
                             <td width="51%" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px;"><?= $this->session->userdata('invitados'); ?></span></td>
                         </tr>
-                        <tr>
+                    <!--    <tr>
                             <td width="49%" height="25" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px; font-weight:bold">Duraci&oacute;n</span></td>
                             <td width="51%" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px;"><?= gmdate('H:i', $experiencia['tiempo' . $this->session->userdata('invitados')] * 60 * 60); ?> HRS.</span></td>
-                        </tr>
+                        </tr>  -->
                         <tr>
                             <td width="49%" height="25" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px; font-weight:bold">Direcci&oacute;n</span></td>
                             <td width="51%" bgcolor="#EEEEEE"><span style="font-family:Arial; font-size:13px;"><?= $actividad['direccion']; ?></span></td>

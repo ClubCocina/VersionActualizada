@@ -138,7 +138,7 @@
                                 <p class="show-chef-text">
                                     <?= isset($chef['dato']) && $chef['dato'] != '' ? $chef['dato'] : '' ?>
                                 </p>
-                                <p class="datos-chef-hidden">¡Conoce las experiencias!</p>
+                                <a class="datos-chef-hidden" href="<?= base_url($urlChef); ?>">¡Conoce las experiencias!</a>
                                 <a class="btn btn-danger btn-experiencias" href="<?= base_url($urlChef); ?>">Ver Chef</a>
                             </div>
                         </div>
