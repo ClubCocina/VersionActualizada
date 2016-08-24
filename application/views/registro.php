@@ -48,7 +48,7 @@
 	echo "E-mail: ".form_input($mail); echo "<br>";
 	echo "Nombre: ".form_input($nombre); echo "<br>";
 	echo "Primer apellido: ".form_input($apellidoPaterno); echo "<br>";
-	echo "Segundo apellido: ".form_input($apellidoMaterno); echo "<br>";
+	//echo "Segundo apellido: ".form_input($apellidoMaterno); echo "<br>";
 	echo "Contraseña: ".form_password($password); echo "<br>";
 	echo "Repita su contraseña: ".form_password($passwordVerificacion); echo "<br>";
 	echo form_hidden($fbid); echo "<br>";
