@@ -1046,20 +1046,20 @@ a:visited {
 }
 
 .statusreserva {
-    width: 100px;
-    padding-top: 81px;
+    width: 140px;
+    padding-top: 80px;
     padding-right: 20px;
     font-size: 18px;
     font-style: italic;
     font-family: "Roboto";
-
+    margin-left: 20px;
     text-align: center;
     font-weight: 500;
     color: #51E3C6;
 }
 
 .chefreserva {
-    width: 199px;
+    width: 250px;
 }
 
 .cheffoto {
@@ -1105,6 +1105,10 @@ a:visited {
     color: #F2F2F2;
     font-size: 20px;
     padding-left: 17px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 20px;
 }
 
 .eventoreserva div {
@@ -1401,7 +1405,7 @@ li.nobottomline {
     /*width:250px;*/
     /*height: 300px;*/
     /*margin-left: 20px;*/
-    color: #000000;
+    color: #FFCF00;
     border-radius: 5px;
     /*margin-right: 10px;*/
     margin-left: 8.333%;
@@ -2852,7 +2856,7 @@ span.ui-spinner {
 }
 
 .bg-rojo-oscuro-btn {
-    background: #FFAA22;
+    background: #FFCF00;
     border-radius: 5px;
 }
 
@@ -3778,7 +3782,6 @@ input::-webkit-inner-spin-button {
     line-height: 100%;
 }
 
-
 .social-buttons > .fa{
     /*float: right;*/
     font-size: 25px;
@@ -3787,6 +3790,10 @@ input::-webkit-inner-spin-button {
 
 .social-buttons .fa {
     margin-right: 0px;
+}
+
+.social-buttons .fa:hover {
+    color:#FFCF00;
 }
 
 @media (min-width: 768px){

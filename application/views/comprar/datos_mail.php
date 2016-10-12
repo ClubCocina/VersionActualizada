@@ -14,7 +14,7 @@
             </tr>
             <tr>
                 <td width="167">
-                    <img src="<?= base_url('images/CdlC_logo.jpg'); ?>" width="167" height="136" alt="">
+                    <img src="<?= base_url('images/CdlC_logo.png'); ?>" width="167" height="136" alt="">
                 </td>
                 <td width="293">
                     <span style="font-family:Arial; font-size:13px; font-weight:bold">Hola</span>
@@ -133,7 +133,7 @@
             </tr>
             <tr>
                 <td colspan="2" align="center">
-                    <img src="<?= base_url('images/email_07.jpg'); ?>" width="423" height="99" alt=""></td>
+                    <img src="<?= base_url('images/pilares_mail.jpg'); ?>" width="423" height="99" alt=""></td>
             </tr>
         </table>
     </body>
