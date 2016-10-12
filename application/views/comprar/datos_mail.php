@@ -18,17 +18,15 @@
                 </td>
                 <td width="293">
                     <span style="font-family:Arial; font-size:13px; font-weight:bold">Hola</span>
-                    <span style="font-family:Arial; font-size:13px; font-weight:bold; color:#f8a23e;"> <?= ucwords($comprador); ?>,</span><br>
+                    <span style="font-family:Arial; font-size:13px; font-weight:bold; color:##FF6600;"> <?= ucwords($comprador); ?>,</span><br>
 
                     <span style="font-family:Arial; font-size:13px; font-weight:bold">
                         Tu Compra se ha efectuado exitosamente.<br>
                         A continuaci&oacute;n puedes ver el detalle <br>
                         ¡y también contarle a tus amigos en las redes sociales! <br>
                         <span>
-                            <a href="   
-                    http://facebook.com/sharer.php?u=<?= urlencode(base_url($chefLink).'#'.str_replace(" ", "_", $experiencia['nombre']))?>"><i class="fa fa-facebook fa-2x"></i></a>
-                            <a href="   
-                    https://twitter.com/intent/tweet?text=<?= urlencode(base_url($chefLink).'#'.str_replace(" ", "_", $experiencia['nombre']))?>"><i class="fa fa-twitter fa-2x"></i></a>        
+                            <a href="http://facebook.com/sharer.php?u=<?= urlencode(base_url($chefLink).'#'.str_replace(" ", "_", $experiencia['nombre']))?>"><i class="fa fa-facebook fa-2x"></i></a>
+                            <a href="https://twitter.com/intent/tweet?text=<?= urlencode(base_url($chefLink).'#'.str_replace(" ", "_", $experiencia['nombre']))?>"><i class="fa fa-twitter fa-2x"></i></a>        
                         </span>
                     </span>
                 </td>
@@ -133,7 +131,7 @@
             </tr>
             <tr>
                 <td colspan="2" align="center">
-                    <img src="<?= base_url('images/pilares_mail.jpg'); ?>" width="423" height="99" alt=""></td>
+                    <img src="<?= base_url('images/email_07.jpg'); ?>" width="423" height="99" alt=""></td>
             </tr>
         </table>
     </body>

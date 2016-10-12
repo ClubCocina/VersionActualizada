@@ -22,7 +22,7 @@
                 <div class="info-actividad">
                     <table>
                         <tr>
-                            <th class="titulo-tb" colspan="2">detalle de compra</th>
+                            <th class="titulo-tb" colspan="2">Detalle de Compra</th>
                         </tr>
                         <tr>
                             <td class="frst-col">CHEF</td>

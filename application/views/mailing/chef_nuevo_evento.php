@@ -12,7 +12,7 @@
                 <td style="font-family: Arial; font-size: 15px; font-weight: bold">
                     <p>Hola <span style="color: #FF6600"><?= $nombreChef?></span></p>
                     <p>
-                        <span style="color:#FF6600">¡Felicitaciones!</span><br>
+                        <span style="color:#000000">¡Felicitaciones!</span><br>
                         Te han contratado para una nueva experiencia. 
                         A continuación, te enviamos el detalle del evento. 
                         Por favor, confirma la recepción de este email.
@@ -65,7 +65,7 @@
             </tr>
             <tr>
                 <td colspan="2" align="center">
-                    <img src="<?= base_url('images/email_07.jpg');?>" width="423" height="99" alt=""></td>
+                    <img src="<?= base_url('images/pilares_mail.jpg');?>" alt=""></td>
             </tr>
         </table>
     </body>

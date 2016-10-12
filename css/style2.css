@@ -1405,7 +1405,7 @@ li.nobottomline {
     /*width:250px;*/
     /*height: 300px;*/
     /*margin-left: 20px;*/
-    color: #FFCF00;
+    color: #000000;
     border-radius: 5px;
     /*margin-right: 10px;*/
     margin-left: 8.333%;
@@ -2489,6 +2489,7 @@ li.nobottomline {
     letter-spacing: 2px;
     text-align: center;    
     padding-top: 10px;
+    color:#ffffff;
 }
 
 .especialidades2{
@@ -2945,16 +2946,16 @@ span.ui-spinner {
     height: 46px !important;
     font-size: 22px;
     text-transform: uppercase;
-    background: orange;
-    color: #F5F3EC;
-    border: 3px solid #DE9322 !important;
+    background: #ff6600;
+    color: #FfFfff;
+    border: 3px solid #ff6600 !important;
     /*margin-top: 20px;
     margin-bottom: 20px;
     margin-right: 50px;*/
 }
 
 #avanzar-compra input:hover{
-    background-color: #a1162f !important;
+    background-color: #ff6600 !important;
 }
 
 #menuchef ul li.menu-paso1 {
@@ -3003,6 +3004,7 @@ span.ui-spinner {
     color: #ff6600;
     letter-spacing: 0.5px;
     font-size: 15px;
+    font-weight: 700;
     line-height: 135%;
     padding-bottom: 20px;
     margin-left: 10px;
@@ -3464,9 +3466,9 @@ div.thumb-sf {
     height: 46px !important;
     font-size: 16px;
     text-transform: uppercase;
-    background: orange;
-    color: #F5F3EC;
-    border: 3px solid #DE9322 !important;
+    background: #ff6600;
+    color: #FfFfff;
+    border: 3px solid ff6600 !important;
     cursor: pointer;
     width: 100%;
 }
