@@ -65,7 +65,7 @@
             </tr>
             <tr>
                 <td colspan="2" align="center">
-                    <img src="<?= base_url('images/pilares_mail.jpg');?>" alt=""></td>
+                    <img src="<?= base_url('images/pilares_mail.png');?>" alt=""></td>
             </tr>
         </table>
     </body>

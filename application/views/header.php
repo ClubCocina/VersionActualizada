@@ -11,8 +11,8 @@
         </script>
         <link rel="canonical" href="http://www.clubdelacocina.cl">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="chef, cocina">
-        <meta name="description" content="Los mejores chef en tu casa, con tu gente.">
+        <meta name="keywords" content="chef a domicilo, cocina en casa, clases de cocina, chef privado">
+        <meta name="description" content="Lo mejor de un restaurante, en tu casa. Conoce las más deliciosas recetas de nuestros chefs y aprende a prepararlas, en tu casa, con tu gente. Arma tu evento con nosotros!">
         <link rel="stylesheet" type="text/css" href="<?= base_url('css/bootstrap.min.css') ?>">
         <link href="<?= base_url('css/style2.css'); ?>" rel="stylesheet" media="screen" />
         <link href="<?= base_url('css/paginator.css'); ?>" rel="stylesheet" media="screen" />
@@ -115,9 +115,9 @@
                                         </div>  
                                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                             <ul class="nav navbar-nav">
-
-                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/2') ?>">¿Cómo Funciona?</a></li>
-                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/22') ?>" style="color:#ff6600">Arma tu evento</a></li>    
+                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/22') ?>" style="color:#ff6600">Arma tu evento</a></li>
+                                                <li class="float-left"><a class="navbar-padding" href="https://plus.google.com/collection/kgXMWB" target="_blank">Prensa</a></li>
+                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/2') ?>">¿Cómo Funciona?</a></li>   
                                             </ul>
                                             <?php if (isset($this->session->userdata['username'])): ?>
                                                 <ul class="logged nav navbar-nav navbar-right">
@@ -176,7 +176,7 @@
                                         <input type="text" placeholder="¿Para cuándo?" name="agenda" id="agenda" class="fecha-buscador"/>
                                     </div>
                                     <div class="input-buscador float-left hidden-xs">
-                                        <div class="constraint-select">
+                                        <div class="constraint-select SueEllen">
                                             <select name="comuna">
                                                 <option value="">¿DÓNDE?</option>
                                                 <?php foreach ($comunas as $comuna): ?>

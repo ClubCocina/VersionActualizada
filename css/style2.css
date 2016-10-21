@@ -675,9 +675,8 @@ a:visited {
     text-transform: uppercase;
     color: #F5F3EC;
     border: none;
-    font-family: "SueEllen";
-    letter-spacing: 1px;
-
+    font-family: inherit;
+    letter-spacing: 0.5px;
     padding-left: 5px;
 }
 
@@ -2033,7 +2032,7 @@ li.nobottomline {
 
 .avatar-preview-chef{
     margin-top: -50px;
-    width: 80%;
+    width: 70%;
     margin-left: 20px;
 }
 
@@ -2200,8 +2199,8 @@ li.nobottomline {
 
 .preview-valor {
     /*margin-top: 15px;*/
-    line-height: 30px;
-    font-size: 110% !important;
+    line-height: 35px;
+    font-size: 120% !important;
     color: #FFFFFF;
 }
 
