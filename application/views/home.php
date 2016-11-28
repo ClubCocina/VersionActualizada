@@ -19,8 +19,8 @@
             <!--comienzo Link fotos -->
             <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                            <a href="<?= base_url('home/ver_experiencias')?>"> 
-                                <img src="<?= base_url('slides/CdlC-slide1.png'); ?>" alt="Ver Experiencias" class="img-slide">
+                            <a href="<?= base_url('home/page/22')?>"> 
+                                <img src="<?= base_url('slides/Arma_tu_evento.png'); ?>" alt="Arma tu evento - Club de la Cocina" class="img-slide">
                                 <div class="carousel-caption">
                                 <!--    <h4>First Thumbnail label</h4>
                                         <p>el texto de prueba 1</p>  -->
@@ -28,23 +28,23 @@
                             </a>    
                         </div>
                         <div class="item">
-                            <a href="<?= base_url('home/ver_experiencias')?>"> 
-                                <img src="<?= base_url('slides/CdlC-slide2.png'); ?>" alt="Ver Experiencias" class="img-slide">
+                            <a href="<?= base_url('chefs/verDatosChef/112')?>"> 
+                                <img src="<?= base_url('slides/Nico_Garate.png'); ?>" alt="Nicolas Garate - Club de la Cocina" class="img-slide">
                                 <div class="carousel-caption">
                                 <!--    <h4>Second Thumbnail label</h4>
                                         <p>el texto de prueba 2</p>  -->
                                 </div>
                             </a>    
                         </div>
-                         <div class="item">
+                      <!--   <div class="item">
                             <a href="<?= base_url('home/ver_experiencias')?>"> 
                                 <img src="<?= base_url('slides/CdlC-slide3.png'); ?>" alt="Ver Experiencias" class="img-slide">
                                 <div class="carousel-caption">
-                                <!--    <h4>Second Thumbnail label</h4>
-                                        <p>el texto de prueba 2</p>  -->
+                                   <h4>Second Thumbnail label</h4>
+                                        <p>el texto de prueba 2</p> 
                                 </div>
                             </a>    
-                        </div>
+                        </div>  -->
             </div> 
             <!--Fin link fotos -->          
        <!--     <div class="carousel-inner" role="listbox">
