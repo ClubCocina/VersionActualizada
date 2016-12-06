@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-10 col-sm-10 col-xs-12 col-sm-offset-1">
         <div id="contacto" class="bg-color-general">
-            <div class="titulo-contacto">Llámanos al <a href="tel:+56957832786">+56 9 5783 2786</a> o déjanos un mensaje</div>
+            <div class="titulo-contacto">Llámanos al <a href="tel:+56999992896">+56 9 9999 2896</a> o déjanos un mensaje</div>
             <?= form_open('home/contacto') ?>
             <div class="col-sm-6 col-xs-12">
                 <div class="contacto-fields">

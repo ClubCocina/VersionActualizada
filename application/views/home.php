@@ -36,15 +36,24 @@
                                 </div>
                             </a>    
                         </div>
-                      <!--   <div class="item">
-                            <a href="<?= base_url('home/ver_experiencias')?>"> 
-                                <img src="<?= base_url('slides/CdlC-slide3.png'); ?>" alt="Ver Experiencias" class="img-slide">
+                         <div class="item">
+                            <a href="<?= base_url('chefs/verDatosChef/322')?>"> 
+                                <img src="<?= base_url('slides/Luis_Felipe_Correa.png'); ?>" alt="Luis Felipe Correa - Club de la Cocina" class="img-slide">
                                 <div class="carousel-caption">
-                                   <h4>Second Thumbnail label</h4>
-                                        <p>el texto de prueba 2</p> 
+                                <!--   <h4>Second Thumbnail label</h4>
+                                        <p>el texto de prueba 2</p>  -->
                                 </div>
                             </a>    
-                        </div>  -->
+                        </div> 
+                        <div class="item">
+                            <a href="<?= base_url('chefs/verDatosChef/354')?>"> 
+                                <img src="<?= base_url('slides/Tito_Garreton.png'); ?>" alt="Tito Garreton - Club de la Cocina" class="img-slide">
+                                <div class="carousel-caption">
+                                <!--   <h4>Second Thumbnail label</h4>
+                                        <p>el texto de prueba 2</p>  -->
+                                </div>
+                            </a>    
+                        </div> 
             </div> 
             <!--Fin link fotos -->          
        <!--     <div class="carousel-inner" role="listbox">
