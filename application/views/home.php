@@ -153,11 +153,14 @@
                         </div>
                     <?php endforeach; ?>
                 <?php endif;?>
+
+                <div class="SueEllen mayus suscripcion"><label>¿Tienes consultas? LL&aacute;manos al +56 9 9999 2896</label>
+                </div>
                 <!-- Begin MailChimp Signup Form -->
                 <div id="mc_embed_signup" class="interior">
-                    <form id="mc-embedded-subscribe-form" class="validate" action="//clubdelacocina.us11.list-manage.com/subscribe/post?u=ba52aedb3826e25b8ae2856f6&amp;id=0a2ca393da" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank">
+                    <form id="mc-embedded-subscribe-form" class="validate" action="//clubdelacocina.us11.list-manage.com/subscribe/post?u=ba52aedb3826e25b8ae2856f6&amp;id=1601d26be8" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank">
                         <div id="mc_embed_signup_scroll" class="SueEllen mayus suscripcion"><label for="mce-EMAIL">Ent&eacute;rate de nuestras novedades</label> <input id="mce-EMAIL" class="email" name="EMAIL" required="" type="email" value="" placeholder="  TU EMAIL" /> <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;"><input tabindex="-1" name="b_ba52aedb3826e25b8ae2856f6_0a2ca393da" type="text" value="" />
+                            <div style="position: absolute; left: -5000px;"><input tabindex="-1" name="b_ba52aedb3826e25b8ae2856f6_1601d26be8" type="text" value="" />
                             </div>
                             <div class="suscripcion"><input class="enviar-suscripcion" name="subscribe" type="submit" value="Suscribirse" />
                             </div>
@@ -165,6 +168,7 @@
                     </form>
                 </div>
                 <!--End mc_embed_signup--> 
+
     </div>
 </div>
 <script>
