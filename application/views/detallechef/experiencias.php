@@ -120,7 +120,11 @@
                                                        class="spinner-invitados"
                                                        value="<?= set_value('invitados' . $idExperiencia, $comensales_default); ?>"
                                                        />
+                                                <div class="row-info block-una-linea">
+                                                    <a href="<?= base_url('home/page/22') ?>" >+ personas</a>
+                                                </div>       
                                             </div>
+                                            
                                         </div>
                             
                                         <div class="overflowauto row-detalle">

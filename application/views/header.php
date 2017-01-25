@@ -29,6 +29,7 @@
         <link rel="stylesheet" href="<?= base_url('css/magnific-popup.css') ?>">
         <link rel="stylesheet" href="<?= base_url('css/jquery.datetimepicker.css') ?>">
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
         <script src="<?= base_url('js/jquery.min.js'); ?>"></script>
         <script src="<?= base_url('js/jquery.quick.pagination.min.js'); ?>"></script>
         <script src="<?= base_url('js/jquery-ui-1.9.2.custom.min.js'); ?>"></script>
@@ -128,7 +129,8 @@
                                             <ul class="nav navbar-nav">
                                                 <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/22') ?>" style="color:#ff6600">Arma tu evento</a></li>
                                                 <li class="float-left"><a class="navbar-padding" href="https://plus.google.com/collection/kgXMWB" target="_blank">Prensa</a></li>
-                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/2') ?>">¿Cómo Funciona?</a></li>   
+                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/2') ?>">¿Cómo Funciona?</a></li>
+                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/23') ?>">Corporativo</a></li>    
                                             </ul>
                                             <?php if (isset($this->session->userdata['username'])): ?>
                                                 <ul class="logged nav navbar-nav navbar-right">
@@ -197,7 +199,7 @@
                                         </div>
                                     </div>
                                     <div class="input-buscador float-left hidden-sm hidden-xs">
-                                        <input type="text" placeholder="NOMBRE DEL CHEF" id="nombre_chef" name="nombre_chef" class="input_autocomplete"/>
+                                        <input type="text" placeholder="NOMBRE CHEF" id="nombre_chef" name="nombre_chef" class="input_autocomplete"/>
                                     </div>
                                     <div class="submit-buscador float-left">
                                         <input type="submit" class="enviar-buscador" value="VER CHEFS"/>

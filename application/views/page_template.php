@@ -50,7 +50,7 @@
 
 </style-->
 <div class="row">
-        <div class="col-xs-10 col-xs-offset-1">
+        <div class="col-md-10 col-sm-10 col-xs-12 margin-center">
     <div id="content-nosotros" class="bg-color-general">
             <div id="texto-nosotros">
                 <div class="titulo-contacto mayus"><?= $pagina['titulo']; ?></div>

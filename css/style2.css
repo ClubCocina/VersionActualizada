@@ -35,7 +35,7 @@ html {
 body {
     background: #FFECC5;
     line-height: 1;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-family: 'Nunito',"Roboto", Arial, Helvetica, sans-serif;
     background: url("../images/GrisMesa_de_trabajo_1.jpg");
     height: 100%;
     background-attachment: fixed;
@@ -133,8 +133,8 @@ a:visited {
 }
 
 .SueEllen {
-    font-family: "SueEllen";
-    letter-spacing: 0.4px;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 0px;
 }
 
 .mayus {
@@ -195,16 +195,16 @@ a:visited {
 .header-top {
     /*padding-top: 18px;*/
     height: 55px; 
-    font-family: "SueEllen", sans-serif;
-    font-size: 17px;
-    letter-spacing: 0.4px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0px;
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
 }
 
 @media (min-width: 768px){
     .header-top{
-        height: 44px;
+        height: 40px;
         border-bottom-right-radius: 5px;
         border-bottom-left-radius: 5px;
     }
@@ -292,7 +292,7 @@ a:visited {
     font-size: 47px;
     color: black;
     font-weight: 700;
-    font-family: "SueEllen";
+    font-family: 'Nunito', sans-serif;
 }
 
 #contenedor-portada {
@@ -369,7 +369,7 @@ a:visited {
     height: 36px;
     background: #FCA502;
     color: #000;
-    font-family: SueEllen;
+    font-family: 'Nunito', sans-serif;
     font-size: 25px;
     line-height: 150%;
     letter-spacing: 0.4px;
@@ -608,13 +608,15 @@ a:visited {
 }
 
 #encuentra-resultado{
-    font-size: 15px;
+    font-size: 12px;
+    font-weight: 800;
 }
 
 @media (min-width: 768px) {
     #encuentra-resultado{
-        font-size: 25px;
-        letter-spacing: 3px;
+        font-size: 22px;
+        font-weight: 800;
+        letter-spacing: 1px;
     }
 }
 
@@ -663,7 +665,7 @@ a:visited {
     background: rgba(0,0,0,0.7);
     color: #F5F3EC;
     border: none;
-    font-family: "SueEllen";
+    font-family: 'Nunito', sans-serif;
     cursor: pointer;
     margin: auto 0;
 }
@@ -672,11 +674,12 @@ a:visited {
 .buscador select, #barra-info select{
     height: 100%;
     font-size: 19px;
+    font-weight: 700;
     text-transform: uppercase;
     color: #F5F3EC;
     border: none;
     font-family: inherit;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.2px;
     padding-left: 5px;
 }
 
@@ -696,7 +699,8 @@ a:visited {
 
 #select-ordenar{
     width: 120px !important;
-    padding: 8px;
+    padding: 7px;
+    border-radius: 4px;
 }
 
 .buscador input::-webkit-input-placeholder {
@@ -887,7 +891,7 @@ a:visited {
 }
 
 #comentarios div.SueEllen {
-    font-size: 25px;
+    font-size: 15px;
     padding-top: 16px;
     padding-left: 13px;
     color: #FFFFFF;
@@ -1122,7 +1126,7 @@ a:visited {
     width: 904px;
     background-color: #333333;
     border-bottom: 4px solid #262626;
-    font-family: "SueEllen";
+    font-family: 'Nunito', sans-serif;
 }
 
 #reservas ul.reservas li:last-child {
@@ -1383,7 +1387,7 @@ li.nobottomline {
     font-size: 16px;
     color: #FFFFFF;
     background: #FFAA22;
-    font-family: 'SueEllen';
+    font-family: 'Nunito', sans-serif;
     text-transform: uppercase;
     border: none;
 }
@@ -1694,15 +1698,15 @@ li.nobottomline {
     margin: 0 auto;*/
     color: white;
     /*height: 10px;*/
-    font-size: 17px;
+    font-size: 14   px;
     padding-top: 14px;
     padding-bottom: 10px;
     /*background: url('../images/background_footer.png') no-repeat;*/
     background-image: none;
     background-color: transparent;
-    font-family: "SueEllen";
+    font-family: 'Nunito', sans-serif;
     opacity: 0.8;
-    letter-spacing: 0.4px;
+    letter-spacing: 0px;
     border-radius: 5px;
 }
 
@@ -1763,7 +1767,7 @@ li.nobottomline {
 }
 
 #links-paginas {
-    /*width: 830px;*/
+    width: 120%;
     height: 100%;
     text-align: center;
 }
@@ -1939,7 +1943,7 @@ li.nobottomline {
 
 .titulo-tags{
     font-size: 25px;
-    font-family: "SueEllen";
+    font-family: 'Nunito', sans-serif;
     font-weight: 0;
     color:#ffffff;
     line-height: 30px;
@@ -1950,7 +1954,7 @@ li.nobottomline {
 
 @media (min-width: 768px){
     .titulo-tags{
-        font-size: 30px;
+        font-size: 25px;
         margin-left: 15px;
         font-weight: 500;
     }
@@ -2118,10 +2122,10 @@ li.nobottomline {
 
 .preview-nombre {
     line-height: 32px;
-    font-size: 24px;
-    font-family: "SueEllen";
-    font-weight: 500;
-    letter-spacing: 1px;
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    letter-spacing: 0px;
     color: #FF6600;
     padding: 8px;
     margin-left: 8.333%;
@@ -2153,7 +2157,7 @@ li.nobottomline {
     /*height: 71px;*/    
     width: auto;
     font-weight: 700;
-    padding: 8px;
+    padding: 10px;
     margin-right: -10px;
 }
 
@@ -2166,6 +2170,7 @@ li.nobottomline {
 @media (min-width: 1280px){
     .precio-preview{
         width: 130%;
+        padding-top: 12px;
     }
 }
 
@@ -2186,7 +2191,7 @@ li.nobottomline {
 }
 
 #precio div.desc-precio, #precio-detalle div.desc-precio {
-    font-size: 12px;
+    font-size: 14px;
     color: #FFCF00;
     font-weight: 500;
 }
@@ -2290,14 +2295,14 @@ li.nobottomline {
 }
 
 .titulo-descripcion {
-    font-size: 30px;
+    font-size: 25px;
     line-height: 30px;
     font-weight: 500;
-    font-family: "SueEllen";
+    font-family: 'Nunito', sans-serif;
 }
 
 #nombre-chef{
-    font-family: "SueEllen";
+    font-family: 'Nunito', sans-serif;
     font-size: 35px;
     color: #FF6600;
     font-weight: 400;
@@ -2314,7 +2319,7 @@ li.nobottomline {
 }
 
 #nuestras-experiencias{
-    font-family: "SueEllen";
+    font-family: 'Nunito', sans-serif;
     font-size: 35px;
     color: #FF6600;
     font-weight: 400;
@@ -2344,7 +2349,7 @@ li.nobottomline {
 
 /*
 #experiencias-chef h3 {
-    font-family: "SueEllen";
+    font-family: 'Nunito', sans-serif;
     font-size: 30px;
     background: rgba(255,255,255,0.6);
     margin-top: 20px;
@@ -2356,7 +2361,7 @@ li.nobottomline {
 */
 
 .menu-chef{    
-    font-family: "SueEllen";
+    font-family: 'Nunito', sans-serif;
     font-size: 25px;
     background: rgba(0,0,0,0.7);
     color: #ffffff;
@@ -2391,7 +2396,7 @@ li.nobottomline {
 
 @media(min-width: 768px){
     .titulo-fantasia{
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 
@@ -2448,17 +2453,17 @@ li.nobottomline {
 }
 
 .titulo-plato {
-    font-size: 20px;
-    font-family: "SueEllen";
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
     font-weight: 600;
-    letter-spacing: 2px;
+    letter-spacing: 0.5px;
 }
 
 .titulo-info {
     height: 10px;
     font-size: 15px;
     padding: 0px;
-    font-family: "SueEllen";
+    font-family: 'Nunito', sans-serif;
     letter-spacing: 2px;
     text-align: center;
 }
@@ -2484,7 +2489,7 @@ li.nobottomline {
     height: 10px;
     font-size: 18px;
     padding: 0px;
-    font-family: "SueEllen";
+    font-family: 'Nunito', sans-serif;
     letter-spacing: 2px;
     text-align: center;    
     padding-top: 10px;
@@ -2492,7 +2497,7 @@ li.nobottomline {
 }
 
 .especialidades2{
-    font-family: "SueEllen";
+    font-family: 'Nunito', sans-serif;
     text-transform: uppercase;
 }
 
@@ -2620,7 +2625,7 @@ span.ui-spinner {
 .btn-comprar {
     background: inherit;
     border: none;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-family: 'Nunito', Roboto, Arial, sans-serif;
     letter-spacing: 0.3px;
     color: white;
     text-align: center;
@@ -2628,7 +2633,7 @@ span.ui-spinner {
     height: 50px;
     font-weight: 600;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 20px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     -webkit-transition: opacity 1s; /* For Safari 3.1 to 6.0 */
@@ -2659,14 +2664,14 @@ span.ui-spinner {
     color: #FF6600;
     padding-top: 4px;
     padding-left: 3px;
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
     line-height: 18px;
     border-style: solid;
     margin: 7px;
     text-transform: uppercase;
     padding-bottom: 6px;
-    font-weight: 500;
+    font-weight: 700;
     border-radius: 4px;
 }
 
@@ -2902,7 +2907,7 @@ span.ui-spinner {
 
 .chef-confirmacion {
     color: #FFFFFF;
-    font-family: 'SueEllen';
+    font-family: 'Nunito', sans-serif;
     font-size: 30px;
     line-height: 30px;
     padding-top: 10px;
@@ -2999,7 +3004,7 @@ span.ui-spinner {
 
 .titulo-ingreso {
     /*width: 764px;*/
-    font-family: 'SueEllen';
+    font-family: 'Nunito', sans-serif;
     color: #ff6600;
     letter-spacing: 0.5px;
     font-size: 15px;
@@ -3079,7 +3084,7 @@ span.ui-spinner {
 
 .label-formapago {
     font-size: 27px;
-    font-family: 'SueEllen';
+    font-family: 'Nunito', sans-serif;
     line-height: 30px;
     padding-top: 10px;
     color: #DF1E49;
@@ -3227,7 +3232,7 @@ span.ui-spinner {
 
 .titulo-contacto{
     font-size: 30px;
-    font-family: "SueEllen";
+    font-family: 'Nunito', sans-serif;
     line-height: 30px;
     padding-bottom: 20px;
     letter-spacing: 1px;
@@ -3279,14 +3284,22 @@ span.ui-spinner {
 
 
 #content-nosotros {
-    padding: 24px;
-    padding-bottom: 70px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    padding-left: 3px;
+    padding-right: 3px;
     margin-bottom: 14px;
     color: #fff;
     text-align: justify;
     border-radius: 5px;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.3px;
     line-height: normal;
+}
+
+#texto-nosotros {
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 #img-corporativa {
@@ -3322,15 +3335,15 @@ span.ui-spinner {
 
 .fixed{
     position: fixed;
-    top: -33px;
+    top: -25px;
     opacity: 0.8;
     z-index: 999;
     color: #fff;
     padding-top: 16px;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.9);
     width: 100%;
     margin-left: 0px;
-    padding-left: 35px;
+    padding-left: 50px;
 }
 
 .magic-fixed{
@@ -3508,14 +3521,15 @@ div.thumb-sf {
 
 
 .buscador.interior input, .buscador.interior .nombrechef-buscador{
-    font-size: 15px !important;
+    font-size: 11px !important;
+    font-weight: 700;
     width: 100% !important;
     border-radius: 2px;
-    letter-spacing: 0.8px;
+    letter-spacing: 0px;
 }
 
 .buscador.interior select {
-    font-size: 15px !important;
+    font-size: 11px !important;
     width: 164px;
     padding-left: 10px;
 }
@@ -3755,7 +3769,7 @@ input::-webkit-inner-spin-button {
 #banner-pasos {
     /*margin: 30px 60px 0 0;*/
     font-size: 25px;
-    font-family: "SueEllen";
+    font-family: 'Nunito', sans-serif;
     color: #FF6600;
     letter-spacing: 0px;
     margin-top: 18px;
@@ -3799,7 +3813,7 @@ input::-webkit-inner-spin-button {
 
 @media (min-width: 768px){
     .social-buttons{
-        font-size: 35px;
+        font-size: 28px;
         line-height: 135% !important;
     }
 
@@ -3812,7 +3826,7 @@ input::-webkit-inner-spin-button {
 
 
 .por-persona {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 12px;
     color: #fff;
@@ -4059,11 +4073,11 @@ a {
 }
 
 .suscripcion{
-    font-size: 20px;
-    font-family: "SueEllen";
+    font-size: 17px;
+    font-family: 'Nunito', sans-serif;
     line-height: 25px;
     padding-bottom: 5px;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     color: #fff;
     margin-top: 5px;
 }
@@ -4100,3 +4114,14 @@ a {
     .mfp-close{
         margin-right: 35px;
     }
+.mfp-close-btn-in .mfp-close {
+    padding-right: 15px;
+}
+.block-una-linea{
+    display: inline-block;
+    color: #ffffff;
+    padding-left: 10px;
+}
+.email{
+    border-radius: 3px;
+}
