@@ -42,6 +42,5 @@ $route['default_controller'] = "home";
 $route['404_override'] = 'Error404';
 $route['chef/([a-z]+)(\.?)([a-z]+)([0-9]*)'] = 'chefs/busquedaPorNombre';
 
-
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

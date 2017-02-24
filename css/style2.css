@@ -2320,7 +2320,7 @@ li.nobottomline {
 
 #nuestras-experiencias{
     font-family: 'Nunito', sans-serif;
-    font-size: 35px;
+    font-size: 25px;
     color: #FF6600;
     font-weight: 400;
     line-height: 135%;
@@ -4124,4 +4124,12 @@ a {
 }
 .email{
     border-radius: 3px;
+}
+@media screen and (min-width: 768px){
+.carousel-indicators {
+    bottom: 40px;
+    }
+}
+.carousel-indicators {
+    left: 49%;
 }
