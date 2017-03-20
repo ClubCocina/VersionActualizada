@@ -121,7 +121,7 @@
                                                        value="<?= set_value('invitados' . $idExperiencia, $comensales_default); ?>"
                                                        />
                                                 <div class="row-info block-una-linea">
-                                                    <a href="<?= base_url('home/page/22') ?>" >+ personas</a>
+                                                    <a href="<?= base_url('home/page/22') ?>" >¿+ personas? Click acá</a>
                                                 </div>       
                                             </div>
                                             

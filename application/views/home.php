@@ -22,8 +22,8 @@
                             <a href="<?= base_url('home/ver_experiencias')?>"> 
                                 <img src="<?= base_url('slides/Lo_mejor_de_un_restaurant.jpg'); ?>" alt="Experiencias Gastronomicas - Club de la Cocina" class="img-slide">
                                 <div class="carousel-caption">
-                                <!--    <h4>First Thumbnail label</h4>
-                                        <p>el texto de prueba 1</p>  -->
+                             <!--      <h4>First Thumbnail label</h4>
+                                        <p>el texto de prueba 1</p> -->
                                 </div>
                             </a>    
                         </div>

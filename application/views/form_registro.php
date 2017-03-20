@@ -7,7 +7,7 @@
                 <form action="<?= base_url('registro'); ?>" class="centerbox form-registro" method='POST'>                       
                     <input class="form-control" type="text" name="nombre" placeholder="Nombre*" value="<?= set_value('nombre', isset($nombre) ? $nombre : '') ?>"/>
                     <input class="form-control" type="text" name="apellidoPaterno" placeholder="Apellido Paterno*" value="<?= set_value('apellidoPaterno', isset($apellidoPaterno) ? $apellidoPaterno : '') ?>"/>
-                <!--    <input class="form-control" type="text" name="apellidoMaterno" placeholder="Apellido Materno" value="<?= set_value('apellidoMaterno', isset($apellidoMaterno) ? $apellidoMaterno : '') ?>"/> -->    
+                <!--   <input class="form-control" type="text" name="apellidoMaterno" placeholder="Apellido Materno" value="<?= set_value('apellidoMaterno', isset($apellidoMaterno) ? $apellidoMaterno : '') ?>"/> -->    
                     <input class="form-control" type="text" name="mail" placeholder="Correo Electrónico*" value="<?= set_value('mail', isset($mail) ? $mail : '') ?>"/>
                     <input class="form-control" type="password" name="password" placeholder="Contraseña*" value="<?= set_value('password') ?>"/>
                     <input class="form-control" type="password" name="passwordVerificacion" placeholder="Repetir Contraseña*" <?= set_value('passwordVerificacion') ?>/>           

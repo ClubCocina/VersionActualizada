@@ -112,7 +112,7 @@
                                                      </li> 
                                                 </ul>
                                 </nav> 
-                                <a href="<?= base_url() ?>"><img class="img-responsive" src="<?= base_url('images/CdlC_logo.png'); ?>" alt="Club de la Cocina"/></a>
+                                <a href="<?= base_url() ?>"><img class="img-responsive" src="<?= base_url('images/Logo_chefencasa.png'); ?>" alt="Club de la Cocina"/></a>
                             </div>
                             <div class="col-md-8 col-sm-8 col-xs-5">
                                 <nav class="navbar navbar-default header-nav">
@@ -127,7 +127,7 @@
                                         </div>  
                                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                             <ul class="nav navbar-nav">
-                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/22') ?>" style="color:#ff6600">Arma tu evento</a></li>
+                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/22') ?>" style="color:#ff6600">Cotiza tu Evento</a></li>
                                                 <li class="float-left"><a class="navbar-padding" href="https://plus.google.com/collection/kgXMWB" target="_blank">Prensa</a></li>
                                                 <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/2') ?>">¿Cómo Funciona?</a></li>
                                                 <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/23') ?>">Corporativo</a></li>    
