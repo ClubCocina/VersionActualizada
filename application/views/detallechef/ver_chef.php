@@ -19,7 +19,7 @@
     <div class="col-md-10 col-sm-10 col-xs-12 margin-center">
         <div id="nombre-chef" class="row">
             <div class="col-md-10 col-sm-10 col-xs-8">
-                <div class="social-buttons"><?= ucwords($datosChef['nombre'] . ' ' . $datosChef['apellidoPaterno']) ?></div>
+                <div class="social-buttons-title"><?= ucwords($datosChef['nombre'] . ' ' . $datosChef['apellidoPaterno']) ?></div>
             </div>        
             <div class="col-md-2 col-sm-2 col-xs-4">
                 <div class="social-buttons">

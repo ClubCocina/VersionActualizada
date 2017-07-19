@@ -19,8 +19,8 @@
             <!--comienzo Link fotos -->
             <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                            <a href="<?= base_url('home/ver_experiencias')?>"> 
-                                <img src="<?= base_url('slides/Lo_mejor_de_un_restaurant.jpg'); ?>" alt="Experiencias Gastronomicas - Club de la Cocina" class="img-slide">
+                            <a href="<?= base_url('home/page/22')?>"> 
+                                <img src="<?= base_url('slides/chef_a_domicilio.jpg'); ?>" alt="Chefs a Domicilio - Club de la Cocina" class="img-slide">
                                 <div class="carousel-caption">
                              <!--      <h4>First Thumbnail label</h4>
                                         <p>el texto de prueba 1</p> -->
@@ -28,8 +28,8 @@
                             </a>    
                         </div>
                         <div class="item">
-                            <a href="<?= base_url('home/page/23')?>"> 
-                                <img src="<?= base_url('slides/La_mejor_gastronomia.jpg'); ?>" alt="Corporativo - Club de la Cocina" class="img-slide">
+                            <a href="<?= base_url('home/ver_experiencias')?>"> 
+                                <img src="<?= base_url('slides/lo_mejor_de_un_restaurant.jpg'); ?>" alt="Chef en Casa - Club de la Cocina" class="img-slide">
                                 <div class="carousel-caption">
                                 <!--    <h4>Second Thumbnail label</h4>
                                         <p>el texto de prueba 2</p>  -->
@@ -37,8 +37,8 @@
                             </a>    
                         </div>
                          <div class="item">
-                            <a href="<?= base_url('home/page/22')?>"> 
-                                <img src="<?= base_url('slides/Requerimiento_especial.jpg'); ?>" alt="Cotiza tu evento - Club de la Cocina" class="img-slide">
+                            <a href="<?= base_url('home/page/23')?>"> 
+                                <img src="<?= base_url('slides/la_mejor_gastronomia.jpg'); ?>" alt="Eventos empresas - Cotizar" class="img-slide">
                                 <div class="carousel-caption">
                                 <!--   <h4>Second Thumbnail label</h4>
                                         <p>el texto de prueba 2</p>  -->

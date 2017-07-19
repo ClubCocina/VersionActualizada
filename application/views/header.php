@@ -41,6 +41,7 @@
         <script src="<?= base_url('js/jquery.datetimepicker.js'); ?>"></script>
         <script src="<?= base_url('js/jquery.blockUI.js'); ?>"></script>
         <script src="<?= base_url('js/bootstrap.min.js'); ?>"></script>
+
         <?php $img = base_url('images/logo.png'); ?>
         <?php if(isset($datosChef) && !empty($datosChef)): ?>
         <?php 
@@ -91,7 +92,7 @@
                 <div id="header">
                     <div class="header-top mayus margin-header bg-color-general">
                         <div class="row">
-                            <div id="logo" class="col-md-4 col-sm-4 col-xs-7">
+                            <div id="logo" class="col-md-3 col-sm-3 col-xs-7">
                                 <nav class="navbar navbar-default header-nav">
                                                  <ul class="navbar-nav navbar-left">
                                                     <li>
@@ -114,7 +115,7 @@
                                 </nav> 
                                 <a href="<?= base_url() ?>"><img class="img-responsive" src="<?= base_url('images/Logo_chefencasa.png'); ?>" alt="Club de la Cocina"/></a>
                             </div>
-                            <div class="col-md-8 col-sm-8 col-xs-5">
+                            <div class="col-md-9 col-sm-9 col-xs-5">
                                 <nav class="navbar navbar-default header-nav">
                                     <div class="container-fluid">
                                         <div class="navbar-header">
@@ -127,7 +128,7 @@
                                         </div>  
                                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                             <ul class="nav navbar-nav">
-                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/22') ?>" style="color:#ff6600">Cotiza tu Evento</a></li>
+                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/22') ?>" style="color:#ff6600">Cotizar Evento</a></li>
                                                 <li class="float-left"><a class="navbar-padding" href="https://plus.google.com/collection/kgXMWB" target="_blank">Prensa</a></li>
                                                 <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/2') ?>">¿Cómo Funciona?</a></li>
                                                 <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/23') ?>">Corporativo</a></li>    
@@ -178,17 +179,17 @@
                     <div class="header-bot">
                         <?php if ($this->router->class !== 'comprar'): ?>
                             <div class="buscador interior">
-                                <span id="encuentra-resultado" class="mayus resultado SueEllen"><h1>ENCUENTRA TU CHEF</h1></span>
+                                <span id="encuentra-resultado" class="mayus resultado SueEllen"><h1>RESERVA UN CHEF</h1></span>
                                 <?php echo form_open('chefs/busquedaForm', array('class' => 'overflowauto')); ?>
                                 <?php
                                 $comunas = $this->meta_usuario_model->getMetasExistentesEnChef(3);
                                 $tagsBuscar = $this->meta_usuario_model->getMetasExistentesEnChef(4);
                                 ?>
                                 <div>
-                                    <div class="input-buscador float-left">
+                                    <div class="input-buscador float-left hidden-sm hidden-xs">
                                         <input type="text" placeholder="¿Para cuándo?" name="agenda" id="agenda" class="fecha-buscador"/>
                                     </div>
-                                    <div class="input-buscador float-left hidden-xs">
+                                    <div class="input-buscador float-left hidden-sm hidden-xs">
                                         <div class="constraint-select SueEllen">
                                             <select name="comuna">
                                                 <option value="">¿DÓNDE?</option>
@@ -198,11 +199,16 @@
                                             </select>
                                         </div>
                                     </div>
-                                    <div class="input-buscador float-left hidden-sm hidden-xs">
-                                        <input type="text" placeholder="NOMBRE CHEF" id="nombre_chef" name="nombre_chef" class="input_autocomplete"/>
-                                    </div>
+                                <!--    <div class="input-buscador float-left hidden-sm hidden-xs">
+                                        <input type="text" placeholder="NOMBRE CHEF" id="nombre_chef" name="nombre_chef" class="input_autocomplete"/>  
+                                    </div>  -->
+ 
                                     <div class="submit-buscador float-left">
                                         <input type="submit" class="enviar-buscador" value="VER CHEFS"/>
+                                    </div>
+                    
+                                    <div class="input-buscador float-left hidden-md hidden-lg hidden-xl">
+                                        <input type="submit" value="COTIZAR" formaction="/home/page/22" />  
                                     </div>
                                     <input type="hidden" name="bool_hora" value="0" id="bool_hora"/>
                                 </div>
