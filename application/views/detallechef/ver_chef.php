@@ -118,6 +118,10 @@
                 </div>
             </div>  -->
         </div>
+        <div class="bg-rojo-oscuro-btn">
+            <!-- <input class="btn-comprar" type="submit" value="Cotizar"> -->
+            <button class="btn-comprar" onclick="javascript: document.location.href='http://www.clubdelacocina.cl/home/page/22'">Cotizar</button>
+        </div>
     </div>
 
     <!-- Experiencias -->

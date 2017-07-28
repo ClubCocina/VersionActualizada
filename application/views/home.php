@@ -145,22 +145,37 @@
                     <?php endforeach; ?>
                 <?php endif;?>
 
-                <div class="SueEllen mayus suscripcion"><label>¿Tienes consultas? LL&aacute;manos al +56 9 9999 2896</label>
-                </div>
-                <!-- Begin MailChimp Signup Form -->
-                <div id="mc_embed_signup" class="interior">
-                    <form id="mc-embedded-subscribe-form" class="validate" action="//clubdelacocina.us11.list-manage.com/subscribe/post?u=ba52aedb3826e25b8ae2856f6&amp;id=1601d26be8" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank">
-                        <div id="mc_embed_signup_scroll" class="SueEllen mayus suscripcion"><label for="mce-EMAIL">Ent&eacute;rate de nuestras novedades</label> <input id="mce-EMAIL" class="email" name="EMAIL" required="" type="email" value="" placeholder="  TU EMAIL" /> <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                            <div style="position: absolute; left: -5000px;"><input tabindex="-1" name="b_ba52aedb3826e25b8ae2856f6_1601d26be8" type="text" value="" />
-                            </div>
-                            <div class="suscripcion"><input class="enviar-suscripcion" name="subscribe" type="submit" value="Suscribirse" />
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <!--End mc_embed_signup--> 
 
     </div>
+            <!--pagina comentarios
+            <div class="centerbox">
+                <ul>
+                    <li><p class="descripcion-fantasia experiencia-calif"><i class="material-icons" style="font-size:18px;color:yellow">grade</i> lo pasamos caballo - Pedro</p></li>  
+                    <li> <p class="descripcion-fantasia experiencia-calif"><i class="material-icons" style="font-size:18px;color:orange">thumb_up</i>lo pasamos chancho - Feña</p></li>  
+                </ul>
+            </div>
+            fin pagina comentarios--> 
+
+                <!-- Begin MailChimp Signup Form -->
+                <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+                <style type="text/css">
+                </style>
+                <div id="mc_embed_signup">
+                <form action="//clubdelacocina.us11.list-manage.com/subscribe/post?u=ba52aedb3826e25b8ae2856f6&amp;id=8a857b65f9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                    <label for="mce-EMAIL">Ent&eacute;rate de nuestras novedades</label>
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="direcci&oacute;n email" required>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ba52aedb3826e25b8ae2856f6_8a857b65f9" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="SUSCRIBIR" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                    </div>
+                </form>
+                </div>
+
+                <!--End mc_embed_signup--> 
+                <div class="SueEllen suscripcion"><label>¿Tienes consultas? LL&aacute;manos al +56 9 9999 2896</label>
+                </div>
+
 </div>
 <script>
     $(window).load(function(){

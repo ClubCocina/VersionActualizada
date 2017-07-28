@@ -30,6 +30,7 @@
         <link rel="stylesheet" href="<?= base_url('css/jquery.datetimepicker.css') ?>">
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src="<?= base_url('js/jquery.min.js'); ?>"></script>
         <script src="<?= base_url('js/jquery.quick.pagination.min.js'); ?>"></script>
         <script src="<?= base_url('js/jquery-ui-1.9.2.custom.min.js'); ?>"></script>
@@ -90,7 +91,7 @@
             <div id="wrapper-header">
                 <!--div class="magic-fixed"></div-->
                 <div id="header">
-                    <div class="header-top mayus margin-header bg-color-general">
+                    <div class="header-top mayus margin-header bg-color-header">
                         <div class="row">
                             <div id="logo" class="col-md-3 col-sm-3 col-xs-7">
                                 <nav class="navbar navbar-default header-nav">
@@ -113,7 +114,7 @@
                                                      </li> 
                                                 </ul>
                                 </nav> 
-                                <a href="<?= base_url() ?>"><img class="img-responsive" src="<?= base_url('images/Logo_chefencasa.png'); ?>" alt="Club de la Cocina"/></a>
+                                <a href="<?= base_url() ?>"><img class="img-responsive" src="<?= base_url('images/cdlc_logo_chefadomicilio.png'); ?>" alt="Club de la Cocina"/></a>
                             </div>
                             <div class="col-md-9 col-sm-9 col-xs-5">
                                 <nav class="navbar navbar-default header-nav">
@@ -128,7 +129,8 @@
                                         </div>  
                                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                             <ul class="nav navbar-nav">
-                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/22') ?>" style="color:#ff6600">Cotizar Evento</a></li>
+                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/22') ?>" style="text-shadow: 0.8px 0.8px 0.8px white;margin-right: 10px;font-size: 16px;">Cotizar Evento</a></li>
+
                                                 <li class="float-left"><a class="navbar-padding" href="https://plus.google.com/collection/kgXMWB" target="_blank">Prensa</a></li>
                                                 <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/2') ?>">¿Cómo Funciona?</a></li>
                                                 <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/23') ?>">Corporativo</a></li>    
@@ -157,7 +159,8 @@
                                                     <li>
                                                         <a class="simple-ajax-popup" href="<?= base_url('login'); ?>">
                                                             <ul>
-                                                                <li><span>Ingresa <span class="hidden-sm">al Club</span></span></li>
+                                                                <!-- <li><span>Ingresa <span class="hidden-sm">al Club</span></span></li> -->
+                                                                <li><span><i class="material-icons" style="font-size:26px;color:rwhite" alt="Ingresa al Club">exit_to_app</i></span></li>
                                                             </ul>
                                                         </a>
                                                     </li>

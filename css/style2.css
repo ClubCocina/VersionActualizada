@@ -145,6 +145,15 @@ a:visited {
     background-color: rgba(0,0,0,0.7);
 }
 
+.bg-color-header {
+    background-color: rgba(117, 168, 151, 0.8);
+    font-weight: bolder;    
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: #fff;
+}
+
 .bg-rojo {
     background-color: #FF6600;
 }
@@ -247,15 +256,15 @@ a:visited {
 
 #username-header {
 
-    font-weight: 600;
+    font-weight: 400;
     color: #FF6600;
     /*margin-top: 22px;*/
-    font-size: 12px;
+    font-size: 10px;
     /*margin-left: 12px;*/
     padding-top: 10px;
     padding-bottom: 10px;
     line-height: 20px;
-    padding-left: 10px;
+    padding-left: 8px;
 }
 
 @media (min-width: 768px) {
@@ -540,9 +549,15 @@ a:visited {
 
 .buscador {
     padding-top: 0px;
-    padding-left: 350px;
     margin: 18px 0 0 15px;
+}    
+
+@media (min-width: 768px){
+    .buscador{
+        padding-left: 350px;      
+    }
 }
+
 .buscador span {
     font-size: 30px;
 }
@@ -626,6 +641,7 @@ a:visited {
     height: 39px;
     font-weight: 800;
     margin-bottom: 4px;
+    margin-right: 2px;
 }
 
 .constraint-select {
@@ -1521,8 +1537,8 @@ li.nobottomline {
 #invitados-comunas {
     padding-left: 15px;
     padding-bottom: 25px;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 
 #invitados-comunas div{
@@ -2035,7 +2051,7 @@ li.nobottomline {
 }
 
 .white-border{
-    border: 3px solid #FFF;
+    border: 2px solid #777;
 }
 
 .show-dishs{
@@ -2050,6 +2066,7 @@ li.nobottomline {
     margin-top: -50px;
     width: 70%;
     margin-left: 20px;
+    margin-bottom: 5px;
 }
 
 .avatar-preview {
@@ -2133,7 +2150,7 @@ li.nobottomline {
 }
 
 .preview-nombre {
-    line-height: 32px;
+    line-height: 20px;
     font-size: 17px;
     font-family: 'Nunito', sans-serif;
     font-weight: 800;
@@ -2169,13 +2186,14 @@ li.nobottomline {
     /*height: 71px;*/    
     width: auto;
     font-weight: 700;
-    padding: 10px;
+    padding: 4px 8px 10px 8px;
     margin-right: -10px;
 }
 
 @media (min-width: 992px){
     .precio-preview{
         width: 150%;
+        padding-top: 13px;
     }
 }
 
@@ -2229,6 +2247,7 @@ li.nobottomline {
 
 .barra-raty > img {
     margin-right: -15px;
+    padding-top: 8px;
 }
 
 @media (min-width: 768px){
@@ -2400,7 +2419,7 @@ li.nobottomline {
 }
 
 .titulo-fantasia {
-    font-size: 20px;
+    font-size: 17px;
     margin-bottom: 15px;
     text-align: left;
     padding-top: 5px;
@@ -3818,7 +3837,7 @@ input::-webkit-inner-spin-button {
     font-size: 25px;
     line-height: 100%;
     display: inline-flex;
-    padding: 3px 17px 0 0;
+    padding: 16px 17px 0 0;
     letter-spacing: 15px;
 }
 .social-buttons-title {
@@ -3846,6 +3865,7 @@ input::-webkit-inner-spin-button {
     .social-buttons{
         font-size: 28px;
         line-height: 135% !important;
+        padding-top: 3px;
     }
 
     .social-buttons > .fa{
@@ -4074,7 +4094,7 @@ a {
 }
 
 #header-nav-collapse{
-    border-color: #aaa;
+    border-color: #FFF;
     margin-bottom: 10px;
 }
 
@@ -4092,7 +4112,7 @@ a {
 }
 
 .navbar-padding{
-    padding: 8px !important;
+    padding: 9px !important;
 }
 
 @media (min-width: 768px) and (max-width: 795px){
@@ -4116,8 +4136,9 @@ a {
 }
 
 .suscripcion{
-    font-size: 17px;
+    font-size: 16px;
     font-family: 'Nunito', sans-serif;
+    font-weight: bold;
     line-height: 25px;
     padding-bottom: 5px;
     letter-spacing: 0px;
@@ -4171,3 +4192,14 @@ a {
 .btn{
     padding: 3px 6px;
 }
+#mc_embed_signup{
+    background:rgba(0,0,0,0); 
+    clear:left;
+    font:17px Nunito,Arial,sans-serif;
+    color: white;
+    width:100%;
+ }
+ #mc-embedded-subscribe{
+    background:#FF6600 !important; 
+ }
+
