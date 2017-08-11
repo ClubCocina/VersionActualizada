@@ -3,6 +3,49 @@
 </div>
 <!--div id="wrapper-footer"-->
 <div id="container-footer" class="container-fluid">
+            <div class="row">
+                <div id="footer" class="bg-color-general mayus col-md-10 col-sm-10 col-xs-12 margin-center">
+                            <!-- Begin MailChimp Signup Form -->
+                    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+                    <style type="text/css">
+                    </style>
+                    <div id="mc_embed_signup">
+                    <form action="//clubdelacocina.us11.list-manage.com/subscribe/post?u=ba52aedb3826e25b8ae2856f6&amp;id=8a857b65f9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                        <label for="mce-EMAIL">Ent&eacute;rate de nuestras novedades</label>
+                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="direcci&oacute;n email" required>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ba52aedb3826e25b8ae2856f6_8a857b65f9" tabindex="-1" value=""></div>
+                        <div class="clear"><input type="submit" value="SUSCRIBIR" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                        </div>
+                    </form>
+                    </div>
+
+                    <!--End mc_embed_signup--> 
+                    <div class="SueEllen suscripcion"><label>¿Tienes consultas? LL&aacute;manos al +56 9 9999 2896</label>
+                    </div>
+                        <nav class="navbar navbar-default header-nav suscripcion">
+                            <label>O visita nuestras redes sociales</label>
+                                                 <ul class="redes-sociales">
+                                                    <li>
+                                                        <a href="https://www.instagram.com/clubdelacocinacl/" target="_blank" id="social-logo"><img class="img-responsive" src="<?= base_url('images/logo.insta.png'); ?>" alt="Instagram Club de la Cocina" />
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://www.facebook.com/Club-de-la-Cocina-687305784636215/" target="_blank" id="social-logo"><img class="img-responsive" src="<?= base_url('images/fb-logo.png'); ?>" alt="Facebook Club de la Cocina" />
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="https://twitter.com/clubdelacocina" target="_blank" id="social-logo"><img class="img-responsive" src="<?= base_url('images/twitter-logo.png'); ?>" alt="Twitter Club de la Cocina" />
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                        </nav>
+                </div>
+            </div>
+</div>
+
+<div id="container-footer" class="container-fluid">
     <div class="row">
         <div id="footer" class="bg-color-general mayus col-md-10 col-sm-10 col-xs-12 margin-center">
             <div id="links-paginas" class="centerbox">

@@ -147,34 +147,47 @@
 
 
     </div>
-            <!--pagina comentarios
-            <div class="centerbox">
-                <ul>
+            <!--pagina comentarios  -->
+            <div class="container">
+                <div class="jumbotron col-md-10 col-sm-10">
+                    <h1>Nuestros Clientes dicen:</h1>      
+                    <p>Aca una bajada si aplica</p>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="contenido-jumbo">
+                              <!--h2>Heading</h2-->
+                              <p>"Excelente! El chef y su ayudante cumplieron con mis expectativas. Disfruté mi cumpleaños en mi casa con una comida original y bien servida."<span style="font-style: italic;"> Maida</span> </p>
+                              <!--p><a class="btn btn-secondary" href="#" role="button">View details »</a></p-->
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="contenido-jumbo">
+                              <!--h2>Heading</h2-->
+                              <p>"Simplemente increíble!!! La Chef fue a mi casa y nos cocinó demasiado rico. Además dejaron todo impecable. Al otro día mi cocina estaba limpia y ordenada!!" <span style="font-style: italic;"> Andrea</span> </p>
+                              <!--p><a class="btn btn-secondary" href="#" role="button">View details »</a></p-->
+                            </div>
+                       </div>
+                        <div class="col-md-4">
+                            <div class="contenido-jumbo">
+                              <!--h2>Heading</h2-->
+                              <p>"Una buenísima opción para aprender cocina en la comodidad de tu casa!! La comida exquisita, la clase entretenida y el Chef muy buena onda!"<span style="font-style: italic;"> Felipe</span> </p>
+                              <!--p><a class="btn btn-secondary" href="#" role="button">View details »</a></p-->
+                            </div>
+                        </div>
+                      </div>
+                        <p class="lead">
+                            <a class="btn btn-primary btn-lg mayus" href="https://www.facebook.com/pg/clubdelacocina/reviews/?ref=page_internal" target="_blank" role="button">Revisa más comentarios</a>
+                        </p>
+                </div>
+                <!--ul>
                     <li><p class="descripcion-fantasia experiencia-calif"><i class="material-icons" style="font-size:18px;color:yellow">grade</i> lo pasamos caballo - Pedro</p></li>  
                     <li> <p class="descripcion-fantasia experiencia-calif"><i class="material-icons" style="font-size:18px;color:orange">thumb_up</i>lo pasamos chancho - Feña</p></li>  
-                </ul>
+                </ul-->
             </div>
-            fin pagina comentarios--> 
 
-                <!-- Begin MailChimp Signup Form -->
-                <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-                <style type="text/css">
-                </style>
-                <div id="mc_embed_signup">
-                <form action="//clubdelacocina.us11.list-manage.com/subscribe/post?u=ba52aedb3826e25b8ae2856f6&amp;id=8a857b65f9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                    <div id="mc_embed_signup_scroll">
-                    <label for="mce-EMAIL">Ent&eacute;rate de nuestras novedades</label>
-                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="direcci&oacute;n email" required>
-                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ba52aedb3826e25b8ae2856f6_8a857b65f9" tabindex="-1" value=""></div>
-                    <div class="clear"><input type="submit" value="SUSCRIBIR" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                    </div>
-                </form>
-                </div>
+           <!-- fin pagina comentarios--> 
 
-                <!--End mc_embed_signup--> 
-                <div class="SueEllen suscripcion"><label>¿Tienes consultas? LL&aacute;manos al +56 9 9999 2896</label>
-                </div>
 
 </div>
 <script>

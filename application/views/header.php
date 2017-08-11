@@ -129,7 +129,7 @@
                                         </div>  
                                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                             <ul class="nav navbar-nav">
-                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/22') ?>" style="text-shadow: 0.8px 0.8px 0.8px white;margin-right: 10px;font-size: 16px;">Cotizar Evento</a></li>
+                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/22') ?>" style="text-shadow: 0.7px 0.7px 0.7px white;margin-right: 10px;font-size: 18px;color: #FF6600;">Cotizar Evento</a></li>
 
                                                 <li class="float-left"><a class="navbar-padding" href="https://plus.google.com/collection/kgXMWB" target="_blank">Prensa</a></li>
                                                 <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/2') ?>">¿Cómo Funciona?</a></li>
@@ -144,7 +144,7 @@
                                                     </li>
                                                     <li>
                                                         <a class="navbar-padding" href="<?= base_url() ?>mipanel">
-                                                            <div>Mi Panel</div>
+                                                            <div><i class="material-icons" style="font-size:18px;color:#FF6600">face</i><span class="hidden-md hidden-sm">para elegir</span></div>
                                                         </a>
                                                     </li>
                                                     <li>
