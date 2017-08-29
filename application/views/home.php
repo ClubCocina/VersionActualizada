@@ -150,8 +150,8 @@
             <!--pagina comentarios  -->
             <div class="container">
                 <div class="jumbotron col-md-10 col-sm-10">
-                    <h1>Nuestros Clientes dicen:</h1>      
-                    <p>Aca una bajada si aplica</p>
+                    <h1>Nuestros Clientes dicen...</h1>      
+                    <!--p>Aca una bajada si aplica</p-->
 
                     <div class="row">
                         <div class="col-md-4">

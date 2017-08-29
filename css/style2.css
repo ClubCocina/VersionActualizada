@@ -4152,6 +4152,7 @@ a {
     text-align: center;
     margin: auto;
     display: inline-flex;
+    vertical-align: sub;
 }
 
 .enviar-suscripcion {
@@ -4243,6 +4244,7 @@ a {
 .jumbotron{
     background-color: rgba(0,0,0,0.01);
     color: #ffffff;
+    padding: 2px;
 }
 
 @media screen and (min-width: 768px){
