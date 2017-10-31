@@ -114,7 +114,7 @@
                                                      </li> 
                                                 </ul>
                                 </nav> 
-                                <a href="<?= base_url() ?>"><img class="img-responsive" src="<?= base_url('images/cdlc_logo_chefadomicilio.png'); ?>" alt="Club de la Cocina"/></a>
+                                <a href="<?= base_url() ?>"><img class="img-responsive" src="<?= base_url('images/logo provisorio-01.jpg'); ?>" alt="Club de la Cocina"/></a>
                             </div>
                             <div class="col-md-9 col-sm-9 col-xs-5">
                                 <nav class="navbar navbar-default header-nav">
@@ -129,7 +129,7 @@
                                         </div>  
                                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                             <ul class="nav navbar-nav">
-                                                <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/22') ?>" style="text-shadow: 0.7px 0.7px 0.7px white;margin-right: 10px;font-size: 18px;color: #FFFFFF;">Cotizar Evento</a></li>
+                                                <!--li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/22') ?>" style="text-shadow: 0.7px 0.7px 0.7px white;margin-right: 10px;font-size: 18px;color: #FFFFFF;">Cotizar Evento</a></li-->
 
                                                 <li class="float-left"><a class="navbar-padding" href="https://plus.google.com/collection/kgXMWB" target="_blank">Prensa</a></li>
                                                 <li class="float-left"><a class="navbar-padding" href="<?= base_url('home/page/2') ?>">¿Cómo Funciona?</a></li>
@@ -189,10 +189,10 @@
                                 $tagsBuscar = $this->meta_usuario_model->getMetasExistentesEnChef(4);
                                 ?>
                                 <div>
-                                    <div class="input-buscador float-left hidden-sm hidden-xs">
+                                    <!--div class="input-buscador float-left hidden-sm hidden-xs">
                                         <input type="text" placeholder="¿Para cuándo?" name="agenda" id="agenda" class="fecha-buscador"/>
-                                    </div>
-                                    <div class="input-buscador float-left hidden-sm hidden-xs">
+                                    </div-->
+                                    <!--div class="input-buscador float-left hidden-sm hidden-xs">
                                         <div class="constraint-select SueEllen">
                                             <select name="comuna">
                                                 <option value="">¿DÓNDE?</option>
@@ -201,7 +201,7 @@
                                                 <?php endforeach; ?>
                                             </select>
                                         </div>
-                                    </div>
+                                    </div -->
                                 <!--    <div class="input-buscador float-left hidden-sm hidden-xs">
                                         <input type="text" placeholder="NOMBRE CHEF" id="nombre_chef" name="nombre_chef" class="input_autocomplete"/>  
                                     </div>  -->
@@ -210,7 +210,7 @@
                                         <input type="submit" class="enviar-buscador" value="VER CHEFS"/>
                                     </div>
                     
-                                    <div class="input-buscador float-left hidden-md hidden-lg hidden-xl">
+                                    <div class="input-buscador float-left">
                                         <input type="submit" value="COTIZAR" formaction="/home/page/22" />  
                                     </div>
                                     <input type="hidden" name="bool_hora" value="0" id="bool_hora"/>

@@ -25,7 +25,7 @@
                     <div class="SueEllen suscripcion"><label>¿Tienes consultas? LL&aacute;manos al +56 9 9999 2896</label>
                     </div>
                         <nav class="navbar navbar-default header-nav suscripcion">
-                            <label>Siguenos!</label>
+                            <label>Síguenos!</label>
                                                  <ul class="redes-sociales">
                                                     <li>
                                                         <a href="https://www.instagram.com/clubdelacocinacl/" target="_blank" id="social-logo"><img class="img-responsive" src="<?= base_url('images/logo.insta.png'); ?>" alt="Instagram Club de la Cocina" />
