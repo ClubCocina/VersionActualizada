@@ -93,7 +93,7 @@
                 <div id="header">
                     <div class="header-top mayus margin-header bg-color-header">
                         <div class="row">
-                            <div id="logo" class="col-md-3 col-sm-3 col-xs-7">
+                            <div id="logo" class="col-md-4 col-sm-4 col-xs-7">
                                 <nav class="navbar navbar-default header-nav">
                                                  <ul class="navbar-nav navbar-left">
                                                     <li>
@@ -114,9 +114,9 @@
                                                      </li> 
                                                 </ul>
                                 </nav> 
-                                <a href="<?= base_url() ?>"><img class="img-responsive" src="<?= base_url('images/logo provisorio-01.jpg'); ?>" alt="Club de la Cocina"/></a>
+                                <a href="<?= base_url() ?>"><img class="img-responsive" src="<?= base_url('images/logo provisorio-02.png'); ?>" alt="Club de la Cocina"/></a>
                             </div>
-                            <div class="col-md-9 col-sm-9 col-xs-5">
+                            <div class="col-md-8 col-sm-8 col-xs-5">
                                 <nav class="navbar navbar-default header-nav">
                                     <div class="container-fluid">
                                         <div class="navbar-header">
@@ -182,7 +182,7 @@
                     <div class="header-bot">
                         <?php if ($this->router->class !== 'comprar'): ?>
                             <div class="buscador interior">
-                                <span id="encuentra-resultado" class="mayus resultado SueEllen"><h1>RESERVA UN CHEF</h1></span>
+                                <span id="encuentra-resultado" class="mayus resultado SueEllen"><h1 style="padding-right: 30px;">RESERVA UN CHEF</h1></span>
                                 <?php echo form_open('chefs/busquedaForm', array('class' => 'overflowauto')); ?>
                                 <?php
                                 $comunas = $this->meta_usuario_model->getMetasExistentesEnChef(3);
