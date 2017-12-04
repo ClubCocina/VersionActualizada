@@ -95,25 +95,25 @@
                         </div>
                         <div id="cotizador<?= $idExperiencia; ?>" class="container-cotizador col-md-3 col-sm-3 col-xs-8 hidden-xs">
                             <div class="info-actividad bg-rojo">
-                                <div class="mayus bg-rojo-oscuro">
+                                <!--div class="mayus bg-rojo-oscuro">
                                     <p class="titulo-cotizador">COTIZADOR</p>
-                                </div>
+                                </div-->
                                 <!--Form experiencia -->
                                 <form class="form-compra" action="<?= base_url('chefs/verDatosChef/' . $datosChef['idUsuario']); ?>" method="POST">
                                     <div class="datos-info">
-                                        <div class="overflowauto row-detalle">
+                                        <!--div class="overflowauto row-detalle">
                                             <div class="titulo-datos">Chef</div>
                                             <div class="row-info">
                                                 <div class="input-vista-chef"><?= ucwords($datosChef['nombre'] . ' ' . $datosChef['apellidoPaterno']) ?></div>
                                             </div>
-                                        </div>
+                                        </div-->
                                     <!--    <div class="overflowauto row-detalle">
                                             <div class="titulo-datos">Experiencia</div>
                                             <div class="row-info">
                                                 <div class="input-vista-chef"><?= $experiencia['nombre']; ?></div>
                                             </div>
                                         </div>  -->
-                                        <div class="overflowauto row-detalle">
+                                        <!--div class="overflowauto row-detalle">
                                             <div class="titulo-datos">¿Cuántos Comen?</div>
                                             <div class="row-info cantidad-invitados prompt-input">
                                                 <input id="invitados<?= $idExperiencia; ?>"
@@ -126,9 +126,9 @@
                                                 </div>       
                                             </div>
                                             
-                                        </div>
+                                        </div-->
                             
-                                        <div class="overflowauto row-detalle">
+                                        <!--div class="overflowauto row-detalle">
                                             <div class="titulo-datos">Fecha y Hora (llegada del chef)</div>
                                             <div class="row-info horario-evento prompt-input">
                                                 <input id="horario<?= $idExperiencia; ?>"
@@ -236,7 +236,7 @@
                                                     });
                                                 </script>
                                             </div>
-                                        </div>
+                                        </div-->
                                   <!--      <div class="row-detalle">
                                             <div class="titulo-datos">Tiempo que el chef estar&aacute; en tu casa</div>
                                             <div class="row-info horario-evento">
@@ -248,7 +248,7 @@
                                                        /><span class="input-vista-chef duracion no-upper">Horas</span>
                                             </div>
                                         </div>  -->
-                                        <div class="row-detalle">
+                                        <!--div class="row-detalle">
                                             <div class="titulo-datos">Precio por persona</div>
                                             <div class="row-info total-evento">
                                                 <input type="text"
@@ -259,8 +259,8 @@
                                                        value="<?= set_value('precioporpersona' . $idExperiencia, number_format($parametrosChef['4'] * $experiencia['tiempo' . $comensales_default] / $comensales_default, 0, ',', '.')); ?>"
                                                        />
                                             </div>
-                                        </div>
-                                        <div class="overflowauto">
+                                        </div-->
+                                        <!--div class="overflowauto">
                                             <div class="titulo-datos">Total</div>
                                             <div class="row-info total-evento">
                                                 <input type="text"
@@ -271,7 +271,7 @@
                                                        value="<?= set_value('total' . $idExperiencia, number_format($parametrosChef['4'] * $experiencia['tiempo' . $comensales_default], 0, ',', '.')); ?>"
                                                        />
                                             </div>
-                                        </div>
+                                        </div-->
                                         <input type="hidden" name="id" value="<?= $idExperiencia; ?>">
                                         <input type="hidden" name="fecha<?= $idExperiencia; ?>" id="fecha<?= $idExperiencia; ?>" />
                                     </div>
@@ -285,14 +285,20 @@
                                             ?>
                                         </div>
                                     <?php endif; ?>
-                                    <div class="bg-rojo-oscuro-btn">
+                                    <!--div class="bg-rojo-oscuro-btn">
                                         <?php $disabled = is_numeric($parametrosChef['4']) ? '' : 'disabled'; ?>
                                         <input <?= $disabled; ?> class="btn-comprar" type="submit" value="Confirmar reserva"/>
+                                    </div-->
+                                    <div class="bg-rojo-oscuro-btn">
+                                        <button class="btn-comprar" onclick="javascript: document.location.href='http://www.clubdelacocina.cl/home/page/22'">Personalizar un evento</button>
                                     </div>
+
+
                                 </form>
                                 <div></div>
                                 <div></div>
                             </div>
+
                         </div>                
                     </div>                                           
                     <script>

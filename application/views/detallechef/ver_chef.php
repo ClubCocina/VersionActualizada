@@ -86,7 +86,7 @@
                     $ <? //is_numeric($parametrosChef['4']) ? number_format(($parametrosChef['4']), 0, ',', '.') : 0; 
                         $comensales = explode('-', $parametrosChef['5']);
                         echo number_format($parametrosChef['4'] * $minTiempo / $comensales[1], 0, ',', '.');
-                    ?>
+                    ?>  
                 </span>
                 <span class="por-persona">por persona</span>
             </div>
@@ -97,14 +97,14 @@
         </div>
         <div id="invitados-comunas" class="bg-rojo white overflowauto">
         <!--    <div>REQUISITOS DEL CHEF</div>  -->
-            <div id="maxpersonas">
+            <!--div id="maxpersonas">
                 <span class="preview-clp">Rango de Comensales</span>
                 <br>
                 <div class="info">
                     <img src="<?= base_url('images/max-invitados.png'); ?>"/>
                     <span>De <?= str_replace('-', ' a ', $parametrosChef['5']) ?> </span>
                 </div>
-            </div>
+            </div-->
         <!--    <div id="comunas">
                 <span class="preview-clp mayus">DONDE COCINA</span>
                 <div class="info"><img src="<?= base_url('images/comunas.png'); ?>" class="float-left"/>

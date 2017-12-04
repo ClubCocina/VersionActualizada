@@ -18,8 +18,8 @@
         <!-- End Google Tag Manager -->
         <link rel="canonical" href="http://www.clubdelacocina.cl">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="chef a domicilo, cocina en casa, clases de cocina, chef privado">
-        <meta name="description" content="Lo mejor de un restaurante, en tu casa. Conoce las más deliciosas recetas de nuestros chefs y aprende a prepararlas, en tu casa, con tu gente. Arma tu evento con nosotros!">
+        <meta name="keywords" content="chef a domicilo, cocina en casa, clases de cocina, chef privado, curso de cocina">
+        <meta name="description" content="El sitio para contratar recomendados Chefs para eventos en casa o corporativos. Exquisitas propuestas y entretenidos formatos, dónde y cuando lo necesites.">
         <link rel="stylesheet" type="text/css" href="<?= base_url('css/bootstrap.min.css') ?>">
         <link href="<?= base_url('css/style2.css'); ?>" rel="stylesheet" media="screen" />
         <link href="<?= base_url('css/paginator.css'); ?>" rel="stylesheet" media="screen" />
